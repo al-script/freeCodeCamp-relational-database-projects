@@ -29,17 +29,16 @@ echo -e "\nWinner of the 2018 tournament team name:"
 echo "$($PSQL "SELECT name FROM teams FULL JOIN games ON teams.team_id = games.winner_id WHERE round='Final' AND year='2018'")"
 
 echo -e "\nList of teams who played in the 2014 'Eighth-Final' round:"
-echo "$($PSQL "SELECT name FROM teams FULL JOIN games ON teams.team_id = games.winner_id WHERE round='Eighth-Final' AND year='2014'")"
-echo "$($PSQL "SELECT name FROM teams FULL JOIN games ON teams.team_id = games.opponent_id WHERE round='Eighth-Final' AND year='2014'")"
-#gotta fix this one
+echo "$($PSQL "SELECT DISTINCT(name) FROM teams FULL JOIN games AS a ON teams.team_id = a.winner_id FULL JOIN games AS b ON teams.team_id = b.opponent_id WHERE (a.round='Eighth-Final' AND a.year='2014') OR (b.round='Eighth-Final' AND b.year='2014') ORDER BY name")"
+#Set alphabetical
 
 echo -e "\nList of unique winning team names in the whole data set:"
-echo "$($PSQL "SELECT DISTINCT(name) FROM teams FULL JOIN games ON teams.team_id = games.winner_id")"
+echo "$($PSQL "SELECT DISTINCT(name) FROM teams RIGHT JOIN games ON teams.team_id = games.winner_id ORDER BY name")"
+#Set alphabetical
 
 echo -e "\nYear and team name of all the champions:"
-echo "$($PSQL "")"
-echo "$($PSQL "SELECT year, name FROM teams FULL JOIN games ON teams.team_id = games.winner_id WHERE round='Final'")"
-
+echo "$($PSQL "SELECT year, name FROM teams FULL JOIN games ON teams.team_id = games.winner_id WHERE round='Final' ORDER BY year")"
+#Set so 2014 is first
 
 echo -e "\nList of teams that start with 'Co':"
 echo "$($PSQL "SELECT name FROM teams WHERE name LIKE 'Co%'")"
