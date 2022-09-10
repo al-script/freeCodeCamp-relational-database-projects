@@ -41,10 +41,10 @@ GAMES_PLAYED_FORMATTED=
 BEST_GAME=$($PSQL "")
 BEST_GAME_FORMATTED=
 echo -e "\nWelcome back, $USERNAME_FORMATTED! You have played $GAMES_PLAYED_FORMATTED games, and your best game took $BEST_GAME_FORMATTED guesses."
-GUESSING_GAME
+GUESSING_GAME_INIT
 elif [[ $IS_USER -eq 0 ]]; then
 echo -e "\nWelcome, $USERNAME_FORMATTED! It looks like this is your first time here."
-GUESSING_GAME
+GUESSING_GAME_INIT
 fi
 }
 
