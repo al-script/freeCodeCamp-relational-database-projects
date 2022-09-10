@@ -4,10 +4,26 @@ PSQL="psql --username=freecodecamp --dbname=<database_name> -t --no-align -c"
 
 #gotta update the database where necessary
 #gotta handle where input is anything but an integer
+#should games played be updated once begin the game, or once end the game?
+#should user creation be handled at start of game or end of game?
+
+HANDLE_UPDATING_DATABASE_ENDGAME(){
+if [[ $IS_USER -eq 1 ]]; then
+  UPDATE_GAMES_PLAYED=$($PSQL "")
+  if [[ $NUMBER_OF_GUESSES -lt $BEST_GAME ]]
+  then
+  #set best game to number_of guesses
+  UPDATE_BEST_GUESS=$($PSQL "")
+  fi
+elif [[ $IS_USER -eq 0 ]]; then
+  INSERT_NEW_USER=$($PSQL "INSERT INTO users(username, total_games, best_game) VALUES($USERNAME, 1, $NUMBER_OF_GUESSES)")
+fi
+}
 
 GUESSING_GAME_CONT(){
 if [[ $USER_GUESS -eq $SECRET_NUMBER ]]; then
   echo -e "\nYou guessed it in $NUMBER_OF_GUESSES tries. The secret number was $SECRET_NUMBER. Nice job!"
+  HANDLE_UPDATING_DATABASE_ENDGAME
 elif [[ $USER_GUESS -lt $SECRET_NUMBER ]]; then
   echo -e "\nIt's higher than that, guess again:"
   NUMBER_OF_GUESSES++
