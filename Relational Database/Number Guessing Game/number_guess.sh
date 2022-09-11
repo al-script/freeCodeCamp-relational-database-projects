@@ -6,8 +6,8 @@ HANDLE_UPDATING_DATABASE_ENDGAME(){
   if [[ $IS_USER -eq 1 ]]; then
     UPDATE_GAMES_PLAYED=$($PSQL "UPDATE users SET games_played=$((GAMES_PLAYED++)) WHERE username='$USERNAME'")
     if [[ $NUMBER_OF_GUESSES -lt $BEST_GAME ]]
-    then
-    UPDATE_BEST_GUESS=$($PSQL "UPDATE users SET best_game=$NUMBER_OF_GUESSES WHERE username='$USERNAME'")
+      then
+      UPDATE_BEST_GUESS=$($PSQL "UPDATE users SET best_game=$NUMBER_OF_GUESSES WHERE username='$USERNAME'")
     fi
   elif [[ $IS_USER -eq 0 ]]; then
     INSERT_NEW_USER=$($PSQL "INSERT INTO users(username, games_played, best_game) VALUES('$USERNAME', 1, $NUMBER_OF_GUESSES)")
