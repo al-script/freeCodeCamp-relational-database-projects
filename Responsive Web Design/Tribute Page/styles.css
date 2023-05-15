@@ -1,0 +1,54 @@
+body {
+    background-color: #BFD0E0;
+    font-family: Arial;
+  }
+  
+  #title {
+    text-align: center;
+    font-size: 3em;
+    margin: 0.25em;
+  }
+  
+  .subheading {
+    text-align: center;
+    font-size: 1.5em;
+    margin: -0.25em 0 0.5em 0;
+  }
+  
+  #img-div {
+    background: #5D5D81;
+    padding: 2em;
+    margin: auto;
+  }
+  
+  #img-caption {
+    text-align: center;
+    color: white;
+    margin-top: 1.5em;
+  }
+  
+  #image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  
+  /* 
+  #tribute-info {
+  
+  
+  }
+  
+  
+  #tribute-link-container {
+  
+  }
+  
+  
+  #tribute-link {
+  
+  
+  } */
+  
