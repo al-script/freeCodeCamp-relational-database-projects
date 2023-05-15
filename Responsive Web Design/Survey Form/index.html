@@ -1,47 +1,141 @@
-<!-- perhaps use bootstrap and the like to make it purdy and fit with style of other projects -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Survey Form Page EXPERIMENTAL</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <form id="survey-form">
-    <fieldset class='heading'>
-      <h1 id="title">Are you <em>awesome</em> enough?</h1>
-      <p id="description">(Hint: yes, yes you are)</p>
-    </fieldset>
-
-    <fieldset>
-      <label for="name" id="name-label">Name of awesome person (you): <input id="name" type="text" name="name" placeholder="Name" required /></label>
-      <label for="email" id="email-label">Email of awesome person (you): <input id="email" type="email" name="email" placeholder="Email" required /></label>
-    </fieldset>
-
-    <fieldset>
-      <label for="number" id="number-label">How awesome are you, on a scale of 100 - 100? <input id="number" type="number" name="number" placeholder="100" min=100 max=100 /></label> 
-      <label for="dropdown">Do you recognize your awesomeness? <select id="dropdown" name="dropdown">
-      <option value="dropdownchoice0">(select one)</option>
-      <option value="dropdownchoice1">Of course</option>
-      <option value="dropdownchoice2">Obviously</option>
-      </select>
-      </label>
-      <h3>Are you...</h3>
-      <label class="light-weight" for="radio1"><input class="inline" id="radio1" type="radio" name="radiobuttons" value="radio1"> Reasonably awesome</label>
-      <label class="light-weight" for="radio2"><input class="inline" id="radio2" type="radio" name="radiobuttons" value="radio2"> Abundantly awesome</Label>
-    </fieldset>
-
-    <fieldset>
-      <h3>Please accept the terms of awesomeness:</h3>
-      <label class="light-weight" for="checkbox1"><input class="inline" required id="checkbox1" type="checkbox" value="checkbox1">  I accept that I am awesome</label>
-      <label class="light-weight" for="checkbox2"><input class="inline" required id="checkbox2" type="checkbox" value="checkbox2">  I embrace my awesomeness</label>
-      <label class="light-weight" for="checkbox3"><input class="inline" required id="checkbox3" type="checkbox" value="checkbox3">  I solemnly swear that I accept and embrace my own awesomeness</label>
+  <head>
+    <title>Survey Form Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible"
+    />
+  </head>
+  <body>
+    <form id="survey-form">
+      <fieldset class="heading">
+        <h1 id="title">Is this a suitable survey form?</h1>
+        <p id="description">You be the judge</p>
       </fieldset>
+
+      <hr />
+
       <fieldset>
-      <label>(Optional) In what ways am I awesome?
-      <textarea rows="5" cols="35" placeholder="The ways in which I am awesome are..."></textarea>
-      </label>
-      <button type="submit" id="submit"><b class='awesome-button'>Engage Awesomeness</b></button>
-    </fieldset>
-  </form>
+        <label for="name" id="name-label">Name of awesome person (you): </label>
+        <input id="name" type="text" name="name" placeholder="Name" required />
+        <label for="email" id="email-label"
+          >Email of awesome person (you):
+        </label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+      </fieldset>
+
+      <hr />
+
+      <fieldset>
+        <label for="number" id="number-label"
+          >How awesome are you, on a scale of 100 - 100?
+          <input
+            id="number"
+            type="number"
+            name="number"
+            placeholder="100"
+            min="100"
+            max="100"
+        /></label>
+        <label for="dropdown"
+          >Do you recognize your awesomeness?
+          <select id="dropdown" name="dropdown">
+            <option value="dropdownchoice0">(select one)</option>
+            <option value="dropdownchoice1">Of course</option>
+            <option value="dropdownchoice2">Obviously</option>
+          </select>
+        </label>
+        <h3>Are you...</h3>
+        <label class="light-weight" for="radio1"
+          ><input
+            class="inline"
+            id="radio1"
+            type="radio"
+            name="radiobuttons"
+            value="radio1"
+          />
+          Reasonably awesome</label
+        >
+        <label class="light-weight" for="radio2"
+          ><input
+            class="inline"
+            id="radio2"
+            type="radio"
+            name="radiobuttons"
+            value="radio2"
+          />
+          Abundantly awesome</label
+        >
+      </fieldset>
+
+      <hr />
+
+      <fieldset>
+        <h3>Please accept the terms of awesomeness:</h3>
+        <label class="light-weight" for="checkbox1"
+          ><input
+            class="inline"
+            required
+            id="checkbox1"
+            type="checkbox"
+            value="checkbox1"
+          />
+          I accept that I am awesome</label
+        >
+        <label class="light-weight" for="checkbox2"
+          ><input
+            class="inline"
+            required
+            id="checkbox2"
+            type="checkbox"
+            value="checkbox2"
+          />
+          I embrace my awesomeness</label
+        >
+        <label class="light-weight" for="checkbox3"
+          ><input
+            class="inline"
+            required
+            id="checkbox3"
+            type="checkbox"
+            value="checkbox3"
+          />
+          I solemnly swear that I accept and embrace my own awesomeness</label
+        >
+      </fieldset>
+
+      <hr />
+
+      <fieldset>
+        <label
+          >(Optional) In what ways am I awesome?
+        </label>
+        <textarea
+            rows="5"
+            cols="35"
+            placeholder="The ways in which I am awesome are..."
+          ></textarea>
+        
+      </fieldset>
+
+      <hr />
+
+      <button type="submit" id="submit">
+        <b class="awesome-button">Engage Awesomeness</b>
+      </button>
+
+    </form>
   </body>
 </html>

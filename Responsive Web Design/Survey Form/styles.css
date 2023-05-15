@@ -1,13 +1,12 @@
 /* fix padding and element height */
 
-.heading {
+/* .heading {
     text-align: center;
     padding: 0;
     margin: 1.5em 0 0 0;
   }
   
   em {
-    /* color: #FB4B4B; */
     text-decoration: underline #FB4B4B;
     text-underline-offset: 5px;
   }
@@ -30,7 +29,6 @@
     background-color: #C4E5F0;
     width: 80vw;
     margin: auto;
-    box-shadow: 0px 0px 1000px 1px #8AA1B1;
     margin-bottom: 1.4em;
     border-radius: 10px;
   }
@@ -39,10 +37,8 @@
     font-family: Arial;
     color: black;
     display: block;
-    /* margin: 0.5rem 0; */
     margin: 0.6em 0.5em;
     font-weight: bold;
-    /* padding: 0.15em */
     padding-top: 0.25em;
   }
   
@@ -60,8 +56,6 @@
   
   input, textarea, select {
     background-color: #F5F4F6;
-    /* border: 1px solid #BFD0E0; */
-    /* border: none; */
     padding: 10px;
     border: 2px solid #bfd0e0;
   }
@@ -108,4 +102,70 @@
   .awesome-button {
     font-size: 1.5em;
   }
-  
+   */
+
+* {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  /* transition: all 0.3s ease; */
+}
+
+/* https://matthewjamestaylor.com/responsive-font-size */
+html {
+  font-size: calc(15px + 0.390625vw);
+}
+
+body {
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+#survey-form {
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85vw;
+  padding: 1.5rem;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+}
+
+hr {
+  width: 100%;
+  border: 0.15rem solid skyblue;
+  border-radius: 0.5rem;
+  opacity: 15%;
+}
+
+label {
+  padding: 0.5rem 0;
+}
+
+input {
+  background-color: #b6b6b6;
+  color: black;
+  border: none;
+  border-radius: 2px;
+  padding: 0.2rem 0.5rem;
+  height: 1.5rem;
+}
+
+input::placeholder {
+  color: black;
+  padding: 5px;
+}
+
+input:focus, input:active {
+  outline: 2px solid deepskyblue;
+  background-color: #cccccc;
+}
