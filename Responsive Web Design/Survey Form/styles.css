@@ -1,0 +1,111 @@
+/* fix padding and element height */
+
+.heading {
+    text-align: center;
+    padding: 0;
+    margin: 1.5em 0 0 0;
+  }
+  
+  em {
+    /* color: #FB4B4B; */
+    text-decoration: underline #FB4B4B;
+    text-underline-offset: 5px;
+  }
+  
+  #description {
+    margin-top: -0.5em;
+    margin-bottom: 1.5em; 
+  }
+  
+  body {
+    font-family: Arial;
+    color: #011936;
+    background-color: #BFD0E0;
+    font-size: 1.25em;
+  }
+  
+  form {
+    font-family: Arial;
+    color:black;
+    background-color: #C4E5F0;
+    width: 80vw;
+    margin: auto;
+    box-shadow: 0px 0px 1000px 1px #8AA1B1;
+    margin-bottom: 1.4em;
+    border-radius: 10px;
+  }
+  
+  label, h3 {
+    font-family: Arial;
+    color: black;
+    display: block;
+    /* margin: 0.5rem 0; */
+    margin: 0.6em 0.5em;
+    font-weight: bold;
+    /* padding: 0.15em */
+    padding-top: 0.25em;
+  }
+  
+  input, textarea, select, button {
+    margin: 10px 0 0 0;
+    width: 100%;
+    padding: 0.4em;
+    font-family: Arial;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #ff644c;
+  }
+  
+  input, textarea, select {
+    background-color: #F5F4F6;
+    /* border: 1px solid #BFD0E0; */
+    /* border: none; */
+    padding: 10px;
+    border: 2px solid #bfd0e0;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    outline: 2px solid #fbc5c5;
+    border: 2px solid #fbc5c5;
+  }
+  
+  h3 {
+    font-size: 1em;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0;
+  }
+  
+  .light-weight {
+    font-weight: normal;
+  }
+  
+  fieldset {
+    border: none;
+    border-bottom: 2px solid #BFD0E0;
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  textarea {
+    margin-top: 1.5em;
+  }
+  
+  button {
+    border: none;
+    height: 3em;
+    color: white;
+    background-color: #FB4B4B;
+    margin-bottom: 0.5em;
+  }
+  
+  .awesome-button {
+    font-size: 1.5em;
+  }
+  
