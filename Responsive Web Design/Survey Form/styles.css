@@ -116,24 +116,36 @@ html {
 
 body {
   background-color: #121212;
-  padding-top: 55px;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* padding-top: 2rem; */
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav {
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 55px;
   z-index: 9999;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .nav-name {
   color: white;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
 }
 
 #survey-form {
