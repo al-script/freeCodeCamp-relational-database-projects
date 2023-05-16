@@ -110,6 +110,15 @@ fieldset {
   width: 65vw;
 }
 
+.inline {
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 5px;
+}
+
 hr {
   width: 100%;
   border: 0.15rem solid var(--hr);
