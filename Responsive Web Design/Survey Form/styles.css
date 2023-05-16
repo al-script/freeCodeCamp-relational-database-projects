@@ -116,10 +116,24 @@ html {
 
 body {
   background-color: #121212;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 2rem;
+  padding-top: 55px;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding-top: 2rem; */
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 55px;
+  z-index: 9999;
+}
+
+.nav-name {
+  color: white;
 }
 
 #survey-form {
