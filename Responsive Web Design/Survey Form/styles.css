@@ -13,6 +13,7 @@ html {
 
   --nav-background: #eaebf0;
   --nav-text: #0f4357;
+  --nav-links: #0f4357;
 
   --survey-form-background: #eeeff4;
   --survey-form-text: #0e2239;
@@ -29,6 +30,7 @@ html {
 
   --nav-background: #121212;
   --nav-text: white;
+  --nav-links: white;
 
   --survey-form-background: #1e1e1e;
   --survey-form-text: white;
@@ -46,6 +48,7 @@ html {
 
     --nav-background: #121212;
     --nav-text: white;
+    --nav-links: white;
 
     --survey-form-background: #1e1e1e;
     --survey-form-text: white;
@@ -90,6 +93,25 @@ main {
   display: flex;
   align-items: baseline;
   gap: 0.5rem;
+}
+
+.nav-project-links {
+  border: 1px solid red;
+  color: var(--nav-links);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.5rem;
+  gap: 0.5rem;
+}
+
+.nav-project {
+  border: 1px solid red;
+  font-size: 0.5rem;
+  color: var(--nav-links);
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: -0.5rem; */
 }
 
 #survey-form {
