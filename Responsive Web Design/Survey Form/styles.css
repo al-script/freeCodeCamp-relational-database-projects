@@ -63,16 +63,14 @@ html {
 
 body {
   background-color: var(--body-background);
-  padding: 5rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5rem 0;
 }
 
 #nav {
@@ -96,7 +94,7 @@ main {
 }
 
 .nav-project-links {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   color: var(--nav-links);
   display: flex;
   justify-content: space-between;
@@ -106,12 +104,35 @@ main {
 }
 
 .nav-project {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-size: 0.5rem;
   color: var(--nav-links);
   /* display: flex; */
   /* flex-direction: column; */
   /* gap: -0.5rem; */
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--nav-background);
+  height: 100px;
+  width: 100%;
+  left: 0;
+  position: absolute;
+}
+
+.footer-name {
+  color: var(--nav-text);
+
+}
+
+.contact-links {
+  display: flex;
+  color: var(--nav-text);
+  gap: 1rem;
+  font-size: 2rem;
 }
 
 #survey-form {
