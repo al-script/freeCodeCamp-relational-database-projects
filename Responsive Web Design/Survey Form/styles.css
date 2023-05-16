@@ -130,7 +130,7 @@ label {
   padding: 0.5rem 0;
 }
 
-input {
+input, #dropdown {
   background-color: var(--text-box-input-background);
   color: var(--text-box-input-text);
   border: none;
@@ -139,12 +139,16 @@ input {
   height: 1.5rem;
 }
 
+#dropdown {
+  height: 1.9rem;
+}
+
 input::placeholder {
   color: var(--text-box-input-placeholder);
   padding: 5px;
 }
 
-input:focus, input:active {
+input:focus, input:active, #dropdown:focus, #dropdown:active {
   outline: 2px solid var(--text-box-active-outline);
   background-color: var(--text-box-active-background);
 }
