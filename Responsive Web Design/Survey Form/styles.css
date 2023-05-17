@@ -8,6 +8,7 @@
 
   --survey-form-background: #eeeff4;
   --survey-form-text: #0e2239;
+  --header-background: #c0ced8;
   --hr: #aebbc6;
   --text-box-input-background: #c0cdd8;
   --text-box-input-placeholder: black;
@@ -71,7 +72,7 @@
 
     --survey-form-background: #1c2021;
     --survey-form-text: white;
-    --header-background: #3e5352;
+    --header-background: #415960;
     --hr: skyblue;
     --text-box-input-background: #a3d3f824;
     --text-box-input-placeholder: white;
