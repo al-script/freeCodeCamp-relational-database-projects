@@ -15,8 +15,8 @@
   --text-box-active-outline: deepskyblue;
   --text-box-active-background: #eeeff4;
 
-  --button-color-hover: #00bfff;
-  --button-color: #6ec6f2;
+  --button-color-hover: #a0b5b3;
+  --button-color: #C0D8D7;
 }
 
 /* :root.dark {
@@ -126,7 +126,7 @@ main {
 }
 
 .nav-link:visited {
-  color: 
+  color: var(--nav-links);
 }
 
 .nav-project {
@@ -173,7 +173,8 @@ fieldset {
   border: none;
   display: flex;
   flex-direction: column;
-  width: 75vw;
+  width: 65vw;
+  /* CAUSING ISSUES */
   padding-bottom: 1.5rem;
 }
 
@@ -226,8 +227,8 @@ input:focus, input:active, #dropdown:focus, #dropdown:active, textarea:active, t
   margin: 1rem 0;
   /* margin-bottom: 1rem; */
   background-color: var(--button-color);
-  outline: 1px solid var(--hr);
-  border: 1px solid var(--hr);
+  outline: none;
+  border: none;
   width: 35%;
   height: 3rem;
   border-radius: 5px;
@@ -235,6 +236,10 @@ input:focus, input:active, #dropdown:focus, #dropdown:active, textarea:active, t
 
 #submit:hover {
   background-color: var(--button-color-hover);
+}
+
+#submit:focus {
+  border: 5px solid var(--text-box-active-outline);
 }
 
 hr {
