@@ -1,6 +1,7 @@
 * {
   font-family: "Atkinson Hyperlegible", sans-serif;
   /* transition: all 0.3s ease; */
+  /* border: 1px solid red; */
 }
 
 /* https://matthewjamestaylor.com/responsive-font-size */
@@ -17,15 +18,15 @@ html {
 
   --survey-form-background: #eeeff4;
   --survey-form-text: #0e2239;
-  --hr: black;
-  --text-box-input-background: #b6b6b6;
+  --hr: #aebbc6;
+  --text-box-input-background: #c0cdd8;
   --text-box-input-placeholder: black;
   --text-box-input-text: black;
   --text-box-active-outline: deepskyblue;
-  --text-box-active-background: #cccccc;
+  --text-box-active-background: #eeeff4;
 }
 
-:root.dark {
+/* :root.dark {
   --body-background: #121212;
 
   --nav-background: #121212;
@@ -59,7 +60,7 @@ html {
     --text-box-active-outline: deepskyblue;
     --text-box-active-background: #cccccc;
   }
-}
+} */
 
 body {
   background-color: var(--body-background);
@@ -146,11 +147,28 @@ footer {
   padding: 1.5rem;
 }
 
+#title {
+  /* margin-top: -0.5rem; */
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+#description {
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 fieldset {
   border: none;
   display: flex;
   flex-direction: column;
-  width: 65vw;
+  width: 80vw;
+  padding-bottom: 2rem;
+}
+
+label {
+  font-size: 1.25rem;
 }
 
 .inline {
@@ -160,6 +178,13 @@ fieldset {
 
 input[type="radio"], input[type="checkbox"] {
   margin-right: 5px;
+}
+
+.radio-answers, .terms {
+  border: 0.4rem solid var(--text-box-input-background);
+  padding: 0.25rem;
+  max-width: 60vw;
+  margin-bottom: 2rem;
 }
 
 hr {
@@ -173,7 +198,7 @@ label {
   padding: 0.5rem 0;
 }
 
-input, #dropdown {
+input, #dropdown, textarea {
   background-color: var(--text-box-input-background);
   color: var(--text-box-input-text);
   border: none;
@@ -191,7 +216,19 @@ input::placeholder {
   padding: 5px;
 }
 
-input:focus, input:active, #dropdown:focus, #dropdown:active {
+input:focus, input:active, #dropdown:focus, #dropdown:active, textarea:active, textarea:focus {
   outline: 2px solid var(--text-box-active-outline);
   background-color: var(--text-box-active-background);
+}
+
+#submit {
+  background-color: var(--text-box-active-outline);
+  outline: 1px solid var(--hr);
+  border: 1px solid var(--hr);
+  width: 25%;
+  height: 2rem;
+}
+
+#submit:hover {
+  background-color: var(--text-box-input-background);
 }
