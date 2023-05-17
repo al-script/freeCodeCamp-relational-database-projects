@@ -120,21 +120,24 @@ main {
   /* border: 1px solid red; */
   font-size: 0.5rem;
   color: var(--nav-links);
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* gap: -0.5rem; */
 }
 
 /* FORM */
 #survey-form {
   background-color: var(--survey-form-background);
   color: var(--survey-form-text);
-  border-radius: 5px;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 85vw;
-  padding: 0 1.5rem;
+  width: 75vw;
+  padding: 0 5rem;
+  max-width: 1000px;
+  padding-bottom: 1rem;
+}
+
+#survey-form > * {
+  max-width: 1000px;
 }
 
 .inline {
@@ -143,14 +146,13 @@ main {
 }
 
 #title {
-  /* margin-top: -0.5rem; */
   font-size: 2.25rem;
   text-align: center;
 }
 
 #description {
-  margin-top: -1rem;
-  margin-bottom: 2rem;
+  margin-top: -0.75rem;
+  /* margin-bottom: 2rem; */
   text-align: center;
 }
 
@@ -158,8 +160,8 @@ fieldset {
   border: none;
   display: flex;
   flex-direction: column;
-  width: 80vw;
-  padding-bottom: 2rem;
+  width: 75vw;
+  padding-bottom: 1.5rem;
 }
 
 label {
@@ -171,14 +173,14 @@ input, #dropdown, textarea {
   background-color: var(--text-box-input-background);
   color: var(--text-box-input-text);
   border: none;
-  border-radius: 2px;
+  border-radius: 0.25rem;
   padding: 0.2rem 0.5rem;
   height: 1.5rem;
 }
 
 input::placeholder {
   color: var(--text-box-input-placeholder);
-  padding: 5px;
+  padding: 0.25rem;
 }
 
 #dropdown {
@@ -186,21 +188,21 @@ input::placeholder {
 }
 
 input[type="radio"], input[type="checkbox"] {
-  margin-right: 5px;
+  margin-right: 0.35rem;
 }
 
 input:focus, input:active, #dropdown:focus, #dropdown:active, textarea:active, textarea:focus {
-  outline: 2px solid var(--text-box-active-outline);
+  outline: 0.25rem solid var(--text-box-active-outline);
   background-color: var(--text-box-active-background);
 }
 
 .radio-answers, .terms {
-  border: 0.4rem solid var(--text-box-input-background);
+  border: 0.25rem solid var(--text-box-input-background);
   padding: 0.25rem;
   max-width: 60vw;
-  margin-top: 1.25rem;
-  margin-bottom: 2rem;
-  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.25rem;
 }
 
 #submit {
