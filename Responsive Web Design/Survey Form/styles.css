@@ -26,7 +26,7 @@ html {
   --text-box-active-background: #eeeff4;
 }
 
-/* :root.dark {
+:root.dark {
   --body-background: #121212;
 
   --nav-background: #121212;
@@ -60,7 +60,7 @@ html {
     --text-box-active-outline: deepskyblue;
     --text-box-active-background: #cccccc;
   }
-} */
+}
 
 body {
   background-color: var(--body-background);
