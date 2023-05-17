@@ -17,6 +17,7 @@
 
   --button-color-hover: #a0b5b3;
   --button-color: #C0D8D7;
+  --button-focus: #cb4545;
 }
 
 /* :root.dark {
@@ -57,13 +58,14 @@
 
   --button-color: #6ec6f2;
   --button-color-hover: #00bfff;
+  --button-focus: #cb4545;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --body-background: #121212;
 
-    --nav-background: #121212;
+    --nav-background: #182729;
     --nav-text: white;
     --nav-links: white;
 
@@ -78,6 +80,7 @@
 
     --button-color: #6ec6f2;
     --button-color-hover: #00bfff;
+    --button-focus: #cb4545;
   }
 }
 
@@ -262,7 +265,7 @@ input:focus, input:active, #dropdown:focus, #dropdown:active, textarea:active, t
 }
 
 #submit:focus {
-  border: 5px solid var(--text-box-active-outline);
+  border: 5px solid var(--button-focus);
 }
 
 hr {
