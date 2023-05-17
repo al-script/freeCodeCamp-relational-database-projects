@@ -75,7 +75,6 @@ html {
 
 body {
   background-color: var(--body-background);
-
 }
 
 main {
@@ -90,6 +89,7 @@ main {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100vw;
   height: 55px;
   z-index: 9999;
@@ -251,9 +251,11 @@ footer {
   justify-content: space-evenly;
   background-color: var(--nav-background);
   height: 100px;
-  width: 100%;
+  /* width: 100%; */
   left: 0;
+  right: 0;
   position: absolute;
+  /* box-sizing: border-box; */
 }
 
 .footer-name {
