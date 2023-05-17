@@ -15,6 +15,7 @@
   --text-box-input-text: black;
   --text-box-active-outline: deepskyblue;
   --text-box-active-background: #eeeff4;
+  --dropdown-background: white;
 
   --button-color-hover: #a0b5b3;
   --button-color: #C0D8D7;
@@ -78,6 +79,7 @@
     --text-box-input-text: white;
     --text-box-active-outline: deepskyblue;
     --text-box-active-background: #a3d3f824;
+    --dropdown-background: black;
 
     --button-color: #6ec6f2;
     --button-color-hover: #04a0d3;
@@ -101,6 +103,7 @@
     --text-box-input-text: white;
     --text-box-active-outline: deepskyblue;
     --text-box-active-background: #a3d3f824;
+    --dropdown-background: black;
 
     --button-color: #6ec6f2;
     --button-color-hover: #04a0d3;
@@ -261,6 +264,10 @@ textarea {
 
 #dropdown {
   height: 1.9rem;
+}
+
+select option {
+  background-color: var(--dropdown-background);
 }
 
 input[type="radio"], input[type="checkbox"] {
