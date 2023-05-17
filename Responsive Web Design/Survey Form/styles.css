@@ -277,3 +277,19 @@ footer {
   gap: 1rem;
   font-size: 2rem;
 }
+
+.contact-links a {
+  color: var(--nav-text);
+}
+
+.contact-links a:hover {
+  color: var(--text-box-active-outline);
+}
+
+.contact-links a:focus {
+  outline: 0.25rem solid var(--text-box-active-outline);
+}
+
+.contact-links a:visited {
+  color: var(--nav-text);
+}
