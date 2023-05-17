@@ -178,9 +178,13 @@ input, #dropdown, textarea {
   height: 1.5rem;
 }
 
-input::placeholder {
+input::placeholder, textarea::placeholder {
   color: var(--text-box-input-placeholder);
   padding: 0.25rem;
+}
+
+textarea {
+  height: 4rem;
 }
 
 #dropdown {
