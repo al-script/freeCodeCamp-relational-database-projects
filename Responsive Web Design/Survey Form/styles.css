@@ -229,13 +229,16 @@ input:focus, input:active, #dropdown:focus, #dropdown:active, textarea:active, t
   background-color: var(--button-color);
   outline: none;
   border: none;
-  width: 35%;
+  width: 25%;
   height: 3rem;
-  border-radius: 5px;
+  border-radius: 0.25rem;
+  font-size: 1rem;
 }
 
 #submit:hover {
   background-color: var(--button-color-hover);
+  text-decoration: grey wavy underline;
+  text-underline-offset: 0.25rem;
 }
 
 #submit:focus {
