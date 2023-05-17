@@ -41,7 +41,7 @@
     --button-color-hover: #00bfff;
 } */
 
-:root.dark {
+/* :root.dark {
   --body-background: #121212;
 
   --nav-background: #121212;
@@ -60,6 +60,28 @@
   --button-color: #6ec6f2;
   --button-color-hover: #00bfff;
   --button-focus: #cb4545;
+} */
+
+:root.dark {
+  --body-background: #121212;
+
+    --nav-background: #1c2021;
+    --nav-text: white;
+    --nav-links: white;
+
+    --survey-form-background: #1c2021;
+    --survey-form-text: white;
+    --header-background: #415960;
+    --hr: skyblue;
+    --text-box-input-background: #a3d3f824;
+    --text-box-input-placeholder: white;
+    --text-box-input-text: white;
+    --text-box-active-outline: deepskyblue;
+    --text-box-active-background: #a3d3f824;
+
+    --button-color: #6ec6f2;
+    --button-color-hover: #04a0d3;
+    --button-focus: #cb4545;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -81,7 +103,7 @@
     --text-box-active-background: #a3d3f824;
 
     --button-color: #6ec6f2;
-    --button-color-hover: #00bfff;
+    --button-color-hover: #04a0d3;
     --button-focus: #cb4545;
   }
 }
@@ -273,7 +295,7 @@ input:focus, input:active, #dropdown:focus, #dropdown:active, textarea:active, t
 
 #submit:hover {
   background-color: var(--button-color-hover);
-  text-decoration: grey wavy underline;
+  text-decoration: var(--text-box-active-background) wavy underline;
   text-underline-offset: 0.25rem;
 }
 
