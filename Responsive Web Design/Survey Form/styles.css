@@ -26,7 +26,7 @@ html {
   --text-box-active-background: #eeeff4;
 }
 
-:root.dark {
+/* :root.dark {
   --body-background: #121212;
 
   --nav-background: #121212;
@@ -60,7 +60,7 @@ html {
     --text-box-active-outline: deepskyblue;
     --text-box-active-background: #cccccc;
   }
-}
+} */
 
 body {
   background-color: var(--body-background);
@@ -100,7 +100,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.5rem;
+  font-size: 0.65rem;
   gap: 0.5rem;
 }
 
@@ -185,6 +185,7 @@ input[type="radio"], input[type="checkbox"] {
   padding: 0.25rem;
   max-width: 60vw;
   margin-bottom: 2rem;
+  border-radius: 5px;
 }
 
 hr {
