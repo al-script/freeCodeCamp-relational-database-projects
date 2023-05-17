@@ -22,6 +22,26 @@
 /* :root.dark {
   --body-background: #121212;
 
+    --nav-background: #121212;
+    --nav-text: white;
+    --nav-links: white;
+
+    --survey-form-background: #1e1e1e;
+    --survey-form-text: white;
+    --hr: skyblue;
+    --text-box-input-background: #a3d3f8;
+    --text-box-input-placeholder: black;
+    --text-box-input-text: black;
+    --text-box-active-outline: deepskyblue;
+    --text-box-active-background: #cccccc;
+
+    --button-color: #6ec6f2;
+    --button-color-hover: #00bfff;
+} */
+
+:root.dark {
+  --body-background: #121212;
+
   --nav-background: #121212;
   --nav-text: white;
   --nav-links: white;
@@ -29,14 +49,14 @@
   --survey-form-background: #1e1e1e;
   --survey-form-text: white;
   --hr: skyblue;
-  --text-box-input-background: #b6b6b6;
-  --text-box-input-placeholder: black;
-  --text-box-input-text: black;
+  --text-box-input-background: #a3d3f824;
+  --text-box-input-placeholder: white;
+  --text-box-input-text: white;
   --text-box-active-outline: deepskyblue;
   --text-box-active-background: #cccccc;
 
-  --button-color: #00bfff;
-  --button-color-hover: #6ec6f2;
+  --button-color: #6ec6f2;
+  --button-color-hover: #00bfff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,16 +70,16 @@
     --survey-form-background: #1e1e1e;
     --survey-form-text: white;
     --hr: skyblue;
-    --text-box-input-background: #b6b6b6;
-    --text-box-input-placeholder: black;
-    --text-box-input-text: black;
+    --text-box-input-background: #a3d3f824;
+    --text-box-input-placeholder: white;
+    --text-box-input-text: white;
     --text-box-active-outline: deepskyblue;
-    --text-box-active-background: #cccccc;
+    --text-box-active-background: #a3d3f824;
 
-    --button-color: #00bfff;
-    --button-color-hover: #6ec6f2;
+    --button-color: #6ec6f2;
+    --button-color-hover: #00bfff;
   }
-} */
+}
 
 /* PRIMARY CONTAINERS */
 * {
