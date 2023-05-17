@@ -71,6 +71,7 @@
 
     --survey-form-background: #1c2021;
     --survey-form-text: white;
+    --header-background: #3e5352;
     --hr: skyblue;
     --text-box-input-background: #a3d3f824;
     --text-box-input-placeholder: white;
@@ -166,19 +167,30 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 75vw;
+  max-width: 65vw;
   padding: 0 5rem;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   padding-bottom: 1rem;
+  overflow: hidden;
 }
 
 #survey-form > * {
-  max-width: 1000px;
+  /* max-width: 1000px; */
 }
 
 .inline {
   display: flex;
   align-items: center;
+}
+
+.heading {
+  background-color: var(--header-background);
+  /* width: 100%; */
+  /* position: sticky; */
+  /* top: 0; */
+  width: 100rem;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
 }
 
 #title {
@@ -196,8 +208,8 @@ fieldset {
   border: none;
   display: flex;
   flex-direction: column;
-  width: 65vw;
-  /* CAUSING ISSUES */
+  min-width: 65vw;
+  /* max-width: 85vw; */
   padding-bottom: 1.5rem;
 }
 
@@ -240,7 +252,7 @@ input:focus, input:active, #dropdown:focus, #dropdown:active, textarea:active, t
 .radio-answers, .terms {
   border: 0.25rem solid var(--text-box-input-background);
   padding: 0.25rem;
-  max-width: 60vw;
+  /* max-width: 60vw; */
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   border-radius: 0.25rem;
@@ -269,7 +281,7 @@ input:focus, input:active, #dropdown:focus, #dropdown:active, textarea:active, t
 }
 
 hr {
-  width: 100%;
+  /* width: 100%; */
   border: 0.15rem solid var(--hr);
   border-radius: 0.5rem;
   opacity: 15%;
