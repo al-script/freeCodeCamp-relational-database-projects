@@ -1,14 +1,4 @@
-* {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  /* transition: all 0.3s ease; */
-  /* border: 1px solid red; */
-}
-
-/* https://matthewjamestaylor.com/responsive-font-size */
-html {
-  font-size: calc(15px + 0.390625vw);
-}
-
+/* LIGHT & DARK MODE */
 :root, :root.light {
   --body-background: #f7f9fd;
 
@@ -71,6 +61,18 @@ html {
   }
 } */
 
+/* PRIMARY CONTAINERS */
+* {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  /* transition: all 0.3s ease; */
+  /* border: 1px solid red; */
+}
+
+/* https://matthewjamestaylor.com/responsive-font-size */
+html {
+  font-size: calc(15px + 0.390625vw);
+}
+
 body {
   background-color: var(--body-background);
 
@@ -83,6 +85,7 @@ main {
   padding: 5rem 0;
 }
 
+/* NAVBAR */
 #nav {
   position: fixed;
   top: 0;
@@ -122,29 +125,7 @@ main {
   /* gap: -0.5rem; */
 }
 
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: var(--nav-background);
-  height: 100px;
-  width: 100%;
-  left: 0;
-  position: absolute;
-}
-
-.footer-name {
-  color: var(--nav-text);
-
-}
-
-.contact-links {
-  display: flex;
-  color: var(--nav-text);
-  gap: 1rem;
-  font-size: 2rem;
-}
-
+/* FORM */
 #survey-form {
   background-color: var(--survey-form-background);
   color: var(--survey-form-text);
@@ -153,7 +134,12 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 85vw;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
 }
 
 #title {
@@ -178,33 +164,6 @@ fieldset {
 
 label {
   font-size: 1.25rem;
-}
-
-.inline {
-  display: flex;
-  align-items: center;
-}
-
-input[type="radio"], input[type="checkbox"] {
-  margin-right: 5px;
-}
-
-.radio-answers, .terms {
-  border: 0.4rem solid var(--text-box-input-background);
-  padding: 0.25rem;
-  max-width: 60vw;
-  margin-bottom: 2rem;
-  border-radius: 5px;
-}
-
-hr {
-  width: 100%;
-  border: 0.15rem solid var(--hr);
-  border-radius: 0.5rem;
-  opacity: 15%;
-}
-
-label {
   padding: 0.5rem 0;
 }
 
@@ -217,13 +176,17 @@ input, #dropdown, textarea {
   height: 1.5rem;
 }
 
+input::placeholder {
+  color: var(--text-box-input-placeholder);
+  padding: 5px;
+}
+
 #dropdown {
   height: 1.9rem;
 }
 
-input::placeholder {
-  color: var(--text-box-input-placeholder);
-  padding: 5px;
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 5px;
 }
 
 input:focus, input:active, #dropdown:focus, #dropdown:active, textarea:active, textarea:focus {
@@ -231,14 +194,57 @@ input:focus, input:active, #dropdown:focus, #dropdown:active, textarea:active, t
   background-color: var(--text-box-active-background);
 }
 
+.radio-answers, .terms {
+  border: 0.4rem solid var(--text-box-input-background);
+  padding: 0.25rem;
+  max-width: 60vw;
+  margin-top: 1.25rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+
 #submit {
+  margin: 1rem 0;
+  /* margin-bottom: 1rem; */
   background-color: var(--button-color);
   outline: 1px solid var(--hr);
   border: 1px solid var(--hr);
-  width: 25%;
-  height: 2rem;
+  width: 35%;
+  height: 3rem;
+  border-radius: 5px;
 }
 
 #submit:hover {
   background-color: var(--button-color-hover);
+}
+
+hr {
+  width: 100%;
+  border: 0.15rem solid var(--hr);
+  border-radius: 0.5rem;
+  opacity: 15%;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--nav-background);
+  height: 100px;
+  width: 100%;
+  left: 0;
+  position: absolute;
+}
+
+.footer-name {
+  color: var(--nav-text);
+
+}
+
+.contact-links {
+  display: flex;
+  color: var(--nav-text);
+  gap: 1rem;
+  font-size: 2rem;
 }
