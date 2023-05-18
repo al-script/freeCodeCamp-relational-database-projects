@@ -468,11 +468,12 @@ footer {
   position: absolute;
   /* box-sizing: border-box; */
   border-top: 1px solid var(--footer-border);
+  overflow: none;
 }
 
 .footer-name {
   color: var(--nav-text);
-
+  padding: 0.5rem;
 }
 
 .contact-links {
@@ -480,6 +481,7 @@ footer {
   color: var(--nav-text);
   gap: 1rem;
   font-size: 2rem;
+  padding: 0.5rem;
 }
 
 .contact-links a {
