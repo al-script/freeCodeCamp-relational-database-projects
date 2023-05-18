@@ -148,8 +148,8 @@
     --survey-form-text: white;
     --header-background: #a3d3f824;
     --header-background: #1c2021; 
-    --header-background: #222d33; 
-    --header-background: #41573e00;
+    --header-background: #7ec9ee40; 
+    /* --header-background: #41573e00; */
     /* --header-border: #6ec6f2; */
     --hr: skyblue;
     --text-box-input-background: #3e4d57;
@@ -365,8 +365,9 @@ input, #dropdown, textarea {
   color: var(--text-box-input-text);
   border: none;
   border-radius: 0.25rem;
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 1rem;
   height: 3rem;
+  font-size: 1rem;
   /* margin-bottom: 1rem; */
 }
 
@@ -381,6 +382,7 @@ input::placeholder, textarea::placeholder {
 
 textarea {
   height: 4rem;
+  padding: 1rem;
 }
 
 #dropdown {
