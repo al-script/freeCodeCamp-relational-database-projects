@@ -347,7 +347,7 @@ footer {
   color: var(--nav-text);
 }
 
-.contact-links a:hover {
+.contact-links i:hover {
   color: var(--text-box-active-outline);
 }
 
