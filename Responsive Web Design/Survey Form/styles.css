@@ -23,6 +23,7 @@
   --dropdown-background: white;
 
   --legend-border: #ec9296;
+  --legend-border-optional: #92c9ec;
 
   /* --button-color-hover: #a0b5b3;
   --button-color: #C0D8D7;
@@ -111,7 +112,8 @@
     --text-box-active-background: #a3d3f824;
     --dropdown-background: black;
 
-    --legend-border: #ec9296;
+    --legend-border: #ac7376;
+    --legend-border-optional: #9fc3da;
 
     --button-color: #6ec6f2;
     --button-color-hover: #04a0d3;
@@ -150,7 +152,8 @@
     --text-box-active-background: #a3d3f824;
     --dropdown-background: black;
 
-    --legend-border: #ec9296;
+    --legend-border: #ac7376;
+    --legend-border-optional: #9fc3da;
 
     --button-color: #6ec6f2;
     --button-color-hover: #04a0d3;
@@ -398,6 +401,10 @@ input:focus, input:active, #dropdown:focus, #dropdown:active, textarea:active, t
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   border-radius: 0.25rem;
+}
+
+.radio-answers {
+  border-color: var(--legend-border-optional);
 }
 
 .optional-header {
