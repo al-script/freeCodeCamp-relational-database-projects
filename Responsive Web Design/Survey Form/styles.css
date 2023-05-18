@@ -218,6 +218,45 @@ main {
   font-size: 0.6rem;
 }
 
+
+
+/* hide nav toggle after breakpoint, need to fix... */
+@media only screen and (min-width: 1001px) {
+  .mode-toggle .nav-bars {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-project-links {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+    background-color: var(--nav-background);
+    display: none;
+    padding: 0 1rem;
+    align-self: flex-end;
+    position: absolute;
+  }
+
+  .nav-project-links::before {
+    content: "Links:"
+}
+  .mode-toggle {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .nav-bars {
+    color: var(--nav-links);
+    cursor: pointer;
+  }
+}
+
+.toggle-nav-menu {
+  display: flex;
+}
+
 /* FORM */
 #survey-form {
   background-color: var(--survey-form-background);

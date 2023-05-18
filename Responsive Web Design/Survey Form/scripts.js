@@ -21,3 +21,15 @@ function toggleLightDarkMode() {
       }
     }
   }
+
+function navMenuToggle() {
+  let navMenu = document.getElementById('nav-project-links');
+  // console.log(navMenu)
+  if (navMenu.classList.contains('toggle-nav-menu')) {
+    navMenu.classList.remove('toggle-nav-menu')
+    // console.log("removed")
+  } else {
+    navMenu.classList.add('toggle-nav-menu')
+    // console.log("added")
+  }
+}
