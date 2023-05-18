@@ -99,6 +99,9 @@
 
     --nav-border: #f7f9fd;
     --footer-border: #f7f9fd;
+    --nav-border: #424242;
+    --footer-border: #696969;
+    --footer-border: #424242;
 
     --survey-form-background: #1c2021;
     --survey-form-text: white;
@@ -137,8 +140,9 @@
     --nav-text: white;
     --nav-links: white;
     
-    --nav-border: #f7f9fd;
-    --footer-border: #f7f9fd;
+    --nav-border: #424242;
+    --footer-border: #696969;
+    --footer-border: #424242;
 
     --survey-form-background: #1c2021;
     --survey-form-text: white;
