@@ -34,6 +34,9 @@ for (i = 0; i < accordion.length; i++) {
     // move view to accordion header if header clicked while active
     if (!this.classList.contains("accordion-active")) {
       // location.href = `#${this.id}`;
+      
+      // Set behavior such that if scrolled past header, then return to top of header
+      // But if haven't, do nothing
     }
 
     let panel = this.nextElementSibling;
