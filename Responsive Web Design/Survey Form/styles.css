@@ -179,12 +179,6 @@ main {
   color: var(--nav-links);
 }
 
-.nav-project {
-  /* border: 1px solid red; */
-  font-size: 0.5rem;
-  color: var(--nav-links);
-}
-
 .fcc-header {
   display: flex;
   align-items: center;
