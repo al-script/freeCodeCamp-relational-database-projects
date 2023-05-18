@@ -237,6 +237,7 @@ main {
     padding: 0.5rem 1rem 0 1rem;
     /* align-self: flex-end; */
     position: absolute;
+    right: 3rem;
     border: 0.15rem solid var(--nav-links);
     border-radius: 0.5rem;
   }
@@ -292,6 +293,9 @@ main {
   width: 100rem;
   margin-top: -0.5rem;
   margin-bottom: 2rem;
+  border-bottom: 0.5rem solid var(--button-color);
+  /* border: none; */
+  padding-bottom: 1.5rem;
 }
 
 #title {
@@ -305,13 +309,17 @@ main {
   text-align: center;
 }
 
-fieldset {
-  border: none;
+fieldset:not(.heading) {
+  /* border: none; */
   display: flex;
   flex-direction: column;
   min-width: 65vw;
-  /* max-width: 85vw; */
+  max-width: 65vw;
   padding-bottom: 1.5rem;
+}
+
+fieldset {
+  border: none;
 }
 
 label {
@@ -369,7 +377,7 @@ input:focus, input:active, #dropdown:focus, #dropdown:active, textarea:active, t
   background-color: var(--button-color);
   outline: none;
   border: none;
-  width: 25%;
+  width: 35vw;
   height: 3rem;
   border-radius: 0.25rem;
   font-size: 1rem;
