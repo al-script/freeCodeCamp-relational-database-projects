@@ -234,13 +234,16 @@ main {
     margin-top: 1rem;
     background-color: var(--nav-background);
     display: none;
-    padding: 0 1rem;
-    align-self: flex-end;
+    padding: 0.5rem 1rem 0 1rem;
+    /* align-self: flex-end; */
     position: absolute;
+    border: 0.15rem solid var(--nav-links);
+    border-radius: 0.5rem;
   }
 
   .nav-project-links::before {
-    content: "Links:"
+    content: "Project Links";
+    font-size: 1.5rem;
 }
   .mode-toggle {
     display: flex;
