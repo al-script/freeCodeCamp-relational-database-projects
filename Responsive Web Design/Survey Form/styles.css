@@ -5,10 +5,15 @@
   --nav-background: #eaebf0;
   --nav-text: #0f4357;
   --nav-links: #0f4357;
+  
+  --nav-border: #D8CAC0;
+  --nav-border: #b8b9bd;
+  --footer-border: #b8b9bd;
 
   --survey-form-background: #eeeff4;
   --survey-form-text: #0e2239;
   --header-background: #c0ced8;
+  /* --header-border: #6ec6f2; */
   --hr: #aebbc6;
   --text-box-input-background: #c0cdd8;
   --text-box-input-placeholder: black;
@@ -16,6 +21,7 @@
   --text-box-active-outline: deepskyblue;
   --text-box-active-background: #eeeff4;
   --dropdown-background: white;
+  --legend-border: #7ec9ee;
 
   /* --button-color-hover: #a0b5b3;
   --button-color: #C0D8D7;
@@ -31,8 +37,14 @@
   --body-selection-background: lightskyblue;
 
   --scrollbar-background: #e1e1e1;
-  --scrollbar-color: #6ec6f2;
-  --scrollbar-hover-color: deepskyblue;
+  --scrollbar-color: #969699;
+  --scrollbar-hover-color: #6a6a6b;
+  --scrollbar-color: #7c97a1;
+  --scrollbar-hover-color: #61767d;
+  --scrollbar-color: #969699;
+  --scrollbar-hover-color: #6a6a6b;
+  --scrollbar-color: #7ec9ee;
+  --scrollbar-hover-color: #3d8cae;
 }
 
 /* :root.dark {
@@ -83,9 +95,13 @@
     --nav-text: white;
     --nav-links: white;
 
+    --nav-border: #f7f9fd;
+    --footer-border: #f7f9fd;
+
     --survey-form-background: #1c2021;
     --survey-form-text: white;
     --header-background: #3e4d57;
+    /* --header-border: #6ec6f2; */
     --hr: skyblue;
     --text-box-input-background: #a3d3f824;
     --text-box-input-placeholder: white;
@@ -93,6 +109,7 @@
     --text-box-active-outline: deepskyblue;
     --text-box-active-background: #a3d3f824;
     --dropdown-background: black;
+    --legend-border: #92ceec;
 
     --button-color: #6ec6f2;
     --button-color-hover: #04a0d3;
@@ -104,8 +121,8 @@
     --body-selection-background: skyblue;
 
     --scrollbar-background: #1e1e1e;
-    --scrollbar-color: #6ec6f2;
-    --scrollbar-hover-color: #5bbce4;
+    --scrollbar-color: #7ec9ee;
+    --scrollbar-hover-color: #3d8cae;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -115,10 +132,14 @@
     --nav-background: #1c2021;
     --nav-text: white;
     --nav-links: white;
+    
+    --nav-border: #f7f9fd;
+    --footer-border: #f7f9fd;
 
     --survey-form-background: #1c2021;
     --survey-form-text: white;
     --header-background: #3e4d57;
+    /* --header-border: #6ec6f2; */
     --hr: skyblue;
     --text-box-input-background: #a3d3f824;
     --text-box-input-placeholder: white;
@@ -126,6 +147,7 @@
     --text-box-active-outline: deepskyblue;
     --text-box-active-background: #a3d3f824;
     --dropdown-background: black;
+    --legend-border: #92ceec;
 
     --button-color: #6ec6f2;
     --button-color-hover: #04a0d3;
@@ -137,8 +159,8 @@
     --body-selection-background: skyblue;
 
     --scrollbar-background: #1e1e1e;
-    --scrollbar-color: #6ec6f2;
-    --scrollbar-hover-color: #5bbce4;
+    --scrollbar-color: #7ec9ee;
+    --scrollbar-hover-color: #3d8cae;
   }
 }
 
@@ -178,6 +200,8 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 1px solid var(--nav-border);
+  /* border-bottom: 0.5px solid skyblue; */
 }
 
 .nav-name {
@@ -276,10 +300,6 @@ main {
   overflow: hidden;
 }
 
-#survey-form > * {
-  /* max-width: 1000px; */
-}
-
 .inline {
   display: flex;
   align-items: center;
@@ -293,7 +313,7 @@ main {
   width: 100rem;
   margin-top: -0.5rem;
   margin-bottom: 2rem;
-  border-bottom: 0.5rem solid var(--button-color);
+  border-bottom: 0.1rem solid var(--header-border);
   /* border: none; */
   padding-bottom: 1.5rem;
 }
@@ -363,7 +383,7 @@ input:focus, input:active, #dropdown:focus, #dropdown:active, textarea:active, t
 }
 
 .radio-answers, .terms {
-  border: 0.25rem solid var(--text-box-input-background);
+  border: 0.25rem solid var(--legend-border);
   padding: 0.25rem;
   /* max-width: 60vw; */
   margin-top: 1rem;
@@ -412,6 +432,7 @@ footer {
   right: 0;
   position: absolute;
   /* box-sizing: border-box; */
+  border-top: 1px solid var(--footer-border);
 }
 
 .footer-name {
