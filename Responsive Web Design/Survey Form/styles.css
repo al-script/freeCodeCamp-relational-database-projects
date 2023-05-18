@@ -21,7 +21,8 @@
   --text-box-active-outline: deepskyblue;
   --text-box-active-background: #eeeff4;
   --dropdown-background: white;
-  --legend-border: #7ec9ee;
+
+  --legend-border: #ec9296;
 
   /* --button-color-hover: #a0b5b3;
   --button-color: #C0D8D7;
@@ -109,7 +110,8 @@
     --text-box-active-outline: deepskyblue;
     --text-box-active-background: #a3d3f824;
     --dropdown-background: black;
-    --legend-border: #92ceec;
+
+    --legend-border: #ec9296;
 
     --button-color: #6ec6f2;
     --button-color-hover: #04a0d3;
@@ -147,7 +149,8 @@
     --text-box-active-outline: deepskyblue;
     --text-box-active-background: #a3d3f824;
     --dropdown-background: black;
-    --legend-border: #92ceec;
+
+    --legend-border: #ec9296;
 
     --button-color: #6ec6f2;
     --button-color-hover: #04a0d3;
@@ -374,7 +377,13 @@ select option {
 }
 
 input[type="radio"], input[type="checkbox"] {
+  margin-left: 1.5rem;
   margin-right: 0.35rem;
+  margin-top: 1rem;
+}
+
+.radio-answers label, .terms label {
+  margin-top: 1rem;
 }
 
 input:focus, input:active, #dropdown:focus, #dropdown:active, textarea:active, textarea:focus {
@@ -384,11 +393,17 @@ input:focus, input:active, #dropdown:focus, #dropdown:active, textarea:active, t
 
 .radio-answers, .terms {
   border: 0.25rem solid var(--legend-border);
-  padding: 0.25rem;
+  /* padding: 0.25rem; */
   /* max-width: 60vw; */
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   border-radius: 0.25rem;
+}
+
+.optional-header {
+  font-style: italic;
+  font-size: 0.8rem;
+  display: block;
 }
 
 #submit {
