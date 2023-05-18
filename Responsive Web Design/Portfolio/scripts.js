@@ -33,7 +33,7 @@ for (i = 0; i < accordion.length; i++) {
 
     // move view to accordion header if header clicked while active
     if (!this.classList.contains("accordion-active")) {
-      location.href = `#${this.id}`;
+      // location.href = `#${this.id}`;
     }
 
     let panel = this.nextElementSibling;
