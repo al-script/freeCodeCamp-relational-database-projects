@@ -185,6 +185,13 @@ main {
   color: var(--nav-links);
 }
 
+.fcc-header {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.6rem;
+}
+
 /* FORM */
 #survey-form {
   background-color: var(--survey-form-background);
