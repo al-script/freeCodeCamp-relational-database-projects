@@ -137,20 +137,21 @@
     --body-background: #121212;
 
     --nav-background: #1c2021;
+    --nav-background: #212b2d;
     --nav-text: white;
     --nav-links: white;
     
-    --nav-border: #424242;
+    --nav-border: #3e4d57;
     --footer-border: #696969;
     --footer-border: #424242;
 
     --survey-form-background: #1c2021;
     --survey-form-text: white;
     --header-background: #a3d3f824;
-    --header-background: #1c2021; 
-    --header-background: #7ec9ee40; 
+    /* --header-background: #1c2021;  */
+    /* --header-background: #212b2d;  */
     /* --header-background: #41573e00; */
-    /* --header-border: #6ec6f2; */
+    --header-border: #3e4d57;
     --hr: skyblue;
     --text-box-input-background: #3e4d57;
     --text-box-input-placeholder: white;
