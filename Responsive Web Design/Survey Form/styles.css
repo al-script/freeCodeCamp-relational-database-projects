@@ -17,9 +17,22 @@
   --text-box-active-background: #eeeff4;
   --dropdown-background: white;
 
-  --button-color-hover: #a0b5b3;
+  /* --button-color-hover: #a0b5b3;
   --button-color: #C0D8D7;
+  --button-focus: #cb4545; */
+
+  --button-color: #6ec6f2;
+  --button-color-hover: #2c94b1c3;
   --button-focus: #cb4545;
+
+  --navbar-selection-color: lightskyblue;
+  --navbar-selection-background: #f4f4fa;
+  --body-selection-color: white;
+  --body-selection-background: lightskyblue;
+
+  --scrollbar-background: #e1e1e1;
+  --scrollbar-color: #6ec6f2;
+  --scrollbar-hover-color: deepskyblue;
 }
 
 /* :root.dark {
@@ -84,6 +97,15 @@
     --button-color: #6ec6f2;
     --button-color-hover: #04a0d3;
     --button-focus: #cb4545;
+
+    --navbar-selection-color: #586c80;
+    --navbar-selection-background: #f4f4fa;
+    --body-selection-color: #37444e;
+    --body-selection-background: skyblue;
+
+    --scrollbar-background: #1e1e1e;
+    --scrollbar-color: #6ec6f2;
+    --scrollbar-hover-color: #5bbce4;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -108,6 +130,15 @@
     --button-color: #6ec6f2;
     --button-color-hover: #04a0d3;
     --button-focus: #cb4545;
+
+    --navbar-selection-color: #586c80;
+    --navbar-selection-background: #f4f4fa;
+    --body-selection-color: #37444e;
+    --body-selection-background: skyblue;
+
+    --scrollbar-background: #1e1e1e;
+    --scrollbar-color: #6ec6f2;
+    --scrollbar-hover-color: #5bbce4;
   }
 }
 
@@ -359,4 +390,46 @@ footer {
 
 .contact-links a:visited {
   color: var(--nav-text);
+}
+
+/* SELECTION */
+
+#navbar .name::-moz-selection,
+.nav-links::-moz-selection {
+  color: var(--navbar-selection-color);
+  background: var(--navbar-selection-background);
+}
+
+#navbar .name::selection,
+.nav-links::selection {
+  color: var(--navbar-selection-color);
+  background: var(--navbar-selection-background);
+}
+
+::-moz-selection {
+  color: var(--body-selection-color);
+  background: var(--body-selection-background);
+}
+
+::selection {
+  color: var(--body-selection-color);
+  background: var(--body-selection-background);
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-hover-color);
 }
