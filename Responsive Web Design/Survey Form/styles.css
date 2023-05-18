@@ -359,7 +359,12 @@ input, #dropdown, textarea {
   border: none;
   border-radius: 0.25rem;
   padding: 0.2rem 0.5rem;
-  height: 1.5rem;
+  height: 3rem;
+  /* margin-bottom: 1rem; */
+}
+
+input:not(.radio-answers input, .terms input), #dropdown {
+  margin-bottom: 1rem;
 }
 
 input::placeholder, textarea::placeholder {
@@ -372,7 +377,7 @@ textarea {
 }
 
 #dropdown {
-  height: 1.9rem;
+  height: 3.4rem;
 }
 
 select option {
@@ -411,6 +416,10 @@ input:focus, input:active, #dropdown:focus, #dropdown:active, textarea:active, t
   font-style: italic;
   font-size: 0.8rem;
   display: block;
+}
+
+.optional-textarea {
+  margin: 1rem 0;
 }
 
 #submit {
