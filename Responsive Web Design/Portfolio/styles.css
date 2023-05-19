@@ -725,12 +725,27 @@ gap: 0.5rem;
 footer {
   width: 100vw;
   transition: 0s;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .portfolio-text-footer {
   position: relative;
-  top: 15;
+  /* top: 15; */
+  /* position: absolute; */
+  /* margin-left: rem; */
   font-size: 0.8rem;
+}
+
+.footer-spacer {
+  width: 65vw;
+  height: 10vw;
+  content: "";
+  /* border: 1px solid yellow; */
+}
+
+footer > * {
+  /* border: 1px solid red; */
 }
 
 /* HOVER, proper behavior on mobile */
