@@ -643,7 +643,22 @@ gap: 0.5rem;
 
 .project-link a {
   align-self: center;
-  display: block;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+.project-link-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.project-link i {
+  /* color: red; */
+  /* display: inline-block; */
 }
 
 .project-image-container {
