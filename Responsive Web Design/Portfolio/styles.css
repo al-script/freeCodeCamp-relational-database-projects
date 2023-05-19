@@ -731,21 +731,12 @@ footer {
 
 .portfolio-text-footer {
   position: relative;
-  /* top: 15; */
-  /* position: absolute; */
-  /* margin-left: rem; */
   font-size: 0.8rem;
 }
 
 .footer-spacer {
   width: 65vw;
-  height: 10vw;
   content: "";
-  /* border: 1px solid yellow; */
-}
-
-footer > * {
-  /* border: 1px solid red; */
 }
 
 /* HOVER, proper behavior on mobile */
