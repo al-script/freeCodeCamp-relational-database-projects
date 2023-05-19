@@ -628,9 +628,12 @@ gap: 0.5rem;
   margin-top: -10px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  /* max-height: 25vh; */
   max-height: 25rem;
   max-width: 25rem;
+  min-height: 10rem;
+  min-width: 10rem;
+  display: flex;
+  flex-direction: column;
 }
 
 /* fix coloring here */
@@ -638,11 +641,16 @@ gap: 0.5rem;
   color: white;
 }
 
+.project-link a {
+  align-self: center;
+  display: block;
+}
+
 .project-image-container {
   color: white;
   max-width: 25vw;
   /* height: 45vw; */
-  font-size: 8rem;
+  font-size: 5rem;
   text-align: center;
 }
 
@@ -664,6 +672,9 @@ gap: 0.5rem;
 
 .project-tile img:not(.tech-stack-icon) {
   height: auto;
+  min-width: 10rem;
+  /* width: 5vw; */
+  /* min-width: 15vw; */
   max-width: 25vw;
   border-radius: 5px;
 }
