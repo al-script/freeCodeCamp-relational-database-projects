@@ -48,3 +48,16 @@ for (i = 0; i < accordion.length; i++) {
     }
   });
 }
+
+// update height of accordion on window resize
+function onResize() {
+  for (i = 0; i < accordion.length; i++) {
+    if(accordion[i].classList.contains("accordion-active")) {
+    let panel = accordion[i].nextElementSibling;
+    panel.style.maxHeight = panel.scrollHeight + "px";
+    console.log(panel.style.maxHeight)
+    }
+  }
+}
+
+window.onresize = onResize;

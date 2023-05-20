@@ -3,8 +3,12 @@
 * {
   font-family: "Atkinson Hyperlegible", sans-serif;
   /* border: 1px solid white; */
-  transition: all 0.3s ease;
+  
   scroll-behavior: smooth !important;
+}
+
+*:not(.project-gallery-container > *) {
+  /* transition: all 0.3s ease; */
 }
 
 body {
