@@ -518,7 +518,7 @@ gap: 0.5rem;
   padding: 0 0.75rem;
   border-bottom: 1px solid grey;
   background-color: var(--accordion-unstacked-gallery-background);
-  max-height: 0;
+  /* max-height: 0; */
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
@@ -643,6 +643,10 @@ gap: 0.5rem;
 /* fix coloring here */
 .fcc-project-link {
   color: white;
+}
+
+.fcc-project-link:hover {
+  color: var(--project-tile-background);
 }
 
 .project-link a {
