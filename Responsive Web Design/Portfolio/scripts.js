@@ -55,7 +55,7 @@ function onResize() {
     if(accordion[i].classList.contains("accordion-active")) {
     let panel = accordion[i].nextElementSibling;
     panel.style.maxHeight = panel.scrollHeight + "px";
-    console.log(panel.style.maxHeight)
+    // console.log(panel.style.maxHeight)
     }
   }
 }
