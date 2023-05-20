@@ -518,7 +518,7 @@ gap: 0.5rem;
   padding: 0 0.75rem;
   border-bottom: 1px solid grey;
   background-color: var(--accordion-unstacked-gallery-background);
-  /* max-height: 0; */
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
@@ -649,7 +649,7 @@ gap: 0.5rem;
   color: var(--project-tile-background);
 }
 
-.project-link a {
+.project-link i {
   align-self: center;
   display: flex;
   text-align: center;
@@ -657,16 +657,11 @@ gap: 0.5rem;
   align-items: center;
 }
 
-.project-image-container i {
-  min-height: 0;
-  min-width: 0;
-}
-
 .project-image-container {
   color: white;
   max-width: 25vw;
   /* height: 45vw; */
-  font-size: 5rem;
+  font-size: 7.5rem;
   text-align: center;
 }
 
@@ -693,6 +688,12 @@ gap: 0.5rem;
   /* min-width: 15vw; */
   max-width: 25vw;
   border-radius: 5px;
+}
+
+.project-image-container i {
+  min-height: 9.25rem;
+  /* height: auto; */
+  min-width: 10rem;
 }
 
 .project-tile .tech-stack-icon {
