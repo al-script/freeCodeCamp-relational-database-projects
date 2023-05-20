@@ -657,16 +657,9 @@ gap: 0.5rem;
   align-items: center;
 }
 
-/* 
-.project-link-image-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-.project-link i {
-  /* color: red; */
-  /* display: inline-block; */
+.project-image-container i {
+  min-height: 0;
+  min-width: 0;
 }
 
 .project-image-container {
