@@ -1,45 +1,116 @@
 /* https://m3.material.io/styles/color/the-color-system/tokens */
 :root, :root.light {
-  --primary: ;
-  --primary-container: ;
-  --on-primary-container: ;
+  --primary: #6750a4;
+  --on-primary: #381e72;
+  --primary-container: #eaddff;
+  --on-primary-container: #21005d;
 
-  --secondary: ;
-  --secondary-container: ;
-  --on-secondary-container: ;
+  --secondary: #625b71;
+  --on-secondary: #332d41;
+  --secondary-container: #e8def8;
+  --on-secondary-container: #1d192b;
 
-  --tertiary: ;
-  --tertiary-container: ;
-  --on-tertiary-container: ;
+  --tertiary: #7d5260;
+  --on-tertiary: #492532;
+  --tertiary-container: #ffd8e4;
+  --on-tertiary-container: #31111d;
 
-  --error: ;
-  --error-container: ;
-  --on-error-contatainer: ;
+  --error: #b3261e;
+  --on-error: #601410;
+  --error-container: #f9dedc;
+  --on-error-contatainer: #410e0b;
   
-  --surface-dim: ;
-  --surface: #f7faff;
-  --surface-bright: ;
+  --surface-dim: #ded8e0;
+  --surface: #fdf7ff;
+  --surface-bright: #fdf7ff;
 
-  --surface-container-lowest: ;
-  --surface-container-lower: ;
-  --surface-container: ;
-  --surface-container-high: ;
-  --surface-container-highest: #e0e4e9;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f8f2fa;
+  --surface-container: #f2ecf4;
+  --surface-container-high: #ece6ee;
+  --surface-container-highest: #e6e0e9;
 
-  --on-surface: ;
-  --on-surface-variant: ;
-  --outline: ;
-  --outline-variant: ;
-
+  --on-surface: #1c1b1f;
+  --on-surface-variant: #49454f;
+  --outline: #79747e;
+  --outline-variant: #cbc4cf;
 }
 
 :root.dark {
+  --primary: #d0bcff;
+  --on-primary: #381e72;
+  --primary-container: #4f378b;
+  --on-primary-container: #eaddff;
 
+  --secondary: #ccc2dc;
+  --on-secondary: #332d41;
+  --secondary-container: #4a4458;
+  --on-secondary-container: #e8def8;
+
+  --tertiary: #efb8c8;
+  --on-tertiary: #492532;
+  --tertiary-container: #633b48;
+  --on-tertiary-container: #ffd8e4;
+
+  --error: #f2b8b5;
+  --on-error: #601410;
+  --error-container: #8c1d18;
+  --on-error-contatainer: #f9dedc;
+  
+  --surface-dim: #141218;
+  --surface: #141218;
+  --surface-bright: #3b383e;
+
+  --surface-container-lowest: #0f0d13;
+  --surface-container-low: #1d1b20;
+  --surface-container: #211f24;
+  --surface-container-high: #2b292f;
+  --surface-container-highest: #36343a;
+
+  --on-surface: #e6e1e5;
+  --on-surface-variant: #cac4d0;
+
+  --outline: #938f99;
+  --outline-variant: #49454e;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --primary: #d0bcff;
+    --on-primary: #381e72;
+    --primary-container: #4f378b;
+    --on-primary-container: #eaddff;
 
+    --secondary: #ccc2dc;
+    --on-secondary: #332d41;
+    --secondary-container: #4a4458;
+    --on-secondary-container: #e8def8;
+
+    --tertiary: #efb8c8;
+    --on-tertiary: #492532;
+    --tertiary-container: #633b48;
+    --on-tertiary-container: #ffd8e4;
+
+    --error: #f2b8b5;
+    --on-error: #601410;
+    --error-container: #8c1d18;
+    --on-error-contatainer: #f9dedc;
+    
+    --surface-dim: #141218;
+    --surface: #141218;
+    --surface-bright: #3b383e;
+
+    --surface-container-lowest: #0f0d13;
+    --surface-container-low: #1d1b20;
+    --surface-container: #211f24;
+    --surface-container-high: #2b292f;
+    --surface-container-highest: #36343a;
+
+    --on-surface: #e6e1e5;
+    --on-surface-variant: #cac4d0;
+
+    --outline: #938f99;
+    --outline-variant: #49454e;
   }
 }
 
