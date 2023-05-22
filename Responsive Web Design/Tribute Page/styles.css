@@ -17,7 +17,7 @@
   --on-error-contatainer: ;
   
   --surface-dim: ;
-  --surface: ;
+  --surface: #fdf7ff;
   --surface-bright: ;
 
   --surface-container-lowest: ;
@@ -43,8 +43,18 @@
   }
 }
 
+* {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  transition: all 0.5s ease;
+}
+
+/* https://matthewjamestaylor.com/responsive-font-size */
+html {
+  font-size: calc(15px + 0.390625vw);
+}
+
 body {
-  background-color: #bfd0e0;
+  background-color: var(--surface);
   font-family: Arial;
 }
 
