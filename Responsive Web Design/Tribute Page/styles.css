@@ -17,7 +17,7 @@
   --on-error-contatainer: ;
   
   --surface-dim: ;
-  --surface: #fdf7ff;
+  --surface: #f7faff;
   --surface-bright: ;
 
   --surface-container-lowest: ;
@@ -45,46 +45,38 @@
 
 * {
   font-family: "Atkinson Hyperlegible", sans-serif;
-  transition: all 0.5s ease;
+  /* transition: all 0.5s ease; */
+  /* border: 1px solid red; */
 }
 
 /* https://matthewjamestaylor.com/responsive-font-size */
 html {
-  font-size: calc(15px + 0.390625vw);
+  font-size: calc(11px + 0.390625vw);
 }
 
 body {
   background-color: var(--surface);
-  font-family: Arial;
 }
 
-#title {
+main * {
+  max-width: 90vw;
+}
+
+main, #img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#heading {
   text-align: center;
-  font-size: 3em;
-  margin: 0.25em;
 }
 
 .subheading {
-  text-align: center;
-  font-size: 1.5em;
-  margin: -0.25em 0 0.5em 0;
-}
-
-#img-div {
-  background: #5d5d81;
-  padding: 2em;
-  margin: auto;
-}
-
-#img-caption {
-  text-align: center;
-  color: white;
-  margin-top: 1.5em;
+  margin-top: -1rem;
 }
 
 #image {
-  max-width: 100%;
-  display: block;
-  height: auto;
-  margin: 0 auto;
+  max-width: 70vw;
+  border-radius: 0.5rem;
 }
