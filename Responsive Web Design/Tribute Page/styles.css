@@ -254,45 +254,40 @@ main, #img-div {
 /* FOOTER */
 
 footer {
+  color: var(--on-surface);
+  background-color: var(--surface-container-highest);
+
+  border-top: 1px solid var(--outline);
+
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: var(--surface-container-highest);
+  
   height: 100px;
+  position: absolute;
   left: 0;
   right: 0;
-  position: absolute;
-  border-top: 1px solid var(--footer-border);
-  overflow: none;
-}
 
-.footer-name {
-  color: var(--nav-text);
-  padding: 0.5rem;
+  overflow: none;
 }
 
 .contact-links {
   display: flex;
-  color: var(--nav-text);
   gap: 1rem;
+
   font-size: 2rem;
-  padding: 0.5rem;
 }
 
-.contact-links a {
-  color: var(--nav-text);
+.contact-links a, .contact-links a:visited {
+  color: var(--on-surface);
 }
 
 .contact-links i:hover {
-  color: var(--text-box-active-outline);
+  color: var(--primary);
 }
 
 .contact-links a:focus {
-  outline: 0.25rem solid var(--text-box-active-outline);
-}
-
-.contact-links a:visited {
-  color: var(--nav-text);
+  outline: 0.25rem solid var(--primary);
 }
 
 /* SELECTION */
