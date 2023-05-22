@@ -1,4 +1,47 @@
+/* https://m3.material.io/styles/color/the-color-system/tokens */
+:root, :root.light {
+  --primary: ;
+  --primary-container: ;
+  --on-primary-container: ;
 
+  --secondary: ;
+  --secondary-container: ;
+  --on-secondary-container: ;
+
+  --tertiary: ;
+  --tertiary-container: ;
+  --on-tertiary-container: ;
+
+  --error: ;
+  --error-container: ;
+  --on-error-contatainer: ;
+  
+  --surface-dim: ;
+  --surface: ;
+  --surface-bright: ;
+
+  --surface-container-lowest: ;
+  --surface-container-lower: ;
+  --surface-container: ;
+  --surface-container-high: ;
+  --surface-container-highest: ;
+
+  --on-surface: ;
+  --on-surface-variant: ;
+  --outline: ;
+  --outline-variant: ;
+
+}
+
+:root.dark {
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+}
 
 body {
   background-color: #bfd0e0;
