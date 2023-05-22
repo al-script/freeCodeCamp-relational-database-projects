@@ -80,3 +80,188 @@ main, #img-div {
   max-width: 70vw;
   border-radius: 0.5rem;
 }
+
+/* NAVBAR */
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 55px;
+  z-index: 9999;
+  background-color: var(--nav-background);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid var(--nav-border);
+  /* border-bottom: 0.5px solid skyblue; */
+}
+
+.nav-name {
+  color: var(--nav-text);
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.nav-project-links {
+  /* border: 1px solid red; */
+  color: var(--nav-links);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.65rem;
+  gap: 0.75rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--nav-links)
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-link:visited {
+  color: var(--nav-links);
+}
+
+.fcc-header {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.6rem;
+}
+
+
+
+/* hide nav toggle after breakpoint, need to fix... */
+@media only screen and (min-width: 1001px) {
+  .mode-toggle .nav-bars {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-project-links {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+    background-color: var(--nav-background);
+    display: none;
+    padding: 0.5rem 1rem 0 1rem;
+    /* align-self: flex-end; */
+    position: absolute;
+    right: 3rem;
+    border: 0.15rem solid var(--nav-links);
+    border-radius: 0.5rem;
+  }
+
+  .nav-project-links::before {
+    content: "Project Links";
+    font-size: 1.5rem;
+}
+  .mode-toggle {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .nav-bars {
+    color: var(--nav-links);
+    cursor: pointer;
+  }
+}
+
+.toggle-nav-menu {
+  display: flex;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--nav-background);
+  height: 100px;
+  /* width: 100%; */
+  left: 0;
+  right: 0;
+  position: absolute;
+  /* box-sizing: border-box; */
+  border-top: 1px solid var(--footer-border);
+  overflow: none;
+}
+
+.footer-name {
+  color: var(--nav-text);
+  padding: 0.5rem;
+}
+
+.contact-links {
+  display: flex;
+  color: var(--nav-text);
+  gap: 1rem;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.contact-links a {
+  color: var(--nav-text);
+}
+
+.contact-links i:hover {
+  color: var(--text-box-active-outline);
+}
+
+.contact-links a:focus {
+  outline: 0.25rem solid var(--text-box-active-outline);
+}
+
+.contact-links a:visited {
+  color: var(--nav-text);
+}
+
+/* SELECTION */
+
+#navbar .name::-moz-selection,
+.nav-links::-moz-selection {
+  color: var(--navbar-selection-color);
+  background: var(--navbar-selection-background);
+}
+
+#navbar .name::selection,
+.nav-links::selection {
+  color: var(--navbar-selection-color);
+  background: var(--navbar-selection-background);
+}
+
+::-moz-selection {
+  color: var(--body-selection-color);
+  background: var(--body-selection-background);
+}
+
+::selection {
+  color: var(--body-selection-color);
+  background: var(--body-selection-background);
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-hover-color);
+}
