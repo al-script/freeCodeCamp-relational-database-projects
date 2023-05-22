@@ -1,35 +1,58 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
+<html lang="en">
+  <head>
+    <title>Tribute Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="scripts.js"></script>
+  </head>
 
-    <body>
-        <main id="main">
+  <body>
+    <main id="main">
+      <div id="title-and-description-and-pic-and-caption">
+        <h1 id="title">The Tribute Page</h1>
+        <p class="subheading"><em>A tribute to the humble tribute page</em></p>
+        <div id="img-div">
+          <img
+            id="image"
+            src="https://i.postimg.cc/mgWbzGkf/Screenshot-2023-04-08-144424.png"
+            alt="alt text"
+          />
+          <figcaption id="img-caption">
+            A wild tribute page in its natural habitat
+          </figcaption>
+        </div>
+      </div>
 
-            <div id="title-and-description-and-pic-and-caption">
-                <h1 id="title">The Tribute Page</h1>
-                <p class="subheading"><em>A tribute to the humble tribute page</em></p>
-                <div id="img-div">
-                    <img id="image" src="https://i.postimg.cc/mgWbzGkf/Screenshot-2023-04-08-144424.png" alt="alt text" />
-                    <figcaption id="img-caption">A wild tribute page in its natural habitat</figcaption>
-                </div>
-            </div>
+      <div id="tribute-info">
+        <h2>
+          The Tribute Page is an early learning opportunity for aspiring web
+          developers:
+        </h2>
+        <ul>
+          <li>A chance to investigate the wonders of HTML and CSS</li>
+          <li>To make things break <</li>
+          <li>To find <em>what works</em> and <strike>what doesn't</strike></li>
+        </ul>
+      </div>
 
-            <div id="tribute-info">
-                <h2>The Tribute Page is an early learning opportunity for aspiring web developers:</h2>
-                <ul>
-                    <li>A chance to investigate the wonders of HTML and CSS</li>
-                    <li>To make things break <</li>
-                    <li>To find <em>what works</em> and <strike>what doesn't</strike></li>
-                </ul>
-            </div>
-
-            <div id="tribute-link-container">
-            If you love learning, building, and computing, then consider jumpstarting your webdev career by <a href="https://www.freecodecamp.org/news/how-to-get-started-with-the-fcc-tribute-page/" target="_blank" id="tribute-link">building your own tribute page</a>.
-            </div>
-
-        </main>
-    </body>
-
+      <div id="tribute-link-container">
+        If you love learning, building, and computing, then consider
+        jumpstarting your webdev career by
+        <a
+          href="https://www.freecodecamp.org/news/how-to-get-started-with-the-fcc-tribute-page/"
+          target="_blank"
+          id="tribute-link"
+          >building your own tribute page</a
+        >.
+      </div>
+    </main>
+  </body>
 </html>
