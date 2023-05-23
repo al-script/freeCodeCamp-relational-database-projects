@@ -1,5 +1,6 @@
 /* https://m3.material.io/styles/color/the-color-system/tokens */
-:root, :root.light {
+:root,
+:root.light {
   --primary: #6750a4;
   --on-primary: #381e72;
   --primary-container: #eaddff;
@@ -19,7 +20,7 @@
   --on-error: #601410;
   --error-container: #f9dedc;
   --on-error-contatainer: #410e0b;
-  
+
   --surface-dim: #ded8e0;
   --surface: #fdf7ff;
   --surface-bright: #fdf7ff;
@@ -56,7 +57,7 @@
   --on-error: #601410;
   --error-container: #8c1d18;
   --on-error-contatainer: #f9dedc;
-  
+
   --surface-dim: #141218;
   --surface: #141218;
   --surface-bright: #3b383e;
@@ -95,7 +96,7 @@
     --on-error: #601410;
     --error-container: #8c1d18;
     --on-error-contatainer: #f9dedc;
-    
+
     --surface-dim: #141218;
     --surface: #141218;
     --surface-bright: #3b383e;
@@ -147,7 +148,8 @@ main > * {
   padding: 0.5rem;
 }
 
-main, #img-div {
+main,
+#img-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,7 +203,8 @@ main, #img-div {
   gap: 0.75rem;
 }
 
-.nav-link, .nav-link:visited {
+.nav-link,
+.nav-link:visited {
   text-decoration: none;
   color: var(--on-surface);
 }
@@ -223,7 +226,6 @@ main, #img-div {
 }
 
 .light-dark-toggle:hover {
-
 }
 
 @media only screen and (min-width: 1001px) {
@@ -277,7 +279,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  
+
   height: 100px;
   position: absolute;
   bottom: 0;
@@ -289,12 +291,13 @@ footer {
 
 .contact-links {
   font-size: 2rem;
-  
+
   display: flex;
   gap: 1rem;
 }
 
-.contact-links a, .contact-links a:visited {
+.contact-links a,
+.contact-links a:visited {
   color: var(--on-surface);
 }
 
