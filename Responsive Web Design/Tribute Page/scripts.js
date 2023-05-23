@@ -24,12 +24,12 @@ function toggleLightDarkMode() {
 
 function navMenuToggle() {
   let navMenu = document.getElementById('nav-project-links');
-  // console.log(navMenu)
+  let toggleBars = document.getElementById('nav-toggle');
   if (navMenu.classList.contains('toggle-nav-menu')) {
-    navMenu.classList.remove('toggle-nav-menu')
-    // console.log("removed")
+    navMenu.classList.remove('toggle-nav-menu');
+    toggleBars.classList.remove('toggle-nav-bars');
   } else {
     navMenu.classList.add('toggle-nav-menu')
-    // console.log("added")
+    toggleBars.classList.add('toggle-nav-bars');
   }
 }

@@ -468,12 +468,22 @@ main,
 }
 
 @media only screen and (min-width: 1121px) {
-  .mode-toggle .nav-bars {
+  #nav-toggle  {
     display: none;
   }
 }
 
 @media only screen and (max-width: 1120px) {
+  #nav-toggle {
+    margin-right: 1rem;
+    padding: 0.55rem;
+    border-radius: 99rem;
+  }
+
+  #nav-toggle:hover {
+    background-color: var(--surface-variant);
+  }
+
   .nav-project-links {
     background-color: var(--surface);
 
@@ -482,8 +492,8 @@ main,
     border: 0.1rem solid var(--outline-variant);
     border-radius: 0.5rem;
 
-    margin-top: 1.25rem;
-    padding: 0.5rem 1rem 0 1rem;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
 
     display: none;
     font-size: 0.8rem;
@@ -491,7 +501,8 @@ main,
     align-items: flex-start;
 
     position: absolute;
-    right: 3rem;
+    left: 2rem;
+    /* right: 3rem; */
   }
 
   .nav-project-links::before {
@@ -513,6 +524,11 @@ main,
 
 .toggle-nav-menu {
   display: flex;
+}
+
+.toggle-nav-bars {
+  /* color: var(--primary); */
+  background-color: var(--surface-variant);
 }
 
 /* FOOTER */
