@@ -193,7 +193,7 @@ main,
 /* NAVBAR */
 #nav {
   color: var(--on-surface);
-  background-color: var(--surface-container);
+  background-color: var(--surface-container-low);
 
   border-bottom: 1px solid var(--outline);
 
@@ -298,7 +298,7 @@ main,
 /* FOOTER */
 footer {
   color: var(--on-surface);
-  background-color: var(--surface-container);
+  background-color: var(--surface-container-low);
 
   border-top: 1px solid var(--outline);
 
