@@ -208,3 +208,60 @@ code {
   padding: 10px;
 }
 
+/* || FOOTER */
+#footer {
+  /* Positioning */
+  position: absolute;
+  bottom: 0;
+
+  /* Box-model */
+  height: 100px;
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  /* Typography */
+  color: var(--on-surface);
+
+  /* Visual */
+  background-color: var(--surface);
+  border-top: 1px solid var(--outline);
+}
+
+.contact-links {
+  /* Box-model */
+  display: flex;
+  gap: 1rem;
+
+  /* Typography */
+  font-size: 2rem;
+}
+
+.contact-links a,
+.contact-links a:visited {
+  /* Typography */
+  color: var(--on-surface);
+}
+
+.contact-links i:hover {
+  /* Typography */
+  color: var(--primary);
+}
+
+.contact-links i {
+  /* Visual */
+  transition: all 1s ease;
+}
+
+.contact-links a:focus {
+  /* Visual */
+  outline: 0.25rem solid var(--primary);
+}
+
+
+/* Positioning */
+/* Box-model */
+/* Typography */
+/* Visual */
