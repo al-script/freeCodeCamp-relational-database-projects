@@ -1,35 +1,165 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
+<html lang="en">
+  <head>
+    <title>Tribute Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="scripts.js"></script>
+  </head>
 
-    <body>
-        <main id="main">
+  <body>
+    <!-- Page container -->
+    <div id="page-container">
 
-            <div id="title-and-description-and-pic-and-caption">
-                <h1 id="title">The Tribute Page</h1>
-                <p class="subheading"><em>A tribute to the humble tribute page</em></p>
-                <div id="img-div">
-                    <img id="image" src="https://i.postimg.cc/mgWbzGkf/Screenshot-2023-04-08-144424.png" alt="alt text" />
-                    <figcaption id="img-caption">A wild tribute page in its natural habitat</figcaption>
-                </div>
-            </div>
+      <!-- Navbar -->
+      <navbar id="nav">
+        <div class="nav-name">
+          <h1>AS</h1>
+          <h3>al-script</h3>
+        </div>
+        <div class="nav-toggle-container">
+          <div class="nav-project-links" id="nav-project-links">
+            <a
+              class="nav-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Survey Form</a
+            >
+            <a
+              class="nav-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Tribute Page</a
+            >
+            <a
+              class="nav-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Technical Documentation</a
+            >
+            <a
+              class="nav-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Product Landing Page</a
+            >
+            <a
+              class="nav-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >&lt;portfolio /&gt</a
+            >
+            <a
+              class="fcc-header nav-link"
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-free-code-camp"></i>
+              <p>Responsive Web Design Projects</p></a
+            >
+          </div>
+        </div>
+        <div class="mode-toggle">
+          <i onclick="navMenuToggle()" class="fa-solid fa-bars nav-bars"></i>
+          <button onclick="toggleLightDarkMode()" class="light-dark-toggle">
+            <i
+              class="fa-solid fa-circle-half-stroke light-dark-toggle-icon"
+            ></i>
+          </button>
+        </div>
+      </navbar>
 
-            <div id="tribute-info">
-                <h2>The Tribute Page is an early learning opportunity for aspiring web developers:</h2>
-                <ul>
-                    <li>A chance to investigate the wonders of HTML and CSS</li>
-                    <li>To make things break <</li>
-                    <li>To find <em>what works</em> and <strike>what doesn't</strike></li>
-                </ul>
-            </div>
+      <!-- Main content -->
+      <main id="main">
+        <div id="heading">
+          <h1 id="title">The Tribute Page</h1>
+          <p class="subheading">
+            <em>A tribute to the humble tribute page</em>
+          </p>
+        </div>
 
-            <div id="tribute-link-container">
-            If you love learning, building, and computing, then consider jumpstarting your webdev career by <a href="https://www.freecodecamp.org/news/how-to-get-started-with-the-fcc-tribute-page/" target="_blank" id="tribute-link">building your own tribute page</a>.
-            </div>
+        <div id="img-div">
+          <img
+            id="image"
+            src="https://i.postimg.cc/wMjb9c23/Screenshot-2023-05-22-184547.png"
+            alt="alt text"
+          />
+          <figcaption id="img-caption">
+            A wild tribute page in its natural habitat
+          </figcaption>
+        </div>
 
-        </main>
-    </body>
+        <div id="tribute-info">
+          <h2>
+            The Tribute Page is an early learning opportunity for aspiring web
+            developers:
+          </h2>
+          <ul>
+            <li>A chance to investigate the wonders of HTML and CSS</li>
+            <li>To make things break <</li>
+            <li>
+              To find <em>what works</em> and <strike>what doesn't</strike>
+            </li>
+          </ul>
+        </div>
 
+        <div id="tribute-link-container">
+          If you love learning, building, and computing, then consider
+          jumpstarting your webdev career by
+          <a
+            href="https://www.freecodecamp.org/news/how-to-get-started-with-the-fcc-tribute-page/"
+            target="_blank"
+            id="tribute-link"
+            >building your own tribute page</a
+          >.
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-name">
+          <h5>al-script x freeCodeCamp | 2023</h5>
+        </div>
+        <div class="contact-links">
+          <a
+            href="https://www.linkedin.com/in/alec-sorensen-1ba743b5/"
+            id="profile-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/al-script"
+            id="profile-link2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://github.com/al-script"
+            id="profile-link2"
+            target="_blank"
+            rel="noreferrer"
+            title="portfolio"
+          >
+            <i class="fa-solid fa-folder-open"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
