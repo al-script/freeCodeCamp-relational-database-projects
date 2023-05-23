@@ -317,10 +317,13 @@ main,
     font-size: 1.5rem;
     /* transition: all 1s ease; */
   }
+  .subheading {
+    font-size: 1rem;
+  }
 }
 
 .subheading {
-  margin-top: -1rem;
+  margin-top: -1.25rem;
 }
 
 #image {
@@ -334,6 +337,32 @@ main,
 
 #tribute-info h2 {
   font-size: 1.2rem;
+}
+
+.tribute-info-aspiring {
+  text-decoration: underline wavy var(--primary);
+  text-underline-offset: 0.4rem;
+}
+
+.tribute-info-primary, .tribute-info-secondary, .tribute-info-tertiary, .tribute-info-error {
+  font-weight: bold;
+  
+}
+
+.tribute-info-primary {
+  color: var(--primary);
+}
+
+.tribute-info-secondary {
+  color: var(--secondary);
+}
+
+.tribute-info-tertiary {
+  color: var(--tertiary);
+}
+
+.tribute-info-error {
+  color: var(--error);
 }
 
 #tribute-link, #tribute-link:visited {
