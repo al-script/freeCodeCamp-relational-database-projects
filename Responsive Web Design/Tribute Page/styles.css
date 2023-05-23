@@ -420,14 +420,14 @@ main,
 
   /* border: 1px solid var(--outline); */
   /* color: var(--primary); */
-  background-color: var
+  transition: all 0.4s ease;
 }
 
 .nav-link:hover {
   color: var(--on-secondary-container);
   background-color: var(--secondary-container);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  transition: all 0.4s ease;
+  
 }
 
 .nav-link-highlighted, .nav-link-highlighted:visited {
@@ -456,6 +456,7 @@ main,
   background-color: var(--surface);
   color: var(--on-surface);
   border-radius: 0.25rem;
+  transition: all 0.4s ease;
 }
 
 .light-dark-toggle i {
@@ -478,6 +479,7 @@ main,
     margin-right: 1rem;
     padding: 0.55rem;
     border-radius: 99rem;
+    transition: all 0.4s ease;
   }
 
   #nav-toggle:hover {
@@ -564,6 +566,9 @@ footer {
 
 .contact-links i:hover {
   color: var(--primary);
+}
+
+.contact-links i {
   transition: all 1s ease;
 }
 
