@@ -395,18 +395,18 @@ main,
 }
 
 .nav-link:hover {
-  color: var(--on-tertiary-container);
-  background-color: var(--tertiary-container);
+  color: var(--on-secondary-container);
+  background-color: var(--secondary-container);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   transition: all 0.4s ease;
 }
 
 .nav-link-highlighted, .nav-link-highlighted:visited {
-  color: var(--on-secondary-container);
+  color: var(--on-primary-container);
   /* text-emphasis: bold; */
   /* border: 1px solid; */
   /* padding: 0.5rem; */
-  background: var(--secondary-container);
+  background: var(--primary-container);
   
   /* text-decoration: underline wavy; */
 }
