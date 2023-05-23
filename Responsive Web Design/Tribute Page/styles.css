@@ -245,9 +245,19 @@ main,
 
 .light-dark-toggle {
   cursor: pointer;
+  border: 0.1rem solid var(--outline);
+  background-color: var(--on-surface);
+  color: var(--surface);
+  border-radius: 0.25rem;
+}
+
+.light-dark-toggle i {
+  padding: 0.25rem;
 }
 
 .light-dark-toggle:hover {
+  color: var(--on-surface);
+  background-color: var(--surface);
 }
 
 @media only screen and (min-width: 1001px) {
