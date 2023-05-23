@@ -120,14 +120,23 @@
   /* border: 1px solid red; */
 }
 
-/* https://matthewjamestaylor.com/responsive-font-size */
 html {
-  font-size: calc(11px + 0.390625vw);
+  font-size: calc(11px + 0.38vw);
 }
 
 body {
+  color: var(--on-surface);
   background-color: var(--surface);
   padding-top: 55px;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+main {
+  padding-bottom: 2rem;
 }
 
 main * {
@@ -243,7 +252,7 @@ main, #img-div {
 
   .nav-project-links::before {
     content: "Project Links";
-    
+
     font-size: 1.5rem;
   }
 
@@ -271,6 +280,7 @@ footer {
   
   height: 100px;
   position: absolute;
+  bottom: 0;
   left: 0;
   right: 0;
 
