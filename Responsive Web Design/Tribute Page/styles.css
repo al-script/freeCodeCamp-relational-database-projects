@@ -2,22 +2,22 @@
 :root,
 :root.light {
   --primary: #6750a4;
-  --on-primary: #381e72;
+  --on-primary: #ffffff;
   --primary-container: #eaddff;
   --on-primary-container: #21005d;
 
   --secondary: #625b71;
-  --on-secondary: #332d41;
+  --on-secondary: #ffffff;
   --secondary-container: #e8def8;
   --on-secondary-container: #1d192b;
 
   --tertiary: #7d5260;
-  --on-tertiary: #492532;
+  --on-tertiary: #ffffff;
   --tertiary-container: #ffd8e4;
   --on-tertiary-container: #31111d;
 
   --error: #b3261e;
-  --on-error: #601410;
+  --on-error: #ffffff;
   --error-container: #f9dedc;
   --on-error-contatainer: #410e0b;
 
@@ -344,26 +344,14 @@ footer {
 }
 
 /* SELECTION */
-#navbar .name::-moz-selection,
-.nav-links::-moz-selection {
-  color: var(--navbar-selection-color);
-  background: var(--navbar-selection-background);
-}
-
-#navbar .name::selection,
-.nav-links::selection {
-  color: var(--navbar-selection-color);
-  background: var(--navbar-selection-background);
-}
-
 ::-moz-selection {
-  color: var(--body-selection-color);
-  background: var(--body-selection-background);
+  color: black;
+  background: skyblue;
 }
 
 ::selection {
-  color: var(--body-selection-color);
-  background: var(--body-selection-background);
+  color: black;
+  background: skyblue;
 }
 
 /* SCROLLBAR */
@@ -372,13 +360,13 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--scrollbar-background);
+  background: var(--surface);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-color);
+  background: var(--secondary);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--scrollbar-hover-color);
+  background: var(--secondary-container);
 }
