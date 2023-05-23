@@ -265,6 +265,7 @@
   /* border: 1px solid red; */
 }
 
+/* https://matthewjamestaylor.com/responsive-font-size */
 html {
   font-family: "Atkinson Hyperlegible", sans-serif;
   font-size: calc(11px + 0.38vw);
@@ -510,6 +511,7 @@ footer {
 
 .contact-links i:hover {
   color: var(--primary);
+  transition: all 1s ease;
 }
 
 .contact-links a:focus {
