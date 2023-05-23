@@ -129,7 +129,7 @@ body {
   background-color: var(--surface);
   padding: 0;
   margin: 0;
-  
+  overflow-x: hidden;
 }
 
 #page-container {
@@ -259,13 +259,13 @@ main,
   background-color: var(--surface);
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 801px) {
   .mode-toggle .nav-bars {
     display: none;
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   .nav-project-links {
     background-color: var(--surface-container);
 
