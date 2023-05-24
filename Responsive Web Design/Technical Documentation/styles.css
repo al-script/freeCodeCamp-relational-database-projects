@@ -195,6 +195,7 @@ main {
   text-align: center;
 
   /* Visual */
+  transition: all 0.4s ease;
   /* background-color: var(--secondary-container); */
   /* border-bottom: solid 1px var(--outline); */
   /* border-bottom: solid 1px var(--outline); */
