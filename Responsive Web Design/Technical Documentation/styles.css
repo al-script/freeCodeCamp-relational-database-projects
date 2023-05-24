@@ -180,8 +180,8 @@ main {
   /* Box-sizing */
   margin: auto;
   width: 100%;
-  border-top: solid 1px var(--outline);
-  border-bottom: solid 1px var(--outline);
+  /* border-top: solid 1px var(--outline); */
+  /* border-bottom: solid 1px var(--outline); */
 }
 
 .nav-list a {
@@ -202,20 +202,20 @@ main {
 
 .nav-list a:nth-of-type(1) {
   /* Visual */
-  /* border-top: solid 1px var(--outline); */
+  border-top: solid 1px var(--outline);
 }
 
 .nav-list a:nth-of-type(5) {
   /* Visual */
-  /* border-bottom: solid 1px var(--outline); */
+  border-bottom: solid 1px var(--outline);
 }
 
 .nav-list a:hover {
   /* Typography */
-  color: var(--on-primary-container);
+  color: var(--on-tertiary-container);
 
   /* Visual */
-  background-color: var(--primary-container);
+  background-color: var(--tertiary-container);
 }
 
 .nav-list a:visited, .nav-list a:link {
