@@ -131,9 +131,9 @@ body {
 main {
   /* Box-model */
   padding-top: 85px;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
   /* padding-left: 200px; */
-  padding-left: 14rem;
+  padding-left: 13.25rem;
   padding-right: 2.25rem;
 }
 
