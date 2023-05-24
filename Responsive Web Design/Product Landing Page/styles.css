@@ -203,7 +203,7 @@ main {
   /* Box-model */
   display: flex;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .feature {
@@ -241,12 +241,15 @@ main {
 }
 
 #section2 {
-  margin-top: 1rem;
+  /* Box-model */
+  margin-top: 3rem;
 }
 
 #form {
+  /* Box-model */
   display: flex;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 #email {
@@ -280,6 +283,10 @@ main {
   /* Visual */
   background-color: var(--primary);
   border-radius: 15rem;
+}
+
+#section3 {
+  margin-top: 3rem;
 }
 
 /* || SELECTION */
