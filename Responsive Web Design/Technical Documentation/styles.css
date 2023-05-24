@@ -195,7 +195,7 @@ main {
   /* Visual */
   /* background-color: var(--secondary-container); */
   /* border-bottom: solid 1px var(--outline); */
-  border-bottom: solid 1px var(--outline);
+  /* border-bottom: solid 1px var(--outline); */
 }
 
 .nav-list a:nth-of-type(1) {
@@ -205,7 +205,7 @@ main {
 
 .nav-list a:nth-of-type(5) {
   /* Visual */
-  /* border: none; */
+  border-bottom: solid 1px var(--outline);
 }
 
 .nav-list a:hover {
