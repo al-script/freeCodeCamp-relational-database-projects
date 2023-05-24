@@ -152,10 +152,10 @@ main {
   align-items: center;
 
   /* Typography */
-  color: var(--on-primary);
+  color: var(--on-surface);
 
   /* Visual */  
-  background-color: var(--primary);
+  background-color: var(--surface);
   border-bottom: 1px solid var(--outline);
 }
 
@@ -180,6 +180,7 @@ main {
 /* || MAIN CONTENT */
 #section0 {
   /* Typography */
+  color: var(--primary);
   font-size: 2rem;
   text-align: center;
 }
