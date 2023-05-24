@@ -155,39 +155,59 @@ main {
 }
 
 .nav-header {
-  text-align: center;
-  font-size: 2.5em;
+  /* Box-sizing */
   padding-bottom: 25px;
   margin: auto;
   width: 100%;
+
+  /* Typography */
+  font-size: 1.5em;
+  text-align: center;
   color: var(--on-surface-variant);
 }
 
 .nav-list {
+  /* Box-sizing */
   margin: auto;
   width: 100%;
 }
 
 .nav-list a {
+  /* Box-sizing */
   padding: 15px;
-  /* background-color: var(--secondary-container); */
-  color: var(--on-secondary-container);
-  /* border-bottom: solid 15px var(--outline); */
   display: block;
+
+  /* Typography */
+  color: var(--on-secondary-container);
   text-decoration: none;
   text-align: center;
+
+  /* Visual */
+  /* background-color: var(--secondary-container); */
+  /* border-bottom: solid 1px var(--outline); */
+  /* border-bottom: solid 1px var(--outline); */
+}
+
+.nav-list a:nth-of-type(1) {
+  /* Visual */
+  /* border-top: solid 1px var(--outline); */
 }
 
 .nav-list a:nth-of-type(5) {
-  border: none;
+  /* Visual */
+  /* border: none; */
 }
 
 .nav-list a:hover {
-  background-color: var(--primary-container);
+  /* Typography */
   color: var(--on-primary-container);
+
+  /* Visual */
+  background-color: var(--primary-container);
 }
 
 .nav-list a:visited, .nav-list a:link {
+  /* Typography */
   color: var(--on-secondary-container);
 }
 
