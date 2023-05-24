@@ -130,7 +130,7 @@ body {
 
 main {
   /* Box-model */
-  padding-top: 55px;
+  padding-top: 100px;
   padding-bottom: 200px;
   padding-left: 200px;
   padding-right: 50px;
@@ -138,15 +138,20 @@ main {
 
 /* || SIDE NAV */
 #navbar {
-  height: 100%;
-  width: 150px;
+  /* Positioning */
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #EBE9ED;
-  border-right: 5px solid white;
-  padding: 20px 0 0 0;
+
+  /* Box-model */
   display: block;
+  height: 100%;
+  width: 150px;
+  padding: 80px 0 0 0;
+  
+  /* Visual */
+  background-color: var(--surface);
+  border-right: 1px solid var(--outline);
 }
 
 .nav-header {
@@ -155,7 +160,7 @@ main {
   padding-bottom: 25px;
   margin: auto;
   width: 100%;
-  color: #507DA5;
+  color: var(--on-surface-variant);
 }
 
 .nav-list {
@@ -165,8 +170,9 @@ main {
 
 .nav-list a {
   padding: 15px;
-  background-color: white;
-  border-bottom: solid 15px #F5F4F6;
+  /* background-color: var(--secondary-container); */
+  color: var(--on-secondary-container);
+  /* border-bottom: solid 15px var(--outline); */
   display: block;
   text-decoration: none;
   text-align: center;
@@ -177,12 +183,12 @@ main {
 }
 
 .nav-list a:hover {
-  background-color: #BBCDDD;
-  color: white;
+  background-color: var(--primary-container);
+  color: var(--on-primary-container);
 }
 
 .nav-list a:visited, .nav-list a:link {
-  color: black;
+  color: var(--on-secondary-container);
 }
 
 /* || MAIN CONTENT */
@@ -204,7 +210,8 @@ main {
 }
 
 code {
-  background-color: #BBCDDD;
+  background-color: var(--surface-variant);
+  color: var(--on-surface-variant);
   display: block;
   padding: 10px;
 }
