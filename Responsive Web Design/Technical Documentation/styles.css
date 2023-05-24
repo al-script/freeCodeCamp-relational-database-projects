@@ -259,7 +259,7 @@ main {
 }
 
 .main-section ul {
-  /* border: 1px solid red; */
+  /* Box-sizing */
   padding-left: 2rem;
 }
 
@@ -278,7 +278,7 @@ code {
   /* Typography */
   color: var(--on-secondary-container);
 
-  /* Visuals */
+  /* Visual */
   background-color: var(--secondary-container);
 }
 
