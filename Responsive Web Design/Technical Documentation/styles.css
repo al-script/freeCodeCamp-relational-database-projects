@@ -103,7 +103,7 @@
 html {
   /* Typography */
   font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: calc(15px + 0.38vw); /* https://matthewjamestaylor.com/responsive-font-size */
+  font-size: calc(11px + 0.38vw); /* https://matthewjamestaylor.com/responsive-font-size */
 }
 
 body {
