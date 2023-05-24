@@ -23,13 +23,13 @@ function toggleLightDarkMode() {
   }
 
 function navMenuToggle() {
-  let navMenu = document.getElementById('nav-project-links');
-  let toggleBars = document.getElementById('nav-toggle');
-  if (navMenu.classList.contains('toggle-nav-menu')) {
-    navMenu.classList.remove('toggle-nav-menu');
-    toggleBars.classList.remove('toggle-nav-bars');
+  let navMenu = document.getElementById('nav-top-project-link-container');
+  let toggleBars = document.getElementById('nav-top-toggle');
+  if (navMenu.classList.contains('toggle-nav-top-menu')) {
+    navMenu.classList.remove('toggle-nav-top-menu');
+    toggleBars.classList.remove('toggle-nav-top-bars');
   } else {
-    navMenu.classList.add('toggle-nav-menu')
-    toggleBars.classList.add('toggle-nav-bars');
+    navMenu.classList.add('toggle-nav-top-menu')
+    toggleBars.classList.add('toggle-nav-top-bars');
   }
 }
