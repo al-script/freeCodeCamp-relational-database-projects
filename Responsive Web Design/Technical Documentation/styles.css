@@ -268,10 +268,10 @@ code {
   padding: 10px;
 
   /* Typography */
-  color: var(--on-surface-variant);
+  color: var(--on-secondary-container);
 
   /* Visuals */
-  background-color: var(--surface-variant);
+  background-color: var(--secondary-container);
 }
 
 /* || TOP NAV */
