@@ -1,3 +1,4 @@
+/* || Color Palette */
 /* https://m3.material.io/theme-builder#/custom */
 :root,
 :root.light {
@@ -26,10 +27,10 @@
 
   --surface: #fbfcfe;
   --on-surface: #191c1e;
-
-  --outline: #71787d;
   --surface-variant: #dce3e9;
   --on-surface-variant: #41484d;
+
+  --outline: #71787d;
 }
 
 :root.dark {
@@ -58,10 +59,10 @@
 
   --surface: #191c1e;
   --on-surface: #e1e2e5;
-
-  --outline: #8a9297;
   --surface-variant: #41484d;
   --on-surface-variant: #c0c7cd;
+
+  --outline: #8a9297;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -91,10 +92,10 @@
 
     --surface: #191c1e;
     --on-surface: #e1e2e5;
-
-    --outline: #8a9297;
     --surface-variant: #41484d;
     --on-surface-variant: #c0c7cd;
+
+    --outline: #8a9297;
   }
 }
 
