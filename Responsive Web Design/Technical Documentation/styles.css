@@ -432,6 +432,43 @@ code {
   outline: 0.25rem solid var(--primary);
 }
 
+/* || SELECTION */
+::-moz-selection {
+  /* Typography */
+  color: black;
+
+  /* Visual */
+  background: skyblue;
+}
+
+::selection {
+  /* Typography */
+  color: black;
+
+  /* Visual */
+  background: skyblue;
+}
+
+/* || SCROLLBAR */
+::-webkit-scrollbar {
+  /* Box-model */
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  /* Visual */
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  /* Visual */
+  background: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /* Visual */
+  background: var(--secondary-container);
+}
 
   /* Positioning */
   /* Box-model */
