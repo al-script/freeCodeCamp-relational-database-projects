@@ -205,17 +205,36 @@ main {
 
 .feature {
   /* Box-model */
-  max-width: 25vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 25vw;
+  padding: 1rem;
 
-  border: 1px solid red;
+  /* Visual */
+  border-radius: 2rem;
+  transition: all 1s ease;
+  background-color: var(--secondary-container);
+}
+
+.feature:hover {
+  /* Typography */
+  color: var(--on-surface-variant);
+
+  /* Visual */
+  background-color: var(--surface-variant);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .feature-icon {
   /* Typography */
   font-size: 3rem;
+  color: var(--primary);
+}
+
+.feature-heading {
+  /* Typography */
+  font-weight: bold;
 }
 
 
