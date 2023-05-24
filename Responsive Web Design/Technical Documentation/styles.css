@@ -180,6 +180,8 @@ main {
   /* Box-sizing */
   margin: auto;
   width: 100%;
+  border-top: solid 1px var(--outline);
+  border-bottom: solid 1px var(--outline);
 }
 
 .nav-list a {
@@ -200,12 +202,12 @@ main {
 
 .nav-list a:nth-of-type(1) {
   /* Visual */
-  border-top: solid 1px var(--outline);
+  /* border-top: solid 1px var(--outline); */
 }
 
 .nav-list a:nth-of-type(5) {
   /* Visual */
-  border-bottom: solid 1px var(--outline);
+  /* border-bottom: solid 1px var(--outline); */
 }
 
 .nav-list a:hover {
