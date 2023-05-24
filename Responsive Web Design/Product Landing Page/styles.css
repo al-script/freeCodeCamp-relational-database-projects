@@ -177,6 +177,17 @@ main {
   font-size: 0.85rem;
 }
 
+.nav-link, .nav-link:visited {
+  /* Typography */
+  color: var(--on-surface);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  /* Typography */
+  color: var(--primary)
+}
+
 /* || MAIN CONTENT */
 #section0 {
   /* Typography */
