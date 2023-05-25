@@ -322,6 +322,9 @@ main {
 
 /* || MAIN CONTENT */
 #section0 {
+  /* Box-model */
+  margin-top: -3rem;
+
   /* Typography */
   color: var(--primary);
   font-size: 2rem;
@@ -356,12 +359,12 @@ main {
   flex-direction: column;
   align-items: center;
   max-width: 25vw;
-  padding: 1rem;
+  padding: 1.5rem ;
 
   /* Visual */
   border-radius: 2rem;
   transition: all 1s ease;
-  background-color: var(--secondary-container);
+  background-color: var(--surface);
 }
 
 .feature:hover {
@@ -427,10 +430,17 @@ main {
   /* Visual */
   background-color: var(--primary);
   border-radius: 15rem;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+#submit:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 #section3 {
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 /* || FOOTER */
