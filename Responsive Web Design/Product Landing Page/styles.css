@@ -395,6 +395,11 @@ main {
 .feature-heading {
   /* Typography */
   font-weight: bold;
+  margin-top: 0.25rem;
+}
+
+.feature-subtext {
+  margin-top: -1rem;
 }
 
 #section2 {
