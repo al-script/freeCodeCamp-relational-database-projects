@@ -16,245 +16,236 @@
   <body>
     <!-- Page container -->
     <div id="page-container">
-      
-    <!-- Navbar -->
-  <navbar id="nav-top">
-    <div class="nav-top-name">
-      <i onclick="navMenuToggle()" class="fa-solid fa-bars nav-bars" id="nav-top-toggle"></i>
-      <h1>AS</h1>
-      <h3>al-script</h3>
-    </div>
-    <div class="nav-toggle-container">
-      <div class="nav-top-project-link-container" id="nav-top-project-link-container">
-        <a
-          class="nav-top-project-link"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fa-solid fa-square-poll-horizontal"></i> Survey Form</a
-        >
-        <a
-          class="nav-top-project-link"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fa-solid fa-champagne-glasses"></i> Tribute Page</a
-        >
-        <a
-          class="nav-top-project-link nav-top-link-highlighted"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fa-solid fa-file-lines"></i> Technical Documentation</a
-        >
-        <a
-          class="nav-top-project-link"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fa-solid fa-shop"></i> Product Landing Page</a
-        >
-        <a
-          class="nav-top-project-link"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fa-solid fa-folder-open"></i> &lt;portfolio /&gt</a
-        >
-        <a
-          class="fcc-header nav-top-project-link"
-          href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fa-brands fa-free-code-camp"></i>
-          <p>Responsive Web Design Projects</p></a
-        >
-      </div>
-    </div>
-    <div>
-      <button onclick="toggleLightDarkMode()" id="light-dark-toggle-button">
-        <i
-          class="fa-solid fa-circle-half-stroke light-dark-toggle-icon"
-        ></i>
-      </button>
-    </div>
-  </navbar>
-
-    <main>
-    <form id="survey-form">
-      <fieldset class="heading">
-        <h1 id="title">Forma ipsum</h1>
-        <p id="description">Pulchra ineptias</p>
-        <!-- <hr /> -->
-      </fieldset>
-
-      <fieldset>
-        <i class="fa-solid fa-user"></i><label for="name" id="name-label">Nomen optimum hominem: </label>
-        <input id="name" type="text" name="name" placeholder="" required />
-        <label for="email" id="email-label"
-          >Oratio ex electronic correspondentia (inscriptio electronica):
-        </label>
-        <input
-          id="email"
-          type="email"
-          name="email"
-          placeholder=""
-          required
-        />
-      </fieldset>
-
-      <!-- <hr /> -->
-
-      <fieldset>
-        <i class="fa-solid fa-circle-question"></i>
-        <label for="number" id="number-label"
-          >Quomodo permotionem huius formae ad beneplacitum tuum, in libra 100 - 100 (C - C) aestimare vis?
-          </label>
-          <input
-            id="number"
-            type="number"
-            name="number"
-            placeholder=""
-            min="100"
-            max="100"
-        />
-
-        <label for="dropdown"
-          >Diam donec adipiscing tristique risus nec feugiat in?
-        </label>
-        <select id="dropdown" name="dropdown">
-          <option value="dropdownchoice0">(Nullam non nisi)</option>
-          <option value="dropdownchoice1">Diam in arcu</option>
-          <option value="dropdownchoice2"> At erat pellentesque adipiscing</option>
-        </select>
-        
-        
-      </fieldset>
-
-      <fieldset class="radio-answers">
-        <legend>Lorem donec...</legend>         
-          <div class="inline">
-          <input
-              id="radio1"
-              type="radio"
-              name="radiobuttons"
-              value="radio1"
-            />
-          <label class="light-weight" for="radio1"
-            >
-            Massa sapien faucibus</label
+      <!-- Navbar -->
+      <navbar id="nav-top">
+        <div class="nav-top-name">
+          <i
+            onclick="navMenuToggle()"
+            class="fa-solid fa-bars nav-bars"
+            id="nav-top-toggle"
+          ></i>
+          <h1>AS</h1>
+          <h3>al-script</h3>
+        </div>
+        <div class="nav-toggle-container">
+          <div
+            class="nav-top-project-link-container"
+            id="nav-top-project-link-container"
           >
+            <a
+              class="nav-top-project-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-solid fa-square-poll-horizontal"></i> Survey Form</a
+            >
+            <a
+              class="nav-top-project-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-solid fa-champagne-glasses"></i> Tribute Page</a
+            >
+            <a
+              class="nav-top-project-link nav-top-link-highlighted"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-solid fa-file-lines"></i> Technical Documentation</a
+            >
+            <a
+              class="nav-top-project-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-solid fa-shop"></i> Product Landing Page</a
+            >
+            <a
+              class="nav-top-project-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-solid fa-folder-open"></i> &lt;portfolio /&gt</a
+            >
+            <a
+              class="fcc-header nav-top-project-link"
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-free-code-camp"></i>
+              <p>Responsive Web Design Projects</p></a
+            >
           </div>
-          <div class="inline">
-          <input
-              id="radio2"
-              type="radio"
-              name="radiobuttons"
-              value="radio2"
+        </div>
+        <div>
+          <button onclick="toggleLightDarkMode()" id="light-dark-toggle-button">
+            <i
+              class="fa-solid fa-circle-half-stroke light-dark-toggle-icon"
+            ></i>
+          </button>
+        </div>
+      </navbar>
+
+      <main>
+        <form id="survey-form">
+          <fieldset class="heading">
+            <h1 id="title">Forma ipsum</h1>
+            <p id="description">Pulchra ineptias</p>
+          </fieldset>
+
+          <fieldset>
+            <i class="fa-solid fa-user"></i
+            ><label for="name" id="name-label">Nomen optimum hominem: </label>
+            <input id="name" type="text" name="name" placeholder="" required />
+            <label for="email" id="email-label"
+              >Oratio ex electronic correspondentia (inscriptio electronica):
+            </label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder=""
+              required
             />
-          <label class="light-weight" for="radio2"
-            >
-            Urna nec tincidunt praesent semper</label
-          >
+          </fieldset>
+
+          <fieldset>
+            <i class="fa-solid fa-circle-question"></i>
+            <label for="number" id="number-label"
+              >Quomodo permotionem huius formae ad beneplacitum tuum, in libra
+              100 - 100 (C - C) aestimare vis?
+            </label>
+            <input
+              id="number"
+              type="number"
+              name="number"
+              placeholder=""
+              min="100"
+              max="100"
+            />
+
+            <label for="dropdown"
+              >Diam donec adipiscing tristique risus nec feugiat in?
+            </label>
+            <select id="dropdown" name="dropdown">
+              <option value="dropdownchoice0">(Nullam non nisi)</option>
+              <option value="dropdownchoice1">Diam in arcu</option>
+              <option value="dropdownchoice2">
+                At erat pellentesque adipiscing
+              </option>
+            </select>
+          </fieldset>
+
+          <fieldset class="radio-answers">
+            <legend>Lorem donec...</legend>
+            <div class="inline">
+              <input
+                id="radio1"
+                type="radio"
+                name="radiobuttons"
+                value="radio1"
+              />
+              <label class="light-weight" for="radio1">
+                Massa sapien faucibus</label
+              >
+            </div>
+            <div class="inline">
+              <input
+                id="radio2"
+                type="radio"
+                name="radiobuttons"
+                value="radio2"
+              />
+              <label class="light-weight" for="radio2">
+                Urna nec tincidunt praesent semper</label
+              >
+            </div>
+          </fieldset>
+
+          <fieldset class="terms">
+            <legend>Dolor sit amet consectetur adipiscing:</legend>
+            <div class="inline">
+              <input
+                required
+                id="checkbox1"
+                type="checkbox"
+                value="checkbox1"
+              />
+              <label class="light-weight" for="checkbox1">
+                Ego risus pretium quam</label
+              >
+            </div>
+            <div class="inline">
+              <input
+                required
+                id="checkbox2"
+                type="checkbox"
+                value="checkbox2"
+              />
+              <label class="light-weight" for="checkbox2">
+                Ego volutpat consequat mauris</label
+              >
+            </div>
+            <div class="inline">
+              <input
+                required
+                id="checkbox3"
+                type="checkbox"
+                value="checkbox3"
+              />
+              <label class="light-weight" for="checkbox3">
+                Ego vulputate dignissim suspendisse in est</label
+              >
+            </div>
+          </fieldset>
+
+          <fieldset class="optional-textarea">
+            <label
+              ><span class="optional-header">Ad libitum</span> Quibus modis
+              affectuose impactus es ab hac forma?
+            </label>
+            <textarea placeholder=""></textarea>
+          </fieldset>
+
+          <button type="submit" id="submit">
+            <b class="awesome-button">Submittere</b>
+          </button>
+        </form>
+      </main>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="footer-name">
+          <h5>al-script x freeCodeCamp | 2023</h5>
         </div>
-      </fieldset>
-
-      <!-- <hr /> -->
-
-      <fieldset class="terms">
-        <legend>Dolor sit amet consectetur adipiscing:</legend>
-        <div class="inline">
-        <input
-            required
-            id="checkbox1"
-            type="checkbox"
-            value="checkbox1"
-          />
-        <label class="light-weight" for="checkbox1"
+        <div class="contact-links">
+          <a
+            href="https://www.linkedin.com/in/alec-sorensen-1ba743b5/"
+            id="profile-link"
+            target="_blank"
+            rel="noreferrer"
           >
-          Ego risus pretium quam</label
-        >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/al-script"
+            id="profile-link2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.alecsorensen.dev"
+            id="profile-link2"
+            target="_blank"
+            rel="noreferrer"
+            title="portfolio"
+          >
+            <i class="fa-solid fa-folder-open"></i>
+          </a>
         </div>
-        <div class="inline">
-          <input
-            required
-            id="checkbox2"
-            type="checkbox"
-            value="checkbox2"
-          />
-        <label class="light-weight" for="checkbox2"
-          >
-          Ego volutpat consequat mauris</label
-        >
-        </div>
-        <div class="inline">
-          <input
-            required
-            id="checkbox3"
-            type="checkbox"
-            value="checkbox3"
-          />
-        <label class="light-weight" for="checkbox3"
-          >
-          Ego vulputate dignissim suspendisse in est</label
-        >
-      </div>
-      </fieldset>
-
-      <!-- <hr /> -->
-
-      <fieldset class="optional-textarea">
-        <label
-          ><span class="optional-header">Ad libitum</span> Quibus modis affectuose impactus es ab hac forma?
-        </label>
-        <textarea
-            placeholder=""
-          ></textarea>
-      </fieldset>
-
-      <!-- <hr /> -->
-
-      <button type="submit" id="submit">
-        <b class="awesome-button">Submittere</b>
-      </button>
-
-    </form>
-  </main>
-
-   <!-- Footer -->
-   <footer id="footer">
-    <div class="footer-name">
-      <h5>al-script x freeCodeCamp | 2023</h5>
+      </footer>
     </div>
-    <div class="contact-links">
-      <a
-        href="https://www.linkedin.com/in/alec-sorensen-1ba743b5/"
-        id="profile-link"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a
-        href="https://github.com/al-script"
-        id="profile-link2"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <i class="fa-brands fa-github"></i>
-      </a>
-      <a
-        href="https://www.alecsorensen.dev"
-        id="profile-link2"
-        target="_blank"
-        rel="noreferrer"
-        title="portfolio"
-      >
-        <i class="fa-solid fa-folder-open"></i>
-      </a>
-    </div>
-  </footer>
-
-  </div>
   </body>
 </html>

@@ -103,7 +103,9 @@
 html {
   /* Typography */
   font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: calc(11px + 0.38vw); /* https://matthewjamestaylor.com/responsive-font-size */
+  font-size: calc(
+    11px + 0.38vw
+  ); /* https://matthewjamestaylor.com/responsive-font-size */
 }
 
 body {
@@ -118,7 +120,7 @@ body {
   /* Visual */
   background-color: var(--background);
 }
-  
+
 #page-container {
   /* Positioning */
   position: relative;
@@ -156,7 +158,7 @@ main {
   /* Typography */
   color: var(--on-surface);
 
-  /* Visual */  
+  /* Visual */
   background-color: var(--surface);
   border-bottom: 1px solid var(--outline);
 }
@@ -199,10 +201,12 @@ main {
 
   /* Visual */
   background-color: var(--secondary-container);
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.nav-top-link-highlighted, .nav-top-link-highlighted:visited {
+.nav-top-link-highlighted,
+.nav-top-link-highlighted:visited {
   /* Typography */
   color: var(--on-primary-container);
 
@@ -248,7 +252,7 @@ main {
 }
 
 @media only screen and (min-width: 1121px) {
-  #nav-top-toggle  {
+  #nav-top-toggle {
     /* Box-model */
     display: none;
   }
@@ -288,7 +292,8 @@ main {
 
     /* Visual */
     background-color: var(--surface);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border: 0.1rem solid var(--outline-variant);
     border-radius: 0.5rem;
   }
@@ -372,7 +377,9 @@ label {
   padding: 0.5rem 0;
 }
 
-input, #dropdown, textarea {
+input,
+#dropdown,
+textarea {
   background-color: var(--text-box-input-background);
   color: var(--text-box-input-text);
   border: none;
@@ -383,11 +390,13 @@ input, #dropdown, textarea {
   /* margin-bottom: 1rem; */
 }
 
-input:not(.radio-answers input, .terms input), #dropdown {
+input:not(.radio-answers input, .terms input),
+#dropdown {
   margin-bottom: 1rem;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: var(--text-box-input-placeholder);
   padding: 0.25rem;
 }
@@ -405,22 +414,30 @@ select option {
   background-color: var(--dropdown-background);
 }
 
-input[type="radio"], input[type="checkbox"] {
+input[type="radio"],
+input[type="checkbox"] {
   margin-left: 1.5rem;
   margin-right: 0.35rem;
   margin-top: 1rem;
 }
 
-.radio-answers label, .terms label {
+.radio-answers label,
+.terms label {
   margin-top: 1rem;
 }
 
-input:focus, input:active, #dropdown:focus, #dropdown:active, textarea:active, textarea:focus {
+input:focus,
+input:active,
+#dropdown:focus,
+#dropdown:active,
+textarea:active,
+textarea:focus {
   outline: 0.25rem solid var(--text-box-active-outline);
   background-color: var(--text-box-active-background);
 }
 
-.radio-answers, .terms {
+.radio-answers,
+.terms {
   border: 0.25rem solid var(--legend-border);
   /* padding: 0.25rem; */
   /* max-width: 60vw; */
@@ -562,7 +579,7 @@ hr {
   background: var(--secondary-container);
 }
 
-  /* Positioning */
-  /* Box-model */
-  /* Typography */
-  /* Visual */
+/* Positioning */
+/* Box-model */
+/* Typography */
+/* Visual */
