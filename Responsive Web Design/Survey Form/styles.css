@@ -427,7 +427,7 @@ main {
   border-radius: 1rem;
 }
 
-#survey-form * {
+.form-heading, .form-section {
   /* Visual */
   border: none;
 }
@@ -455,7 +455,7 @@ main {
   color: var(--on-surface);
 
   /* Visual */
-  background-color: var(--surface-variant);
+  background-color: var(--surface);
   border: 1px solid var(--outline);
   border-radius: 0.25rem;
   outline: none;
@@ -470,6 +470,7 @@ main {
   /* Box-model */
   align-self: center;
   margin: 1rem;
+  padding: 1rem 1.5rem;
   
   /* Typography */
   color: var(--primary);
@@ -477,5 +478,9 @@ main {
   /* Visual */
   background-color: var(--surface);
   border: 1px solid var(--outline);
-  border-radius: 1rem;
+  border-radius: 99rem;
+  transition: all 0.4s ease;
 }
+
+.form-submit-button:hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
