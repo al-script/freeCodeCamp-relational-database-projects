@@ -1,0 +1,434 @@
+/* || Color Palette */
+/* https://m3.material.io/theme-builder#/custom */
+:root,
+:root.light {
+  --primary: #006689;
+  --on-primary: #ffffff;
+  --primary-container: #c2e8ff;
+  --on-primary-container: #001e2c;
+
+  --secondary: #4e616d;
+  --on-secondary: #ffffff;
+  --secondary-container: #d1e5f3;
+  --on-secondary-container: #091e28;
+
+  --tertiary: #605a7d;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #e6deff;
+  --on-tertiary-container: #1c1736;
+
+  --error: #ba1a1a;
+  --on-error: #ffffff;
+  --error-container: #ffdad6;
+  --on-error-contatainer: #410002;
+
+  --background: #fbfcfe;
+  --on-background: #191c1e;
+
+  --surface: #fbfcfe;
+  --on-surface: #191c1e;
+  --surface-variant: #dce3e9;
+  --on-surface-variant: #41484d;
+
+  --outline: #71787d;
+}
+
+:root.dark {
+  --primary: #78d1ff;
+  --on-primary: #003549;
+  --primary-container: #004d68;
+  --on-primary-container: #c2e8ff;
+
+  --secondary: #b5c9d7;
+  --on-secondary: #20333d;
+  --secondary-container: #364954;
+  --on-secondary-container: #d1e5f3;
+
+  --tertiary: #c9c1ea;
+  --on-tertiary: #312c4c;
+  --tertiary-container: #484264;
+  --on-tertiary-container: #e6deff;
+
+  --error: #ffb4ab;
+  --on-error: #690005;
+  --error-container: #93000a;
+  --on-error-contatainer: #ffdad6;
+
+  --background: #191c1e;
+  --on-background: #e1e2e5;
+
+  --surface: #191c1e;
+  --on-surface: #e1e2e5;
+  --surface-variant: #41484d;
+  --on-surface-variant: #c0c7cd;
+
+  --outline: #8a9297;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #78d1ff;
+    --on-primary: #003549;
+    --primary-container: #004d68;
+    --on-primary-container: #c2e8ff;
+
+    --secondary: #b5c9d7;
+    --on-secondary: #20333d;
+    --secondary-container: #364954;
+    --on-secondary-container: #d1e5f3;
+
+    --tertiary: #c9c1ea;
+    --on-tertiary: #312c4c;
+    --tertiary-container: #484264;
+    --on-tertiary-container: #e6deff;
+
+    --error: #ffb4ab;
+    --on-error: #690005;
+    --error-container: #93000a;
+    --on-error-contatainer: #ffdad6;
+
+    --background: #191c1e;
+    --on-background: #e1e2e5;
+
+    --surface: #191c1e;
+    --on-surface: #e1e2e5;
+    --surface-variant: #41484d;
+    --on-surface-variant: #c0c7cd;
+
+    --outline: #8a9297;
+  }
+}
+
+/* || GLOBAL */
+html {
+  /* Typography */
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: calc(11px + 0.38vw); /* https://matthewjamestaylor.com/responsive-font-size */
+}
+
+body {
+  /* Box-model */
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+
+  /* Typography */
+  color: var(--on-background);
+
+  /* Visual */
+  background-color: var(--background);
+}
+  
+#page-container {
+  /* Positioning */
+  position: relative;
+
+  /* Box-model */
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+main {
+  /* Box-model */
+  padding: 100px 2rem 150px 2rem;
+}
+
+/* || HEADER */
+#header {
+  /* Positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+
+  /* Box-model */
+  height: 55px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* Typography */
+  color: var(--on-surface);
+
+  /* Visual */  
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--outline);
+}
+
+.logo-text {
+  /* Box-model */
+  margin-left: 0.5rem;
+}
+
+#nav-bar {
+  /* Box-model */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+
+  /* Typography */
+  font-size: 0.85rem;
+}
+
+.nav-link, .nav-link:visited {
+  /* Box-model */
+  padding: 0.4rem;
+  
+  /* Typography */
+  color: var(--on-secondary-container);
+  text-decoration: none;
+  /* border: 1px solid var(--outline); */
+  
+  /* Visual */
+  background-color: var(--secondary-container);
+  border-radius: 0.5rem;
+}
+
+.nav-link:hover {
+  /* Visual */
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+/* || NAV TOGGLE/LIGHT DARK MODE */
+#light-link-toggle-container {
+  /* Box-model */
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+#nav-top-toggle {
+  /* Box-model */
+  padding: 0.55rem;
+
+  /* Visual */
+  border-radius: 99rem;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+#nav-top-toggle:hover {
+  /* Visual */
+  background-color: var(--surface-variant);
+}
+
+.toggle-nav-top-bars {
+  /* Visual */
+  background-color: var(--surface-variant);
+}
+
+.nav-top-project-link-container {
+  /* Positioning */
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+
+  /* Box-model */
+  display: none;
+  gap: 0.75rem;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+
+  /* Typography */
+  font-size: 0.85rem;
+
+  /* Visual */
+  background-color: var(--surface);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border: 0.1rem solid var(--outline-variant);
+  border-radius: 0.5rem;
+}
+
+.toggle-nav-top-menu {
+  /* Box-model */
+  display: flex;
+}
+
+.nav-top-name {
+  /* Box-model */
+  display: flex;
+  align-items: baseline;
+  align-self: center;
+  gap: 0.5rem;
+}
+
+.nav-top-project-link,
+.nav-top-project-link:visited {
+  /* Box-model */
+  padding: 1rem 1.5rem;
+
+  /* Typography */
+  text-decoration: none;
+  color: var(--on-surface);
+
+  /* Visual */
+  border-radius: 100rem;
+  transition: all 0.4s ease;
+}
+
+.nav-top-project-link:hover {
+  /* Typography */
+  color: var(--on-secondary-container);
+
+  /* Visual */
+  background-color: var(--secondary-container);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.nav-top-link-highlighted, .nav-top-link-highlighted:visited {
+  /* Typography */
+  color: var(--on-primary-container);
+
+  /* Visual */
+  background: var(--primary-container);
+}
+
+.fcc-header {
+  /* Box-model */
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  /* padding: 0.3rem; */
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+
+  /* Typography */
+  font-size: 0.7rem;
+}
+
+#light-dark-toggle-button {
+  /* Box-sizing */
+  margin-right: 1rem;
+
+  /* Typography */
+  color: var(--on-surface);
+
+  /* Visual */
+  background-color: var(--surface);
+  cursor: pointer;
+  border: 0.1rem solid var(--outline);
+  border-radius: 0.25rem;
+  transition: all 0.4s ease;
+}
+
+.light-dark-toggle-icon {
+  /* Box-model */
+  padding: 0.25rem;
+}
+
+#light-dark-toggle-button:hover {
+  /* Typography */
+  color: var(--surface);
+
+  /* Visual */
+  background-color: var(--on-surface);
+}
+
+/* || FOOTER */
+#footer {
+  /* Positioning */
+  position: absolute;
+  bottom: 0;
+
+  /* Box-model */
+  height: 100px;
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  /* Typography */
+  color: var(--on-surface);
+
+  /* Visual */
+  background-color: var(--surface);
+  border-top: 1px solid var(--outline);
+}
+
+.contact-links {
+  /* Box-model */
+  display: flex;
+  gap: 1rem;
+
+  /* Typography */
+  font-size: 2rem;
+}
+
+.contact-links a,
+.contact-links a:visited {
+  /* Typography */
+  color: var(--on-surface);
+}
+
+.contact-links i:hover {
+  /* Typography */
+  color: var(--primary);
+}
+
+.contact-links i {
+  /* Visual */
+  transition: all 1s ease;
+}
+
+.contact-links a:focus {
+  /* Visual */
+  outline: 0.25rem solid var(--primary);
+}
+
+/* || SELECTION */
+::-moz-selection {
+  /* Typography */
+  color: black;
+
+  /* Visual */
+  background: skyblue;
+}
+
+::selection {
+  /* Typography */
+  color: black;
+
+  /* Visual */
+  background: skyblue;
+}
+
+/* || SCROLLBAR */
+::-webkit-scrollbar {
+  /* Box-model */
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  /* Visual */
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  /* Visual */
+  background: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /* Visual */
+  background: var(--secondary-container);
+}
+
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+
+  /* || MAIN CONTENT */
+  #section1, #section2, #section3 {
+    /* Box-model */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
