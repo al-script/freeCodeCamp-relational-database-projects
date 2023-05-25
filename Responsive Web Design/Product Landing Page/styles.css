@@ -129,10 +129,8 @@ body {
 }
 
 main {
-  padding-top: 100px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 150px;
+  /* Box-model */
+  padding: 100px 2rem 150px 2rem;
 }
 
 /* || HEADER */
@@ -190,6 +188,7 @@ main {
 
 /* || NAV TOGGLE/LIGHT DARK MODE */
 #light-link-toggle-container {
+  /* Box-model */
   display: flex;
   align-items: center;
 }
@@ -435,11 +434,13 @@ main {
 }
 
 #submit:hover {
+  /* Visual */
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 #section3 {
+  /* Box-sizing */
   margin-top: 5rem;
 }
 
