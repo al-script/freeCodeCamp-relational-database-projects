@@ -99,27 +99,42 @@
   }
 }
 
-/* PRIMARY CONTAINERS */
-* {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  transition: all 0.5s ease;
-  /* border: 1px solid red; */
-}
-
-/* https://matthewjamestaylor.com/responsive-font-size */
+/* || GLOBAL */
 html {
-  font-size: calc(15px + 0.390625vw);
+  /* Typography */
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: calc(11px + 0.38vw); /* https://matthewjamestaylor.com/responsive-font-size */
 }
 
 body {
-  background-color: var(--body-background);
+  /* Box-model */
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+
+  /* Typography */
+  color: var(--on-background);
+
+  /* Visual */
+  background-color: var(--background);
+}
+  
+#page-container {
+  /* Positioning */
+  position: relative;
+
+  /* Box-model */
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem 0;
+  /* Box-model */
+  padding-top: 85px;
+  padding-bottom: 150px;
+  /* padding-left: 200px; */
+  padding-left: 13.25rem;
+  padding-right: 2.5rem;
 }
 
 /* NAVBAR */
