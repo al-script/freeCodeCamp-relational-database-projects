@@ -258,7 +258,7 @@ main {
 .nav-top-project-link,
 .nav-top-project-link:visited {
   /* Box-model */
-  padding: 0.5rem;
+  padding: 1rem 1.5rem;
 
   /* Typography */
   text-decoration: none;
@@ -292,7 +292,7 @@ main {
   align-items: center;
   gap: 0.2rem;
   /* padding: 0.3rem; */
-  padding: 0 0.5rem;
+  padding: 0.5rem 1.5rem;
 
   /* Typography */
   font-size: 0.7rem;
