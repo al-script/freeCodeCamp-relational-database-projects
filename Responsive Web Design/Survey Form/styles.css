@@ -524,44 +524,45 @@ hr {
   outline: 0.25rem solid var(--primary);
 }
 
-/* SELECTION */
-
-#navbar .name::-moz-selection,
-.nav-links::-moz-selection {
-  color: var(--navbar-selection-color);
-  background: var(--navbar-selection-background);
-}
-
-#navbar .name::selection,
-.nav-links::selection {
-  color: var(--navbar-selection-color);
-  background: var(--navbar-selection-background);
-}
-
+/* || SELECTION */
 ::-moz-selection {
-  color: var(--body-selection-color);
-  background: var(--body-selection-background);
+  /* Typography */
+  color: black;
+
+  /* Visual */
+  background: skyblue;
 }
 
 ::selection {
-  color: var(--body-selection-color);
-  background: var(--body-selection-background);
+  /* Typography */
+  color: black;
+
+  /* Visual */
+  background: skyblue;
 }
 
-/* SCROLLBAR */
-
+/* || SCROLLBAR */
 ::-webkit-scrollbar {
+  /* Box-model */
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--scrollbar-background);
+  /* Visual */
+  background: var(--surface);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-color);
+  /* Visual */
+  background: var(--secondary);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--scrollbar-hover-color);
+  /* Visual */
+  background: var(--secondary-container);
 }
+
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
