@@ -93,121 +93,136 @@
             <p id="description">Pulchra ineptias</p>
           </fieldset>
 
-          <fieldset>
-            <i class="fa-solid fa-user"></i
-            ><label for="name" id="name-label">Nomen optimum hominem: </label>
-            <input id="name" type="text" name="name" placeholder="" required />
-            <label for="email" id="email-label"
-              >Oratio ex electronic correspondentia (inscriptio electronica):
-            </label>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder=""
-              required
-            />
+          <fieldset class="form-section">
+            <i class="fa-solid fa-user"></i>
+            <div class="form-input-group">
+              <label for="name" id="name-label">Nomen optimum hominem: </label>
+              <input class="form-input" id="name" type="text" name="name" placeholder="" required />
+              <label for="email" id="email-label"
+                >Oratio ex electronic correspondentia (inscriptio electronica):
+              </label>
+              <input
+                class="form-input"
+                id="email"
+                type="email"
+                name="email"
+                placeholder=""
+                required
+              />
+          </div>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="form-section">
             <i class="fa-solid fa-circle-question"></i>
-            <label for="number" id="number-label"
-              >Quomodo permotionem huius formae ad beneplacitum tuum, in libra
-              100 - 100 (C - C) aestimare vis?
-            </label>
-            <input
-              id="number"
-              type="number"
-              name="number"
-              placeholder=""
-              min="100"
-              max="100"
-            />
+            <div class="form-input-group">
+              <label for="number" id="number-label"
+                >Quomodo permotionem huius formae ad beneplacitum tuum, in libra
+                100 - 100 (C - C) aestimare vis?
+              </label>
+              <input
+                class="form-input"
+                id="number"
+                type="number"
+                name="number"
+                placeholder=""
+                min="100"
+                max="100"
+              />
 
-            <label for="dropdown"
-              >Diam donec adipiscing tristique risus nec feugiat in?
-            </label>
-            <select id="dropdown" name="dropdown">
-              <option value="dropdownchoice0">(Nullam non nisi)</option>
-              <option value="dropdownchoice1">Diam in arcu</option>
-              <option value="dropdownchoice2">
-                At erat pellentesque adipiscing
-              </option>
-            </select>
+              <label for="dropdown"
+                >Diam donec adipiscing tristique risus nec feugiat in?
+              </label>
+              <select class="form-input" id="dropdown" name="dropdown">
+                <option value="dropdownchoice0">(Nullam non nisi)</option>
+                <option value="dropdownchoice1">Diam in arcu</option>
+                <option value="dropdownchoice2">
+                  At erat pellentesque adipiscing
+                </option>
+              </select>
+          </div>
           </fieldset>
 
-          <fieldset class="radio-answers">
-            <legend>Lorem donec...</legend>
-            <div class="inline">
-              <input
-                id="radio1"
-                type="radio"
-                name="radiobuttons"
-                value="radio1"
-              />
-              <label class="light-weight" for="radio1">
-                Massa sapien faucibus</label
-              >
-            </div>
-            <div class="inline">
-              <input
-                id="radio2"
-                type="radio"
-                name="radiobuttons"
-                value="radio2"
-              />
-              <label class="light-weight" for="radio2">
-                Urna nec tincidunt praesent semper</label
-              >
-            </div>
-          </fieldset>
-
-          <fieldset class="terms">
-            <legend>Dolor sit amet consectetur adipiscing:</legend>
-            <div class="inline">
-              <input
-                required
-                id="checkbox1"
-                type="checkbox"
-                value="checkbox1"
-              />
-              <label class="light-weight" for="checkbox1">
-                Ego risus pretium quam</label
-              >
-            </div>
-            <div class="inline">
-              <input
-                required
-                id="checkbox2"
-                type="checkbox"
-                value="checkbox2"
-              />
-              <label class="light-weight" for="checkbox2">
-                Ego volutpat consequat mauris</label
-              >
-            </div>
-            <div class="inline">
-              <input
-                required
-                id="checkbox3"
-                type="checkbox"
-                value="checkbox3"
-              />
-              <label class="light-weight" for="checkbox3">
-                Ego vulputate dignissim suspendisse in est</label
-              >
+          <fieldset class="form-section radio-answers">
+            <i class="fa-regular fa-circle-question"></i>
+            <div class="form-input-group">
+              <legend>Lorem donec...</legend>
+              <div class="inline">
+                <input
+                  id="radio1"
+                  type="radio"
+                  name="radiobuttons"
+                  value="radio1"
+                />
+                <label class="light-weight" for="radio1">
+                  Massa sapien faucibus</label
+                >
+              </div>
+              <div class="inline">
+                <input
+                  id="radio2"
+                  type="radio"
+                  name="radiobuttons"
+                  value="radio2"
+                />
+                <label class="light-weight" for="radio2">
+                  Urna nec tincidunt praesent semper</label
+                >
+              </div>
             </div>
           </fieldset>
 
-          <fieldset class="optional-textarea">
-            <label
-              ><span class="optional-header">Ad libitum</span> Quibus modis
-              affectuose impactus es ab hac forma?
-            </label>
-            <textarea placeholder=""></textarea>
+          <fieldset class="form-section terms">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <div class="form-input-group">
+              <legend>Dolor sit amet consectetur adipiscing:</legend>
+              <div class="inline">
+                <input
+                  required
+                  id="checkbox1"
+                  type="checkbox"
+                  value="checkbox1"
+                />
+                <label class="light-weight" for="checkbox1">
+                  Ego risus pretium quam</label
+                >
+              </div>
+              <div class="inline">
+                <input
+                  required
+                  id="checkbox2"
+                  type="checkbox"
+                  value="checkbox2"
+                />
+                <label class="light-weight" for="checkbox2">
+                  Ego volutpat consequat mauris</label
+                >
+              </div>
+              <div class="inline">
+                <input
+                  required
+                  id="checkbox3"
+                  type="checkbox"
+                  value="checkbox3"
+                />
+                <label class="light-weight" for="checkbox3">
+                  Ego vulputate dignissim suspendisse in est</label
+                >
+              </div>
+            </div>
           </fieldset>
 
-          <button type="submit" id="submit">
+          <fieldset class="form-section optional-textarea">
+            <i class="fa-regular fa-circle-question"></i>
+            <div class="form-input-group">
+              <label
+                ><span class="optional-header">Ad libitum</span> Quibus modis
+                affectuose impactus es ab hac forma?
+              </label>
+              <textarea class="form-input" placeholder=""></textarea>
+            </div>
+          </fieldset>
+
+          <button class="form-submit-button" type="submit" id="submit">
             <b class="awesome-button">Submittere</b>
           </button>
         </form>
