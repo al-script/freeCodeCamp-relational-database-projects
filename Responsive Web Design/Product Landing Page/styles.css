@@ -337,7 +337,7 @@ main {
   text-align: center;
 }
 
-#section1, #section2 {
+#section1, #section2, #section3 {
   /* Box-model */
   display: flex;
   align-items: center;
@@ -456,6 +456,10 @@ main {
 #section3 {
   /* Box-sizing */
   margin-top: 5rem;
+}
+
+#section3 code {
+  align-self: flex-start;
 }
 
 /* || FOOTER */
