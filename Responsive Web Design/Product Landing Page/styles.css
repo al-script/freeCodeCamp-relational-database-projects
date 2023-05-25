@@ -175,7 +175,7 @@ main {
 
 .nav-link, .nav-link:visited {
   /* Box-model */
-  padding: 0.7rem;
+  padding: 0.4rem;
   
   /* Typography */
   color: var(--on-secondary-container);
