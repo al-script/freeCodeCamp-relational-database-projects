@@ -137,102 +137,177 @@ main {
   padding-right: 2.5rem;
 }
 
-/* NAVBAR */
-#nav {
+/* || TOP NAV */
+#nav-top {
+  /* Positioning */
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  width: 100vw;
-  height: 55px;
   z-index: 9999;
-  background-color: var(--nav-background);
+
+  /* Box-model */
+  height: 55px;
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 1px solid var(--nav-border);
-  /* border-bottom: 0.5px solid skyblue; */
+
+  /* Typography */
+  color: var(--on-surface);
+
+  /* Visual */  
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--outline);
 }
 
-.nav-name {
-  color: var(--nav-text);
+.nav-top-name {
+  /* Box-model */
   display: flex;
   align-items: baseline;
   gap: 0.5rem;
-  font-size: 1rem;
 }
 
-.nav-project-links {
-  /* border: 1px solid red; */
-  color: var(--nav-links);
+.nav-top-project-link-container {
+  /* Box-model */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.65rem;
   gap: 0.75rem;
+
+  /* Typography */
+  font-size: 0.85rem;
 }
 
-.nav-link {
+.nav-top-project-link,
+.nav-top-project-link:visited {
+  /* Box-model */
+  padding: 0.5rem;
+
+  /* Typography */
   text-decoration: none;
-  color: var(--nav-links)
+  color: var(--on-surface);
+
+  /* Visual */
+  border-radius: 100rem;
+  transition: all 0.4s ease;
 }
 
-.nav-link:hover {
-  text-decoration: underline;
+.nav-top-project-link:hover {
+  /* Typography */
+  color: var(--on-secondary-container);
+
+  /* Visual */
+  background-color: var(--secondary-container);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.nav-link:visited {
-  color: var(--nav-links);
+.nav-top-link-highlighted, .nav-top-link-highlighted:visited {
+  /* Typography */
+  color: var(--on-primary-container);
+
+  /* Visual */
+  background: var(--primary-container);
 }
 
 .fcc-header {
+  /* Box-model */
   display: flex;
   align-items: center;
   gap: 0.2rem;
-  font-size: 0.6rem;
+  /* padding: 0.3rem; */
+  padding: 0 0.5rem;
+
+  /* Typography */
+  font-size: 0.7rem;
 }
 
+#light-dark-toggle-button {
+  /* Typography */
+  color: var(--on-surface);
 
+  /* Visual */
+  background-color: var(--surface);
+  cursor: pointer;
+  border: 0.1rem solid var(--outline);
+  border-radius: 0.25rem;
+  transition: all 0.4s ease;
+}
 
-/* hide nav toggle after breakpoint, need to fix... */
-@media only screen and (min-width: 1001px) {
-  .mode-toggle .nav-bars {
+.light-dark-toggle-icon {
+  /* Box-model */
+  padding: 0.25rem;
+}
+
+#light-dark-toggle-button:hover {
+  /* Typography */
+  color: var(--surface);
+
+  /* Visual */
+  background-color: var(--on-surface);
+}
+
+@media only screen and (min-width: 1121px) {
+  #nav-top-toggle  {
+    /* Box-model */
     display: none;
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  .nav-project-links {
+@media only screen and (max-width: 1120px) {
+  #nav-top-toggle {
+    /* Box-model */
+    margin-right: 1rem;
+    padding: 0.55rem;
+
+    /* Visual */
+    border-radius: 99rem;
+    transition: all 0.4s ease;
+    cursor: pointer;
+  }
+
+  #nav-top-toggle:hover {
+    /* Visual */
+    background-color: var(--surface-variant);
+  }
+
+  .nav-top-project-link-container {
+    /* Positioning */
+    position: absolute;
+    left: 2rem;
+
+    /* Box-model */
+    display: none;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 1rem;
-    background-color: var(--nav-background);
-    display: none;
-    padding: 0.5rem 1rem 0 1rem;
-    /* align-self: flex-end; */
-    position: absolute;
-    right: 3rem;
-    border: 0.15rem solid var(--nav-links);
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+
+    /* Typography */
+    font-size: 0.8rem;
+
+    /* Visual */
+    background-color: var(--surface);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border: 0.1rem solid var(--outline-variant);
     border-radius: 0.5rem;
   }
 
-  .nav-project-links::before {
+  /* .nav-top-project-link-container::before {
     content: "Project Links";
+    color: var(--on-surface-variant);
     font-size: 1.5rem;
-}
-  .mode-toggle {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-  }
-  .nav-bars {
-    color: var(--nav-links);
-    cursor: pointer;
-  }
+  } */
 }
 
-.toggle-nav-menu {
+.toggle-nav-top-menu {
+  /* Box-model */
   display: flex;
+}
+
+.toggle-nav-top-bars {
+  /* Visual */
+  background-color: var(--surface-variant);
 }
 
 /* FORM */
