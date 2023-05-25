@@ -22,14 +22,15 @@ function toggleLightDarkMode() {
     }
   }
 
-function navMenuToggle() {
-  let navMenu = document.getElementById('nav-project-links');
-  // console.log(navMenu)
-  if (navMenu.classList.contains('toggle-nav-menu')) {
-    navMenu.classList.remove('toggle-nav-menu')
-    // console.log("removed")
-  } else {
-    navMenu.classList.add('toggle-nav-menu')
-    // console.log("added")
+  function navMenuToggle() {
+    let navMenu = document.getElementById('nav-top-project-link-container');
+    let toggleBars = document.getElementById('nav-top-toggle');
+    if (navMenu.classList.contains('toggle-nav-top-menu')) {
+      navMenu.classList.remove('toggle-nav-top-menu');
+      toggleBars.classList.remove('toggle-nav-top-bars');
+    } else {
+      navMenu.classList.add('toggle-nav-top-menu')
+      toggleBars.classList.add('toggle-nav-top-bars');
+    }
   }
-}
+  
