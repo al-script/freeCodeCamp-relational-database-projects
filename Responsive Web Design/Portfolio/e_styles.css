@@ -172,8 +172,11 @@ main {
 }
 
 .portfolio-text:hover {
-  background-color: black;
+  /* Typography */
   color: limegreen;
+
+  /* Visual */
+  background-color: black;
 }
 
 /* || HEADER */
@@ -513,6 +516,7 @@ main {
 }
 
 .welcome-greeting-icons {
+  /* Box-sizing */
   display: flex;
 }
 
@@ -589,6 +593,10 @@ main {
   content: "";
   background: limegreen;
   animation: blinking-cursor 2s steps(2) infinite;
+}
+
+.block {
+  display: block;
 }
 
 /* || PROJECT SECTION */
@@ -675,7 +683,7 @@ main {
 
   /* Box-model */
   padding: 1rem 1.5rem;
-  margin: 1.5rem 1.5rem -1.5rem 0;
+  margin: 1.5rem 1.5rem -1rem 0;
   width: 10rem;
 
   /* Typography */
