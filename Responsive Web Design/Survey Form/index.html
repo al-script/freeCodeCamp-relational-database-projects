@@ -202,10 +202,21 @@
               </div>
               <div class="form-input-container">
                 <span class="optional-header">Ad libitum</span>
-                <label
+                
+                <div class="inline-space-between">
+                  <label
                   >Quibus modis affectuose impactus es ab hac forma?
                 </label>
-                <textarea class="form-input" placeholder=""></textarea>
+                  <button
+                    onclick="clearTextarea()"
+                    type="button"
+                    class="clear-button"
+                    id="radio-clear"
+                  >
+                    <i class="clear-icon fa-regular fa-circle-xmark"></i>
+                  </button>
+                </div>
+                <textarea class="form-input textarea-optional" placeholder=""></textarea>
               </div>
             </div>
           </fieldset>

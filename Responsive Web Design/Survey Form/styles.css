@@ -427,7 +427,8 @@ main {
   border-radius: 1rem;
 }
 
-.form-heading, .form-section {
+.form-heading,
+.form-section {
   /* Visual */
   border: none;
 }
@@ -454,7 +455,7 @@ main {
 
 .form-input-group-icon {
   position: relative;
-  top: 0.15rem
+  top: 0.15rem;
 }
 
 .form-input-group {
@@ -516,7 +517,7 @@ textarea {
   align-self: center;
   margin: 1rem;
   padding: 1rem 1.5rem;
-  
+
   /* Typography */
   color: var(--on-primary);
 
@@ -529,5 +530,6 @@ textarea {
 
 .form-submit-button:hover {
   background-color: lightskyblue;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }

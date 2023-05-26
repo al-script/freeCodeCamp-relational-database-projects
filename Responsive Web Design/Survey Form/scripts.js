@@ -41,3 +41,10 @@ function clearRadio() {
     radioButtons[i].checked = false;
   }
 }
+
+function clearTextarea() {
+  let textArea = document.getElementsByClassName('textarea-optional');
+  for (let i = 0; i < textArea.length; i++) {
+    textArea[i].value = "";
+  }
+}
