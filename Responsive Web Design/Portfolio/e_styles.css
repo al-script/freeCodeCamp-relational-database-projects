@@ -718,7 +718,7 @@ main {
   /* Visual */
   background-color: var(--secondary-container);
   border-radius: 0.5rem;
-  transition: all 1s ease;
+  transition: all 0.4s ease;
 }
 
 .project-tile:hover{
