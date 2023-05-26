@@ -424,11 +424,8 @@ main {
   /* Typography */
   /* Visual */
 
-  /* || MAIN CONTENT */
-  #section1, #section2, #section3 {
-    /* Box-model */
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
+/* || MAIN CONTENT */
+.main-section-container {
+  /* height: 100vh; */
+}
+
