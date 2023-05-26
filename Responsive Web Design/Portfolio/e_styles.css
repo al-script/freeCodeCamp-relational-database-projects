@@ -621,8 +621,9 @@ main {
   padding: 1rem 1rem;
 
   /* Typography */
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: bold;
   /* font-weight: bold; */
   color: var(--on-surface);
   text-align: left;
