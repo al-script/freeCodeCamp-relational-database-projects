@@ -487,10 +487,11 @@ main {
 
 .name-container {
   flex-direction: row;
+  gap: 0.5rem;
 }
 
 input[name="name"], input[name="last-name"] {
-  max-width: 5rem;
+  max-width: 5.5rem;
 }
 
 .first-name, .last-name {
