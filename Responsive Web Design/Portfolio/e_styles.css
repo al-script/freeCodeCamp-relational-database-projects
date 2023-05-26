@@ -635,6 +635,14 @@ main {
   transition: 0.25s;
 }
 
+.accordion-button:hover {
+  /* Typography */
+  color: var(--on-surface-variant);
+
+  /* Visual */
+  background-color: var(--surface-variant);
+}
+
 .accordion-button:nth-of-type(1) {
   /* Visual */
   border-radius: 0.5rem 0.5rem 0rem 0rem;
@@ -656,10 +664,10 @@ main {
   z-index: 999;
 
   /* Typography */
-  color: var(--on-primary-container);
+  color: var(--on-tertiary-container);
 
   /* Visual */
-  background-color: var(--primary-container);
+  background-color: var(--tertiary-container);
 }
 
 .accordion-panel {
@@ -709,6 +717,7 @@ main {
 }
 
 .certificate-link-info-icon {
+  /* Box-sizing */
   margin-right: 0.45rem;
 }
 
@@ -835,8 +844,14 @@ main {
 }
 
 .project-tile-info-icon {
+  /* Typography */
   color: var(--primary);
   cursor: pointer;
+}
+
+.project-tile-info-icon:hover {
+  /* Typography */
+  color: var(--tertiary);
 }
 
 .project-tile-link-image-container {
@@ -846,7 +861,9 @@ main {
 }
 
 .project-tile-image {
+  /* Box-sizing */
   margin-top: 0.5rem;
+  
   /* Typogaphy */
   font-size: 8rem;
   color: var(--on-secondary-container);
