@@ -418,7 +418,7 @@ main {
 
 .contact-links i {
   /* Visual */
-  transition: all 1s ease;
+  transition: all 0.4s ease;
 }
 
 .contact-links a:focus {
@@ -766,6 +766,10 @@ main {
 .links-header {
   /* Typography */
   font-size: 1.45rem;
+}
+
+.links-header .fa-greater-than {
+  /* font-size: 1.75rem; */
 }
 
 .links-gallery {
