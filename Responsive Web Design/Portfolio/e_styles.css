@@ -475,6 +475,41 @@ main {
 }
 
 /* || WELCOME SECTION */
+#welcome-section {
+  /* Box-sizing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-greeting {
+  /* Box-sizing */
+  display: flex;
+  align-items: center;
+  /* gap: 0.5rem; */
+}
+
+.welcome-message-icon {
+  /* Positioning */
+  position: relative;
+  bottom: 3rem;
+  right: 1rem;
+}
+
+.welcome-person-icon, .welcome-message-icon {
+  /* Typography */
+  font-size: 3rem;
+}
+
+.welcome-greeting-text {
+  /* Typography */
+  font-size: 2.5rem;
+}
+
+.welcome-description {
+  /* Typography */
+  font-size: 1.75rem;
+}
 
 .welcome-text-effect {
   /* Visual */
