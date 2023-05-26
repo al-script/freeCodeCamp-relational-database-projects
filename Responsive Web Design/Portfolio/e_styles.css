@@ -39,6 +39,10 @@
   --welcome-primary-underline: skyblue;
   --welcome-alt: #191c1e;
   --welcome-alt-underline: #eba487;
+
+  /* Accordion special styling */
+  --accordion-inactive: #1e1e1e;
+  --accordion-active: #586c80; 
 }
 
 :root.dark {
@@ -79,6 +83,10 @@
   --welcome-primary-underline: #191c1e;
   --welcome-alt: #eba487;
   --welcome-alt-underline: #191c1e;
+
+  /* Accordion special styling */
+  --accordion-inactive: #1e1e1e;
+  --accordion-active: #586c80; 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -120,6 +128,10 @@
     --welcome-primary-underline: #191c1e;
     --welcome-alt: #eba487;
     --welcome-alt-underline: #191c1e;
+
+    /* Accordion special styling */
+    --accordion-inactive: #1e1e1e;
+    --accordion-active: #586c80;   
   }
 }
 
@@ -638,10 +650,10 @@ main {
 
 .accordion-button:hover {
   /* Typography */
-  color: var(--on-surface-variant);
+  color: var(--on-tertiary-container);
 
   /* Visual */
-  background-color: var(--surface-variant);
+  background-color: var(--tertiary-container);
 }
 
 .accordion-button:nth-of-type(1) {
@@ -870,6 +882,9 @@ main {
   color: var(--on-secondary-container);
 }
 
+.spacer {
+  padding: 1rem;
+}
 
 /* || LINKS SECTION */
 #links {
