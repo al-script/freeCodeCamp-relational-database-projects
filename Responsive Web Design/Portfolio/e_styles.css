@@ -489,14 +489,14 @@ main {
   /* gap: 0.5rem; */
 }
 
-.welcome-message-icon {
+.welcome-greeting-message-icon {
   /* Positioning */
   position: relative;
   bottom: 3rem;
   right: 1rem;
 }
 
-.welcome-person-icon, .welcome-message-icon {
+.welcome-greeting-person-icon, .welcome-greeting-message-icon {
   /* Typography */
   font-size: 3rem;
 }
