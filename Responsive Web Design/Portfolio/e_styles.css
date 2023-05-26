@@ -657,7 +657,7 @@ main {
   /* Typography */
   color: var(--primary);
   text-decoration: none;
-  font-size: 0.7rem;
+  font-size: 0.74rem;
   text-align: center;
 
   /* Visual */
@@ -667,7 +667,12 @@ main {
 }
 
 .certificate-link:hover {
+  /* Visual */
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.certificate-link-info-icon {
+  margin-right: 0.5rem;
 }
 
 .accordion-panel-tech-stack-container {
