@@ -34,7 +34,7 @@ function navMenuToggle() {
   }
 }
   
-  // Clear optional radio button selection on button click 
+  // Clear optional radio button selection & textarea on button click 
 function clearRadio() {
   let radioButtons = document.getElementsByClassName('radio-optional');
   for (let i = 0; i < radioButtons.length; i++) {

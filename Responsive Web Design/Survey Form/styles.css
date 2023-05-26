@@ -485,6 +485,20 @@ main {
   border: 1px solid var(--primary);
 }
 
+.name-container {
+  flex-direction: row;
+}
+
+input[name="name"], input[name="last-name"] {
+  max-width: 5rem;
+}
+
+.first-name, .last-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .optional-header {
   font-style: italic;
   font-size: 0.9rem;

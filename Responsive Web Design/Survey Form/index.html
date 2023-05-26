@@ -96,23 +96,33 @@
           <fieldset class="form-section">
             <i class="form-input-group-icon fa-solid fa-user"></i>
             <div class="form-input-group">
-              <div class="form-input-container">
-                <label for="name" id="name-label"
-                  >Nomen optimum hominem:
-                </label>
-                <input
-                  class="form-input"
-                  id="name"
-                  type="text"
-                  name="name"
-                  placeholder=""
-                  required
-                />
+              <div class="form-input-container name-container">
+                <div class="first-name">
+                  <label for="name" id="name-label">Praenomen </label>
+                  <input
+                    class="form-input"
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholder=""
+                    required
+                  />
+                </div>
+                <div class="last-name">
+                  <label for="last-name" id="last-name-label">Cognomen </label>
+                  <input
+                    class="form-input"
+                    id="last-name"
+                    type="text"
+                    name="last-name"
+                    placeholder=""
+                    required
+                  />
+                </div>
               </div>
               <div class="form-input-container">
                 <label for="email" id="email-label"
-                  >Oratio ex electronic correspondentia (inscriptio
-                  electronica):
+                  >Inscriptio electronica
                 </label>
                 <input
                   class="form-input"
@@ -202,11 +212,11 @@
               </div>
               <div class="form-input-container">
                 <span class="optional-header">Ad libitum</span>
-                
+
                 <div class="inline-space-between">
                   <label
-                  >Quibus modis affectuose impactus es ab hac forma?
-                </label>
+                    >Quibus modis affectuose impactus es ab hac forma?
+                  </label>
                   <button
                     onclick="clearTextarea()"
                     type="button"
@@ -216,7 +226,10 @@
                     <i class="clear-icon fa-regular fa-circle-xmark"></i>
                   </button>
                 </div>
-                <textarea class="form-input textarea-optional" placeholder=""></textarea>
+                <textarea
+                  class="form-input textarea-optional"
+                  placeholder=""
+                ></textarea>
               </div>
             </div>
           </fieldset>
