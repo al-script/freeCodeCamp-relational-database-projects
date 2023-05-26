@@ -557,9 +557,9 @@ main {
 .cursor-blink::after {
   /* Box-model */
   display: inline-block;
-  height: 1rem;
-  width: 0.25rem;
-  margin-bottom: -0.2rem;
+  height: 1.5rem;
+  width: 0.4rem;
+  margin-bottom: -0.3rem;
 
   /* Visual */
   content: "";
