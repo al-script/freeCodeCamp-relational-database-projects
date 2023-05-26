@@ -712,6 +712,9 @@ main {
 .tech-stack-tile {
   /* Box-sizing */
   max-width: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tech-stack-icon-link {
@@ -719,15 +722,21 @@ main {
 
 .tech-stack-icon {
   /* Box-sizing */
-  width: 2rem;
+  width: 2.5rem;
 }
 
 .tech-stack-name {
   /* Typography */
+  padding: 0;
+  margin: 0;
 }
 
 .tech-stack-subtitle {
   /* Typography */
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  text-align: center;
 }
 
 .accordion-panel-project-gallery-container {
