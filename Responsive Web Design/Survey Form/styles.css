@@ -471,6 +471,17 @@ main {
   border: 1px solid var(--primary);
 }
 
+.optional-header {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+textarea {
+  color: var(--on-surface);
+  resize: none;
+  font-family: "Atkinson Hyperlegible";
+}
+
 .form-submit-button {
   /* Box-model */
   align-self: center;
