@@ -435,14 +435,12 @@ main {
   border-radius: 0.5rem;
 }
 
-.accordion-project-button:nth-of-type(1) {
+.accordion-button:nth-of-type(1) {
   /* Visual */
   border-radius: 0.5rem 0.5rem 0rem 0rem;
 }
 
-.accordion-project-button {
-  /* Positioning */
-
+.accordion-button {
   /* Box-sizing */
   width: 100%;
   padding: 1rem 0.5rem;
@@ -457,19 +455,10 @@ main {
   cursor: pointer;
   outline: none;
   border: none;
-  transition: 0.5s;
+  transition: 0.25s;
 }
 
-.accordion-project-button:after {
-  content: "◇";
-  float: right;
-}
-
-.accordion-project-toggle-active:after {
-  content: "◈";
-}
-
-.accordion-project-toggle-active {
+.accordion-button-active {
   /* Positioning */
   position: sticky;
   top: 55px;
@@ -482,12 +471,21 @@ main {
   background-color: var(--primary-container);
 }
 
-.accordion-project-container {
+.accordion-button:after {
+  content: "◇";
+  float: right;
+}
+
+.accordion-button-active:after {
+  content: "◈";
+}
+
+.accordion-panel {
   /* Box-sizing */
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
   padding: 0 1rem;
+  /* max-height: 0; */
+  overflow: hidden;
+  transition: max-height 0.25s ease-out;
   
   /* Visual */
   border-bottom: 1px solid var(--outline);
