@@ -667,7 +667,11 @@ main {
 }
 
 .certificate-link:hover {
+  /* Typography */
+  color: var(--on-primary-container);
   /* Visual */
+  background-color: var(--primary-container);
+  border-color: var(--primary-container);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
