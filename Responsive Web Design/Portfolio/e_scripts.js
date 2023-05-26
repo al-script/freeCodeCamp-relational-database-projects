@@ -62,7 +62,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
         panel.style.maxHeight = panel.scrollHeight + "px";
       }
     }
-    console.log("window resized");
   }
 
   window.onresize = onResize;
