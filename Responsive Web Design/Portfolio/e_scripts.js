@@ -36,15 +36,15 @@ function navMenuToggle() {
   
 //  Handle accordion
 //  help from: https://www.w3schools.com/howto/howto_js_accordion.asp
-let accordion = document.getElementsByClassName("accordion-button");
+let accordion = document.getElementsByClassName("accordion-project-button");
 let i;
 
 for (i = 0; i < accordion.length; i++) {
   accordion[i].addEventListener("click", function () {
-    this.classList.toggle("accordion-active");
+    this.classList.toggle("accordion-project-toggle-active");
 
     // move view to accordion header if header clicked while active
-    if (!this.classList.contains("accordion-active")) {
+    if (!this.classList.contains("accordion-project-toggle-active")) {
       // location.href = `#${this.id}`;
       
       // Set behavior such that if scrolled past header, then return to top of header
@@ -64,7 +64,7 @@ for (i = 0; i < accordion.length; i++) {
 // Update height of accordion on window resize
 function onResize() {
   for (i = 0; i < accordion.length; i++) {
-    if (accordion[i].classList.contains("accordion-active")) {
+    if (accordion[i].classList.contains("accordion-project-toggle-active")) {
     let panel = accordion[i].nextElementSibling;
     panel.style.maxHeight = panel.scrollHeight + "px";
     }

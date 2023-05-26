@@ -429,3 +429,150 @@ main {
   /* height: 100vh; */
 }
 
+.project-group-accordion-container {
+  /* Visual */
+  border: 1px solid var(--outline);
+  border-radius: 0.5rem;
+}
+
+.accordion-project-button:nth-of-type(1) {
+  /* Visual */
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.accordion-project-button {
+  /* Positioning */
+
+  /* Box-sizing */
+  width: 100%;
+  padding: 1rem 0.5rem;
+
+  /* Typography */
+  font-size: 1rem;
+  color: var(--on-surface);
+  text-align: left;
+
+  /* Visual */
+  background-color: var(--surface);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: 0.5s;
+}
+
+.accordion-project-button:after {
+  content: "◇";
+  float: right;
+}
+
+.accordion-project-toggle-active:after {
+  content: "◈";
+}
+
+.accordion-project-toggle-active {
+  /* Positioning */
+  position: sticky;
+  top: 55px;
+  z-index: 999;
+
+  /* Typography */
+  color: var(--on-primary-container);
+
+  /* Visual */
+  background-color: var(--primary-container);
+}
+
+.accordion-project-container {
+  /* Box-sizing */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding: 0 1rem;
+  
+  /* Visual */
+  border-bottom: 1px solid var(--outline);
+  /* background-color: var(--secondary-container); */
+}
+
+.tech-stack-header {
+  /* Typography */
+  font-size: 2rem;
+  /* could combine with project-gallery-header */
+}
+
+.tech-stack-gallery {
+  /* Box-sizing */
+  display: flex;
+}
+
+.tech-stack-tile {
+  /* Box-sizing */
+  max-width: 5rem;
+}
+
+.tech-stack-icon-link {
+}
+
+.tech-stack-icon {
+  /* Box-sizing */
+  width: 2rem;
+}
+
+.tech-stack-name {
+  /* Typography */
+}
+
+.tech-stack-subtitle {
+  /* Typography */
+}
+
+.accordion-project-gallery-container {
+  /* Box-sizing */
+  display: flex;
+  flex-direction: column;
+}
+
+.project-gallery-header { 
+  /* Typography */
+  font-size: 2rem;  
+  /* could combine with tech-stack-header */
+}
+
+.project-gallery {
+  /* Box-sizing */
+  display: flex;
+  max-width: 35rem;
+  padding-bottom: 1rem;
+}
+
+.project-tile {
+  /* Box-sizing */
+  padding: 1rem;
+  width: 10rem;
+
+  /* Typography */
+  color: var(--on-secondary-container);
+
+  /* Visual */
+  background-color: var(--secondary-container);
+  border-radius: 0.5rem;
+}
+
+.project-tile-header {
+  /* Box sizing */
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.project-tile-title {
+  /* display: inline-block; */
+}
+
+.project-tile-info {
+  /* display: inline-block; */
+}
+
+.project-tile-image {
+  font-size: 5rem;
+}
