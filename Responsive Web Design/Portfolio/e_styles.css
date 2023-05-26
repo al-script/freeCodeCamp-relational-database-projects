@@ -586,7 +586,7 @@ main {
 .accordion-button {
   /* Box-sizing */
   width: 100%;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1rem;
 
   /* Typography */
   font-size: 1.25rem;
