@@ -451,7 +451,24 @@ main {
 }
 
 /* || WELCOME SECTION */
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+}
 
+.cursor-blink::after {
+  /* Box-model */
+  display: inline-block;
+  height: 1rem;
+  width: 0.25rem;
+  margin-bottom: -0.2rem;
+
+  /* Visual */
+  content: "";
+  background: limegreen;
+  animation: blinking-cursor 2s steps(2) infinite;
+}
 
 /* || PROJECT SECTION */
 .project-group {
