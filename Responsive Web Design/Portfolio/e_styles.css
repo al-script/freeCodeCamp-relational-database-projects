@@ -679,10 +679,15 @@ main {
 }
 
 .divider {
-  border: 1px solid var(--outline);
+  /* Positioning */
+  z-index: -1;
+
+  /* Box-sizing */
   margin-top: -2.5rem;
   margin-bottom: 1.5rem;
-  z-index: -1;
+  
+  /* Visual */
+  border: 1px solid var(--outline);
 }
 
 .tech-stack-header {
@@ -695,13 +700,14 @@ main {
   /* Box-sizing */
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  /* justify-content: center; */
+  gap: 3rem;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
 .tech-stack-tile {
   /* Box-sizing */
-  max-width: 5rem;
+  max-width: 12rem;
 }
 
 .tech-stack-icon-link {
