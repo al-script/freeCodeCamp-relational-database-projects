@@ -31,6 +31,14 @@
   --on-surface-variant: #41484d;
 
   --outline: #71787d;
+
+  /* Welcome section special styling */
+  --code: #191c1e;
+  --code-underline: limegreen;
+  --welcome-primary: #191c1e;
+  --welcome-primary-underline: skyblue;
+  --welcome-alt: #191c1e;
+  --welcome-alt-underline: #eba487;
 }
 
 :root.dark {
@@ -63,6 +71,14 @@
   --on-surface-variant: #c0c7cd;
 
   --outline: #8a9297;
+
+  /* Welcome section special styling */
+  --code: limegreen;
+  --code-underline: #191c1e;
+  --welcome-primary: skyblue;
+  --welcome-primary-underline: #191c1e;
+  --welcome-alt: #eba487;
+  --welcome-alt-underline: #191c1e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -96,6 +112,14 @@
     --on-surface-variant: #c0c7cd;
 
     --outline: #8a9297;
+
+    /* Welcome section special styling */
+    --code: limegreen;
+    --code-underline: #191c1e;
+    --welcome-primary: skyblue;
+    --welcome-primary-underline: #191c1e;
+    --welcome-alt: #eba487;
+    --welcome-alt-underline: #191c1e;
   }
 }
 
@@ -451,6 +475,41 @@ main {
 }
 
 /* || WELCOME SECTION */
+
+.welcome-text-effect {
+  /* Visual */
+  transition: all 0.3s ease;
+}
+
+.welcome-description-emphasis-code {
+  /* Typography */
+  color: var(--code);
+  text-decoration: underline var(--code-underline);
+  text-decoration-thickness: 0.15rem;
+  text-underline-offset: 0.2rem;
+}
+
+.welcome-description-emphasis {
+  /* Typography */
+  color: var(--welcome-primary);
+  text-decoration: underline var(--welcome-primary-underline);
+  text-decoration-thickness: 0.15rem;
+  text-underline-offset: 0.2rem;
+}
+
+.welcome-description-emphasis-alt {
+  /* Typography */
+  color: var(--welcome-alt);
+  text-decoration: underline var(--welcome-alt-underline);
+  text-decoration-thickness: 0.15rem;
+  text-underline-offset: 0.2rem;
+}
+
+.welcome-text-effect:hover {
+  /* Typography */
+  color: limegreen;
+}
+
 @keyframes blinking-cursor {
   0% {
     opacity: 0;
