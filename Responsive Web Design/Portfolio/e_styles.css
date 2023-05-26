@@ -662,7 +662,7 @@ main {
 
   /* Visual */
   border: 1px solid var(--outline);
-  border-radius: 99rem;
+  border-radius: 3rem;
   transition: all 0.4s ease;
 }
 
@@ -672,7 +672,7 @@ main {
 }
 
 .certificate-link-info-icon {
-  margin-right: 0.5rem;
+  margin-right: 0.45rem;
 }
 
 .accordion-panel-tech-stack-container {
@@ -689,6 +689,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  /* justify-content: center; */
 }
 
 .tech-stack-tile {
@@ -731,6 +732,7 @@ main {
   gap: 1rem;
   /* max-width: 35rem; */
   padding-bottom: 1rem;
+  /* justify-content: center; */
 }
 
 .project-tile {
