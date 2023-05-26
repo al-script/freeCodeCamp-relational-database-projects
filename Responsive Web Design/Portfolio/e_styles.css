@@ -451,6 +451,9 @@ main {
 }
 
 .project-group {
+  /* Typography */
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .project-group-header {
@@ -468,7 +471,9 @@ main {
   padding: 1rem 0.5rem;
 
   /* Typography */
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  /* font-weight: bold; */
   color: var(--on-surface);
   text-align: left;
 
@@ -534,6 +539,8 @@ main {
 .tech-stack-gallery {
   /* Box-sizing */
   display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .tech-stack-tile {
@@ -572,14 +579,20 @@ main {
 .project-gallery {
   /* Box-sizing */
   display: flex;
-  max-width: 35rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* max-width: 35rem; */
   padding-bottom: 1rem;
 }
 
 .project-tile {
   /* Box-sizing */
   padding: 1rem;
+  padding-top: 0;
   width: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   /* Typography */
   color: var(--on-secondary-container);
@@ -587,6 +600,12 @@ main {
   /* Visual */
   background-color: var(--secondary-container);
   border-radius: 0.5rem;
+  transition: all 1s ease;
+}
+
+.project-tile:hover{
+  /* Visual */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .project-tile-header {
@@ -594,16 +613,28 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  width: 100%;
 }
 
 .project-tile-title {
-  /* display: inline-block; */
 }
 
-.project-tile-info {
-  /* display: inline-block; */
+.project-tile-info-link{
+}
+
+.project-tile-info-icon {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.project-tile-link-image-container {
+}
+
+.project-tile-link{
 }
 
 .project-tile-image {
+  /* Typogaphy */
   font-size: 5rem;
+  color: var(--on-secondary-container);
 }
