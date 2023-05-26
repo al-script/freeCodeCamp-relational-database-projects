@@ -475,6 +475,8 @@ main {
 /* || MAIN CONTENT */
 .main-section-container {
   /* height: 100vh; */
+  padding-top: 30rem;
+  padding-bottom: 30rem;
 }
 
 /* || WELCOME SECTION */
