@@ -203,14 +203,24 @@ main {
 .logo-text {
   /* Box-model */
   margin-left: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
 }
+
+.logo-text h3 {
+  /* Box-sizing */
+  margin: 0;
+}
+
 
 #nav-bar {
   /* Box-model */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
 
   /* Typography */
   font-size: 0.85rem;
@@ -222,17 +232,19 @@ main {
   padding: 0.4rem;
 
   /* Typography */
-  color: var(--on-secondary-container);
+  color: var(--on-surface);
   text-decoration: none;
   /* border: 1px solid var(--outline); */
 
   /* Visual */
-  background-color: var(--secondary-container);
   border-radius: 0.5rem;
+  transition: all 0.4s ease;
 }
 
 .nav-link:hover {
   /* Visual */
+  color: var(--on-secondary-container);
+  background-color: var(--secondary-container);
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
@@ -247,6 +259,7 @@ main {
 #nav-top-toggle {
   /* Box-model */
   padding: 0.55rem;
+  margin-left: 0.25rem;
 
   /* Visual */
   border-radius: 99rem;
@@ -491,19 +504,28 @@ main {
   /* Box-sizing */
   display: flex;
   align-items: center;
+  justify-content: space-around;
   /* gap: 0.5rem; */
+}
+
+.welcome-greeting-icons, .welcome-greeting-text {
+  /* border: 1px solid red; */
+}
+
+.welcome-greeting-icons {
+  display: flex;
 }
 
 .welcome-greeting-message-icon {
   /* Positioning */
   position: relative;
-  bottom: 3rem;
+  bottom: 4rem;
   right: 1rem;
 }
 
 .welcome-greeting-person-icon, .welcome-greeting-message-icon {
   /* Typography */
-  font-size: 3rem;
+  font-size: 4.5rem;
 }
 
 .welcome-greeting-text {
