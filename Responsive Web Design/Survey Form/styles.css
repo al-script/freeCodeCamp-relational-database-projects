@@ -432,11 +432,24 @@ main {
   border: none;
 }
 
+.form-heading {
+  text-align: center;
+}
+
 .form-section {
   /* Box-model */
   display: flex;
   gap: 1rem;
   align-items: baseline;
+  /* padding-bottom: 2rem; */
+}
+
+.form-input-container {
+  /* Box-sizing */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 0.75rem;
 }
 
 .form-input-group-icon {
@@ -474,6 +487,7 @@ main {
 .optional-header {
   font-style: italic;
   font-size: 0.9rem;
+  margin-bottom: -0.35rem;
 }
 
 .inline-space-between {
@@ -488,10 +502,7 @@ main {
 
 .clear-icon {
   color: var(--on-surface);
-}
-
-#radio-clear{
-
+  cursor: pointer;
 }
 
 textarea {
