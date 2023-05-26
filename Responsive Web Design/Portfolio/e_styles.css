@@ -662,12 +662,14 @@ main {
 }
 
 .accordion-button:after {
-  content: "◇";
+  content: "►";
+  /* content: "◇►"; */
   float: right;
 }
 
 .accordion-button-active:after {
-  content: "◈";
+  content: "▼";
+  /* content: "◈▼"; */
 }
 
 .accordion-button-active {
