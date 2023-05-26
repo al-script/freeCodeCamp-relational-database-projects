@@ -678,6 +678,13 @@ main {
 .accordion-panel-tech-stack-container {
 }
 
+.divider {
+  border: 1px solid var(--outline);
+  margin-top: -2.5rem;
+  margin-bottom: 1.5rem;
+  z-index: -1;
+}
+
 .tech-stack-header {
   /* Typography */
   font-size: 2rem;
