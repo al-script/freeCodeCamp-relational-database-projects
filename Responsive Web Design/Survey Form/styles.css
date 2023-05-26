@@ -490,7 +490,7 @@ main {
 .name-container {
   /* Box-model */
   flex-direction: row;
-  gap: 0.5rem;
+  gap: 0.9rem;
 }
 
 input[name="name"],
@@ -534,6 +534,12 @@ input[name="last-name"] {
 
   /* Visual */
   cursor: pointer;
+}
+
+.radio-input-container, .check-input-container {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 textarea {
