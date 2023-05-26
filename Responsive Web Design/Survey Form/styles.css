@@ -476,6 +476,24 @@ main {
   font-size: 0.9rem;
 }
 
+.inline-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clear-button {
+  background-color: var(--surface);
+  border: none;
+}
+
+.clear-icon {
+  color: var(--on-surface);
+}
+
+#radio-clear{
+
+}
+
 textarea {
   color: var(--on-surface);
   resize: none;
