@@ -96,140 +96,159 @@
           <fieldset class="form-section">
             <i class="form-input-group-icon fa-solid fa-user"></i>
             <div class="form-input-group">
-            <div class="form-input-container">
-              <label for="name" id="name-label">Nomen optimum hominem: </label>
-              <input class="form-input" id="name" type="text" name="name" placeholder="" required />
+              <div class="form-input-container">
+                <label for="name" id="name-label"
+                  >Nomen optimum hominem:
+                </label>
+                <input
+                  class="form-input"
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder=""
+                  required
+                />
+              </div>
+              <div class="form-input-container">
+                <label for="email" id="email-label"
+                  >Oratio ex electronic correspondentia (inscriptio
+                  electronica):
+                </label>
+                <input
+                  class="form-input"
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder=""
+                  required
+                />
+              </div>
             </div>
-            <div class="form-input-container">
-              <label for="email" id="email-label"
-                >Oratio ex electronic correspondentia (inscriptio electronica):
-              </label>
-              <input
-                class="form-input"
-                id="email"
-                type="email"
-                name="email"
-                placeholder=""
-                required
-              />
-            </div>
-          </div>
           </fieldset>
 
           <fieldset class="form-section">
             <i class="form-input-group-icon fa-solid fa-circle-question"></i>
             <div class="form-input-group">
               <div class="form-input-container">
-              <label for="number" id="number-label"
-                >Quomodo permotionem huius formae ad beneplacitum tuum, in libra
-                100 - 100 (C - C) aestimare vis?
-              </label>
-              <input
-                class="form-input"
-                id="number"
-                type="number"
-                name="number"
-                placeholder=""
-                min="100"
-                max="100"
-              />
+                <label for="number" id="number-label"
+                  >Quomodo permotionem huius formae ad beneplacitum tuum, in
+                  libra 100 - 100 (C - C) aestimare vis?
+                </label>
+                <input
+                  class="form-input"
+                  id="number"
+                  type="number"
+                  name="number"
+                  placeholder=""
+                  min="100"
+                  max="100"
+                />
+              </div>
+              <div class="form-input-container">
+                <label for="dropdown"
+                  >Diam donec adipiscing tristique risus nec feugiat in?
+                </label>
+                <select class="form-input" id="dropdown" name="dropdown">
+                  <option value="dropdownchoice0">(Nullam non nisi)</option>
+                  <option value="dropdownchoice1">Diam in arcu</option>
+                  <option value="dropdownchoice2">
+                    At erat pellentesque adipiscing
+                  </option>
+                </select>
+              </div>
             </div>
-            <div class="form-input-container">
-              <label for="dropdown"
-                >Diam donec adipiscing tristique risus nec feugiat in?
-              </label>
-              <select class="form-input" id="dropdown" name="dropdown">
-                <option value="dropdownchoice0">(Nullam non nisi)</option>
-                <option value="dropdownchoice1">Diam in arcu</option>
-                <option value="dropdownchoice2">
-                  At erat pellentesque adipiscing
-                </option>
-              </select>
-            </div>
-          </div>
           </fieldset>
 
           <fieldset class="form-section radio-answers">
             <i class="form-input-group-icon fa-regular fa-circle-question"></i>
             <div class="form-input-group">
               <div class="form-input-container">
-              <span class="optional-header">Ad libitum</span>
-              <div class="inline-space-between"><legend>Lorem donec...</legend><button onclick="clearRadio()" type="button" class="clear-button" id="radio-clear"><i class="clear-icon fa-regular fa-circle-xmark"></i></button></div>
-              <div>
-                <input
-                  id="radio1"
-                  type="radio"
-                  name="radiobuttons"
-                  value="radio1"
-                  class="radio-optional"
-                />
-                <label class="light-weight" for="radio1">
-                  Massa sapien faucibus</label
-                >
-              </div>
-              <div>
-                <input
-                  id="radio2"
-                  type="radio"
-                  name="radiobuttons"
-                  value="radio2"
-                  class="radio-optional"
-                />
-                <label class="light-weight" for="radio2">
-                  Urna nec tincidunt praesent semper</label
-                >
-              </div>
+                <span class="optional-header">Ad libitum</span>
+                <div class="inline-space-between">
+                  <legend>Lorem donec...</legend>
+                  <button
+                    onclick="clearRadio()"
+                    type="button"
+                    class="clear-button"
+                    id="radio-clear"
+                  >
+                    <i class="clear-icon fa-regular fa-circle-xmark"></i>
+                  </button>
+                </div>
+                <div>
+                  <input
+                    id="radio1"
+                    type="radio"
+                    name="radiobuttons"
+                    value="radio1"
+                    class="radio-optional"
+                  />
+                  <label class="light-weight" for="radio1">
+                    Massa sapien faucibus</label
+                  >
+                </div>
+                <div>
+                  <input
+                    id="radio2"
+                    type="radio"
+                    name="radiobuttons"
+                    value="radio2"
+                    class="radio-optional"
+                  />
+                  <label class="light-weight" for="radio2">
+                    Urna nec tincidunt praesent semper</label
+                  >
+                </div>
               </div>
               <div class="form-input-container">
                 <span class="optional-header">Ad libitum</span>
                 <label
-                  >Quibus modis
-                  affectuose impactus es ab hac forma?
+                  >Quibus modis affectuose impactus es ab hac forma?
                 </label>
                 <textarea class="form-input" placeholder=""></textarea>
-            </div>  
-          </div>         
+              </div>
+            </div>
           </fieldset>
 
           <fieldset class="form-section terms">
             <i class="form-input-group-icon fa-solid fa-circle-exclamation"></i>
             <div class="form-input-group">
               <div class="form-input-container">
-              <legend>Dolor sit amet consectetur adipiscing:</legend>
-              <div>
-                <input
-                  required
-                  id="checkbox1"
-                  type="checkbox"
-                  value="checkbox1"
-                />
-                <label class="light-weight" for="checkbox1">
-                  Ego risus pretium quam</label
-                >
+                <legend>Dolor sit amet consectetur adipiscing:</legend>
+                <div>
+                  <input
+                    required
+                    id="checkbox1"
+                    type="checkbox"
+                    value="checkbox1"
+                  />
+                  <label class="light-weight" for="checkbox1">
+                    Ego risus pretium quam</label
+                  >
+                </div>
+                <div>
+                  <input
+                    required
+                    id="checkbox2"
+                    type="checkbox"
+                    value="checkbox2"
+                  />
+                  <label class="light-weight" for="checkbox2">
+                    Ego volutpat consequat mauris</label
+                  >
+                </div>
+                <div>
+                  <input
+                    required
+                    id="checkbox3"
+                    type="checkbox"
+                    value="checkbox3"
+                  />
+                  <label class="light-weight" for="checkbox3">
+                    Ego vulputate dignissim suspendisse in est</label
+                  >
+                </div>
               </div>
-              <div>
-                <input
-                  required
-                  id="checkbox2"
-                  type="checkbox"
-                  value="checkbox2"
-                />
-                <label class="light-weight" for="checkbox2">
-                  Ego volutpat consequat mauris</label
-                >
-              </div>
-              <div>
-                <input
-                  required
-                  id="checkbox3"
-                  type="checkbox"
-                  value="checkbox3"
-                />
-                <label class="light-weight" for="checkbox3">
-                  Ego vulputate dignissim suspendisse in est</label
-                >
-              </div>
-            </div>
             </div>
           </fieldset>
 
