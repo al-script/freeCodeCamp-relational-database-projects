@@ -103,7 +103,9 @@
 html {
   /* Typography */
   font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: calc(11px + 0.38vw); /* https://matthewjamestaylor.com/responsive-font-size */
+  font-size: calc(
+    11px + 0.38vw
+  ); /* https://matthewjamestaylor.com/responsive-font-size */
 }
 
 body {
@@ -118,7 +120,7 @@ body {
   /* Visual */
   background-color: var(--background);
 }
-  
+
 #page-container {
   /* Positioning */
   position: relative;
@@ -152,7 +154,7 @@ main {
   /* Typography */
   color: var(--on-surface);
 
-  /* Visual */  
+  /* Visual */
   background-color: var(--surface);
   border-bottom: 1px solid var(--outline);
 }
@@ -173,15 +175,16 @@ main {
   font-size: 0.85rem;
 }
 
-.nav-link, .nav-link:visited {
+.nav-link,
+.nav-link:visited {
   /* Box-model */
   padding: 0.4rem;
-  
+
   /* Typography */
   color: var(--on-secondary-container);
   text-decoration: none;
   /* border: 1px solid var(--outline); */
-  
+
   /* Visual */
   background-color: var(--secondary-container);
   border-radius: 0.5rem;
@@ -239,7 +242,8 @@ main {
 
   /* Visual */
   background-color: var(--surface);
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border: 0.1rem solid var(--outline-variant);
   border-radius: 0.5rem;
 }
@@ -277,10 +281,12 @@ main {
 
   /* Visual */
   background-color: var(--secondary-container);
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.nav-top-link-highlighted, .nav-top-link-highlighted:visited {
+.nav-top-link-highlighted,
+.nav-top-link-highlighted:visited {
   /* Typography */
   color: var(--on-primary-container);
 
@@ -419,25 +425,26 @@ main {
   background: var(--secondary-container);
 }
 
-  /* Positioning */
-  /* Box-model */
-  /* Typography */
-  /* Visual */
+/* Positioning */
+/* Box-model */
+/* Typography */
+/* Visual */
 
 /* || MAIN CONTENT */
 .main-section-container {
   /* height: 100vh; */
 }
 
+.project-group {
+}
+
+.project-group-header {
+}
+
 .project-group-accordion-container {
   /* Visual */
   border: 1px solid var(--outline);
   border-radius: 0.5rem;
-}
-
-.accordion-button:nth-of-type(1) {
-  /* Visual */
-  border-radius: 0.5rem 0.5rem 0rem 0rem;
 }
 
 .accordion-button {
@@ -458,6 +465,20 @@ main {
   transition: 0.25s;
 }
 
+.accordion-button:nth-of-type(1) {
+  /* Visual */
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.accordion-button:after {
+  content: "◇";
+  float: right;
+}
+
+.accordion-button-active:after {
+  content: "◈";
+}
+
 .accordion-button-active {
   /* Positioning */
   position: sticky;
@@ -471,25 +492,22 @@ main {
   background-color: var(--primary-container);
 }
 
-.accordion-button:after {
-  content: "◇";
-  float: right;
-}
-
-.accordion-button-active:after {
-  content: "◈";
-}
-
 .accordion-panel {
   /* Box-sizing */
   padding: 0 1rem;
   /* max-height: 0; */
   overflow: hidden;
   transition: max-height 0.25s ease-out;
-  
+
   /* Visual */
   border-bottom: 1px solid var(--outline);
   /* background-color: var(--secondary-container); */
+}
+
+.accordion-panel-project-header {
+}
+
+.accordion-panel-tech-stack-container {
 }
 
 .tech-stack-header {
@@ -524,15 +542,15 @@ main {
   /* Typography */
 }
 
-.accordion-project-gallery-container {
+.accordion-panel-project-gallery-container {
   /* Box-sizing */
   display: flex;
   flex-direction: column;
 }
 
-.project-gallery-header { 
+.project-gallery-header {
   /* Typography */
-  font-size: 2rem;  
+  font-size: 2rem;
   /* could combine with tech-stack-header */
 }
 
