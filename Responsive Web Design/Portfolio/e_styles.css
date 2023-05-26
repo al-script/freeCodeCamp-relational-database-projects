@@ -135,6 +135,20 @@ main {
   padding: 100px 2rem 150px 2rem;
 }
 
+.portfolio-text {
+  /* Box-sizing */
+  padding: 0.25rem;
+
+  /* Typography */
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.portfolio-text:hover {
+  background-color: black;
+  color: limegreen;
+}
+
 /* || HEADER */
 #header {
   /* Positioning */
@@ -361,6 +375,7 @@ main {
   /* Box-model */
   display: flex;
   gap: 1rem;
+  align-items: flex-end;
 
   /* Typography */
   font-size: 2rem;
