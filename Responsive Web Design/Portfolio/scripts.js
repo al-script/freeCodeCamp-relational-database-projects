@@ -27,10 +27,7 @@ function toggleLightDarkMode() {
 let accordion = document.getElementsByClassName("accordion");
 let i;
 
-console.log("accordion:", accordion);
-
 for (i = 0; i < accordion.length; i++) {
-  console.log(i)
   accordion[i].addEventListener("click", function () {
     this.classList.toggle("accordion-active");
 
