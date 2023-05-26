@@ -22,17 +22,17 @@ function toggleLightDarkMode() {
     }
   }
 
-  function navMenuToggle() {
-    let navMenu = document.getElementById('nav-top-project-link-container');
-    let toggleBars = document.getElementById('nav-top-toggle');
-    if (navMenu.classList.contains('toggle-nav-top-menu')) {
-      navMenu.classList.remove('toggle-nav-top-menu');
-      toggleBars.classList.remove('toggle-nav-top-bars');
-    } else {
-      navMenu.classList.add('toggle-nav-top-menu')
-      toggleBars.classList.add('toggle-nav-top-bars');
-    }
+function navMenuToggle() {
+  let navMenu = document.getElementById('nav-top-project-link-container');
+  let toggleBars = document.getElementById('nav-top-toggle');
+  if (navMenu.classList.contains('toggle-nav-top-menu')) {
+    navMenu.classList.remove('toggle-nav-top-menu');
+    toggleBars.classList.remove('toggle-nav-top-bars');
+  } else {
+    navMenu.classList.add('toggle-nav-top-menu')
+    toggleBars.classList.add('toggle-nav-top-bars');
   }
+}
   
   // Clear optional radio button selection on button click 
 function clearRadio() {
