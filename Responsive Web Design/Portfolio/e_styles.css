@@ -680,6 +680,7 @@ main {
 .certificate-link {
   /* Positioning */
   align-self: flex-end;
+  z-index: 99;
 
   /* Box-model */
   padding: 1rem 1.5rem;
@@ -789,7 +790,7 @@ main {
   flex-wrap: wrap;
   gap: 1rem;
   /* max-width: 35rem; */
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.75rem;
   justify-content: center;
 }
 
