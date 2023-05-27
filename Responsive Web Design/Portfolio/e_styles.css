@@ -142,6 +142,8 @@ html {
   font-size: calc(
     11px + 0.38vw
   ); /* https://matthewjamestaylor.com/responsive-font-size */
+  /* Visual */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -167,7 +169,7 @@ body {
 }
 
 :target {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 60px;
 }
 
 main {
