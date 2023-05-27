@@ -43,11 +43,16 @@ window.addEventListener("DOMContentLoaded", (event) => {
   for (i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener("click", function () {
       this.classList.toggle("accordion-button-active");
-
+      
       let panel = this.nextElementSibling;
 
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
+        // jump to beginning of accordion if accordion header is sticky, essentially
+        // could improve by adding smooth scrolling
+        if (this.getBoundingClientRect().top < 0) {
+          location.href = `#${this.id}`;
+        }
       } else {
         panel.style.maxHeight = panel.scrollHeight + "px";
       }

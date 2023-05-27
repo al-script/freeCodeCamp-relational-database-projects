@@ -166,6 +166,10 @@ body {
   min-width: 100vw;
 }
 
+:target {
+    scroll-margin-top: 100px;
+}
+
 main {
   /* Box-model */
   padding: 100px 2rem 150px 2rem;
@@ -688,7 +692,7 @@ main {
 .accordion-panel {
   /* Box-sizing */
   padding: 0 1rem;
-  /* max-height: 0; */
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.25s ease-out;
 
