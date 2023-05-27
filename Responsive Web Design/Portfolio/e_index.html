@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i.postimg.cc/HxpxQmn5/AS-favicon.png"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="e_styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="e_scripts.js"></script>
+  </head>
+  <body>
+    <!-- Page container -->
+    <div id="page-container">
+      <!-- Header -->
+      <header id="header">
+        <div class="logo-text">
+          <span class="portfolio-text">&lt;portfolio&gt</span>
+          <h3>
+             AS al-script
+          </h3>
+        </div>
+
+        <nav id="nav-bar">
+          <a class="nav-link" href="#welcome-section"
+            ><i class="fa-solid fa-handshake-simple"></i
+          ></a>
+          <a class="nav-link" href="#projects"
+            ><i class="fa-solid fa-folder-open"></i
+          ></a>
+          <a class="nav-link" href="#links"><i class="fa-solid fa-link"></i></a>
+        </nav>
+
+        <div id="light-link-toggle-container">
+          <i
+            onclick="navMenuToggle()"
+            class="fa-solid fa-bars nav-bars"
+            id="nav-top-toggle"
+          ></i>
+          <button onclick="toggleLightDarkMode()" id="light-dark-toggle-button">
+            <i
+              class="fa-solid fa-circle-half-stroke light-dark-toggle-icon"
+            ></i>
+          </button>
+        </div>
+
+        <div
+          class="nav-top-project-link-container"
+          id="nav-top-project-link-container"
+        >
+          <div class="nav-top-name">
+            <h1>AS</h1>
+            <h3>al-script</h3>
+          </div>
+          <a
+            class="nav-top-project-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-solid fa-square-poll-horizontal"></i> Survey Form</a
+          >
+          <a
+            class="nav-top-project-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-solid fa-champagne-glasses"></i> Tribute Page</a
+          >
+          <a
+            class="nav-top-project-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-solid fa-file-lines"></i> Technical Documentation</a
+          >
+          <a
+            class="nav-top-project-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-solid fa-shop"></i> Product Landing Page</a
+          >
+          <a
+            class="nav-top-project-link nav-top-link-highlighted"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-solid fa-folder-open"></i> &lt;portfolio /&gt</a
+          >
+          <a
+            class="fcc-header nav-top-project-link"
+            href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-free-code-camp"></i>
+            <p>Responsive Web Design Projects</p></a
+          >
+        </div>
+      </header>
+
+      <!-- Main content -->
+      <main>
+        <!-- Welcome section -->
+        <div id="welcome-section" class="main-section-container">
+          <div class="welcome-greeting">
+            <div class="welcome-greeting-icons">
+              <i class="fa-solid fa-person welcome-greeting-person-icon"></i>
+              <i
+                class="fa-regular fa-message welcome-greeting-message-icon"
+              ></i>
+            </div>
+            <p class="welcome-greeting-text">
+              Hi, I'm <span class="welcome-description-emphasis">Alec</span>
+            </p>
+          </div>
+          <div class="welcome-description">
+            <span class="welcome-text-effect"
+              ><i class="fa-solid fa-greater-than"></i
+            ></span>
+            <span class="welcome-text-effect">I</span>
+            <span class="welcome-description-emphasis-code">build</span>
+            <span class="welcome-text-effect">things</span>
+            <span class="welcome-text-effect">for</span>
+            <span class="welcome-text-effect">people</span>
+            <span class="welcome-text-effect">to</span>
+            <span class="welcome-description-emphasis-alt">use</span>
+            <span class="welcome-text-effect">and</span>
+            <span class="welcome-description-emphasis-alt">enjoy</span>
+            <br />
+            <span class="welcome-text-effect"
+              ><i class="fa-solid fa-greater-than"></i
+            ></span>
+            <span class="welcome-text-effect">I</span>
+            <span class="welcome-text-effect">can</span>
+            <span class="welcome-description-emphasis">help you</span>
+            <span class="welcome-text-effect">do</span>
+            <span class="welcome-text-effect">the</span>
+            <span class="block"><span class="welcome-text-effect">same</span> <span class="cursor-blink"></span></span>
+            
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div id="projects" class="main-section-container">
+          <div class="project-group">
+            <div class="project-group-header">
+              <p>
+                <i class="fa-brands fa-free-code-camp"></i> freeCodeCamp
+                Projects
+              </p>
+            </div>
+            <div class="project-group-accordion-container">
+              <!-- Project Accordion -->
+              <button
+                id="responsive-web-design-projects"
+                class="accordion-button"
+              >
+                <i class="fa-brands fa-free-code-camp"></i> Responsive Web
+                Design
+              </button>
+              <div class="accordion-panel">
+                <a
+                  class="certificate-link"
+                  href="https://www.freecodecamp.org/certification/al-script/front-end-development-libraries"
+                >
+                <i class="fa-solid fa-circle-info certificate-link-info-icon"></i> freeCodeCamp
+                  Certificate
+                </a>
+                <div class="accordion-panel-tech-stack-container">
+                  <p class="tech-stack-header">Tech Stack</p>
+                  <div class="divider"></div>
+                  <div class="tech-stack-gallery">
+                    <div class="tech-stack-tile">
+                      <a
+                        class="tech-stack-icon-link"
+                        href="https://reactjs.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                          alt="React"
+                          class="tech-stack-icon"
+                        />
+                      </a>
+                      <p class="tech-stack-name">HTML</p>
+                      <p class="tech-stack-subtitle">
+                        Good ol' Hypertext Markup Language
+                      </p>
+                    </div>
+                    <div class="tech-stack-tile">
+                      <a
+                        class="tech-stack-icon-link"
+                        href="https://reactjs.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                          alt="React"
+                          class="tech-stack-icon"
+                        />
+                      </a>
+                      <p class="tech-stack-name">CSS</p>
+                      <p class="tech-stack-subtitle">
+                        Good ol' Cascading Style Sheets
+                      </p>
+                    </div>
+                    <div class="tech-stack-tile">
+                      <a
+                        class="tech-stack-icon-link"
+                        href="https://reactjs.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                          alt="React"
+                          class="tech-stack-icon"
+                        />
+                      </a>
+                      <p class="tech-stack-name">JS</p>
+                      <p class="tech-stack-subtitle">
+                        Good ol' Vanilla JavaScript
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-panel-project-gallery-container">
+                  <p class="project-gallery-header">Projects</p>
+                  <div class="divider"></div>
+                  <div class="project-gallery">
+                    <div class="project-tile">
+                      <div class="project-tile-header">
+                        <p class="project-tile-title">Survey Form</p>
+                        <a
+                          href=""
+                          id="project-tile-info-link"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i
+                            class="project-tile-info-icon fa-solid fa-circle-info"
+                          ></i>
+                        </a>
+                      </div>
+                      <div class="project-tile-link-image-container">
+                        <a
+                          href=""
+                          id="project-tile-link"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i
+                            class="project-tile-image fa-solid fa-file-code"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-tile">
+                      <div class="project-tile-header">
+                        <p class="project-tile-title">Tribute Page</p>
+                        <a
+                          href=""
+                          id="project-tile-info-link"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i
+                            class="project-tile-info-icon fa-solid fa-circle-info"
+                          ></i>
+                        </a>
+                      </div>
+                      <div class="project-tile-link-image-container">
+                        <a
+                          href=""
+                          id="project-tile-link"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i
+                            class="project-tile-image fa-solid fa-file-code"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-tile">
+                      <div class="project-tile-header">
+                        <p class="project-tile-title">
+                          Technical Documentation
+                        </p>
+                        <a
+                          href=""
+                          id="project-tile-info-link"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i
+                            class="project-tile-info-icon fa-solid fa-circle-info"
+                          ></i>
+                        </a>
+                      </div>
+                      <div class="project-tile-link-image-container">
+                        <a
+                          href=""
+                          id="project-tile-link"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i
+                            class="project-tile-image fa-solid fa-file-code"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-tile">
+                      <div class="project-tile-header">
+                        <p class="project-tile-title">Product Landing Page</p>
+                        <a
+                          href=""
+                          id="project-tile-info-link"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i
+                            class="project-tile-info-icon fa-solid fa-circle-info"
+                          ></i>
+                        </a>
+                      </div>
+                      <div class="project-tile-link-image-container">
+                        <a
+                          href=""
+                          id="project-tile-link"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i
+                            class="project-tile-image fa-solid fa-file-code"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-tile">
+                      <div class="project-tile-header">
+                        <p class="project-tile-title">Personal Portfolio</p>
+                        <a
+                          href=""
+                          id="project-tile-info-link"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i
+                            class="project-tile-info-icon fa-solid fa-circle-info"
+                          ></i>
+                        </a>
+                      </div>
+                      <div class="project-tile-link-image-container">
+                        <a
+                          href=""
+                          id="project-tile-link"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i
+                            class="project-tile-image fa-solid fa-file-code"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- JavaScript Algorithms and Data Structures -->
+              <button
+                id="javascript-algorithms-and-data-structures-projects"
+                class="accordion-button"
+              >
+                <i class="fa-brands fa-free-code-camp"></i> JavaScript
+                Algorithms and Data Structures
+              </button>
+              <div class="accordion-panel">
+                <a
+                  class="certificate-link"
+                  href="https://www.freecodecamp.org/certification/al-script/front-end-development-libraries"
+                >
+                <i class="fa-solid fa-circle-info certificate-link-info-icon"></i> freeCodeCamp
+                  Certificate
+                </a>
+                <div class="accordion-panel-tech-stack-container">
+                  <p class="tech-stack-header">Tech Stack</p>
+                  <div class="divider"></div>
+                  <div class="tech-stack-gallery">
+                    <div class="tech-stack-tile">
+                      <a
+                        class="tech-stack-icon-link"
+                        href="https://reactjs.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                          alt="React"
+                          class="tech-stack-icon"
+                        />
+                      </a>
+                      <p class="tech-stack-name">HTML</p>
+                      <p class="tech-stack-subtitle">
+                        Good ol' Hypertext Markup Language
+                      </p>
+                    </div>
+                    <div class="tech-stack-tile">
+                      <a
+                        class="tech-stack-icon-link"
+                        href="https://reactjs.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                          alt="React"
+                          class="tech-stack-icon"
+                        />
+                      </a>
+                      <p class="tech-stack-name">CSS</p>
+                      <p class="tech-stack-subtitle">
+                        Good ol' Cascading Style Sheets
+                      </p>
+                    </div>
+                    <div class="tech-stack-tile">
+                      <a
+                        class="tech-stack-icon-link"
+                        href="https://reactjs.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                          alt="React"
+                          class="tech-stack-icon"
+                        />
+                      </a>
+                      <p class="tech-stack-name">JS</p>
+                      <p class="tech-stack-subtitle">
+                        Good ol' Vanilla JavaScript
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="spacer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div id="links" class="main-section-container">
+          <div class="links-header">
+            <p>
+              <i class="fa-solid fa-greater-than"></i> Think I can help your
+              team?
+              <br />
+              <i class="fa-solid fa-greater-than"></i> Let's get in touch
+              <span class="cursor-blink"></span>
+            </p>
+          </div>
+          <div class="links-gallery">
+            <div class="link-tile">
+              <a
+                href="https://www.linkedin.com/in/alec-sorensen-1ba743b5/"
+                id="profile-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-brands fa-linkedin links-icons"></i>
+              </a>
+            </div>
+            <div class="link-tile">
+              <a
+                href="https://github.com/al-script"
+                id="profile-link2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-brands fa-github links-icons"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="footer-name">
+          <h5>al-script x freeCodeCamp | 2023</h5>
+        </div>
+        <div class="contact-links">
+          <!-- <a
+            href="https://www.linkedin.com/in/alec-sorensen-1ba743b5/"
+            id="profile-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/al-script"
+            id="profile-link2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.alecsorensen.dev"
+            id="profile-link2"
+            target="_blank"
+            rel="noreferrer"
+            title="portfolio"
+          >
+            <i class="fa-solid fa-folder-open"></i>
+          </a> -->
+          <span class="portfolio-text">&lt;/portfolio&gt</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
