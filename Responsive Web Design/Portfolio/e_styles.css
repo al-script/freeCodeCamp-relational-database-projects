@@ -621,9 +621,8 @@ main {
 /* || PROJECT SECTION */
 .project-group {
   /* Typography */
-  font-size: 2.2rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  text-align: center;
 }
 
 .project-group-header {
