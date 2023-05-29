@@ -526,6 +526,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-weight: bold;
   /* gap: 0.5rem; */
 }
 
@@ -569,24 +570,24 @@ main {
   /* Typography */
   color: var(--code);
   text-decoration: underline var(--code-underline);
-  text-decoration-thickness: 0.15rem;
-  text-underline-offset: 0.2rem;
+  text-decoration-thickness: 0.25rem;
+  text-underline-offset: 0.32rem;
 }
 
 .welcome-description-emphasis {
   /* Typography */
   color: var(--welcome-primary);
   text-decoration: underline var(--welcome-primary-underline);
-  text-decoration-thickness: 0.15rem;
-  text-underline-offset: 0.2rem;
+  text-decoration-thickness: 0.25rem;
+  text-underline-offset: 0.32rem;
 }
 
 .welcome-description-emphasis-alt {
   /* Typography */
   color: var(--welcome-alt);
   text-decoration: underline var(--welcome-alt-underline);
-  text-decoration-thickness: 0.15rem;
-  text-underline-offset: 0.2rem;
+  text-decoration-thickness: 0.25rem;
+  text-underline-offset: 0.32rem;
 }
 
 .welcome-text-effect:hover {
@@ -603,7 +604,7 @@ main {
 .cursor-blink::after {
   /* Box-model */
   display: inline-block;
-  height: 1.5rem;
+  height: 1.6rem;
   width: 0.4rem;
   margin-bottom: -0.3rem;
 
