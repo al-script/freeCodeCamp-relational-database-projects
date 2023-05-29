@@ -668,6 +668,10 @@ main {
   border-radius: 0.5rem 0.5rem 0rem 0rem;
 }
 
+.accordion-button:last-of-type {
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+
 .accordion-button:after {
   content: "►";
   /* content: "◇►"; */
@@ -690,6 +694,9 @@ main {
 
   /* Visual */
   background-color: var(--tertiary-container);
+  border-bottom-left-radius: 0rem !important;
+  border-bottom-right-radius: 0rem !important;
+  transition: none;
 }
 
 .accordion-panel {
@@ -703,7 +710,7 @@ main {
   flex-direction: column;
 
   /* Visual */
-  border-bottom: 1px solid var(--outline);
+  /* border-top: 1px solid var(--outline); */
   /* background-color: var(--secondary-container); */
 }
 
