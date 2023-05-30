@@ -431,8 +431,8 @@ main {
 /* Typography */
 /* Visual */
 
-#main {
-}
+/* #main {
+} */
 
 #survey-form {
   /* Box-model */
@@ -558,7 +558,8 @@ input[name="last-name"] {
   cursor: pointer;
 }
 
-.radio-input-container, .check-input-container {
+.radio-input-container,
+.check-input-container {
   display: flex;
   align-items: center;
   gap: 0.25rem;
