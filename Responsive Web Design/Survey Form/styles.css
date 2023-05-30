@@ -443,6 +443,7 @@ main {
   /* Visual */
   border: 1px solid var(--outline);
   border-radius: 1rem;
+  background-color: var(--surface-container-low);
 }
 
 .form-heading,
@@ -494,15 +495,16 @@ main {
   color: var(--on-surface);
 
   /* Visual */
-  background-color: var(--surface);
+  background-color: var(--surface-container-highest);
   border: 1px solid var(--outline);
   border-radius: 0.25rem;
   outline: none;
+  outline: 3px solid var(--surface-container-low);
 }
 
 .form-input:focus {
   /* Visual */
-  border: 1px solid var(--primary);
+  outline: 3px solid var(--primary);
 }
 
 .name-container {
@@ -542,7 +544,7 @@ input[name="last-name"] {
 
 .clear-button {
   /* Visual */
-  background-color: var(--surface);
+  background-color: var(--surface-container-low);
   border: none;
 }
 
