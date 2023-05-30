@@ -117,85 +117,102 @@
   }
 }
 
-* {
-  /* border: 1px solid red; */
-}
-
-/* https://matthewjamestaylor.com/responsive-font-size */
+/* || GLOBAL */
 html {
+  /* Typography */
   font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: calc(11px + 0.38vw);
+  font-size: calc(
+    11px + 0.38vw
+  ); /* https://matthewjamestaylor.com/responsive-font-size */
+  box-sizing: border-box;
 }
 
 body {
-  color: var(--on-background);
-  background-color: var(--background);
+  /* Box-model */
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+
+  /* Typography */
+  color: var(--on-background);
+
+  /* Visual */
+  background-color: var(--background);
 }
 
 #page-container {
+  /* Positioning */
   position: relative;
+
+  /* Box-model */
   min-height: 100vh;
   min-width: 100vw;
 }
 
 main {
-  padding-top: 55px;
-  padding-bottom: 200px;
-  /* height: calc(100vh - 55px); */
+  /* Box-model */
+  padding: 85px 0 150px 0;
 }
 
+/* || MAIN CONTENT */
+
 main * {
+  /* Box-sizing */
   max-width: 90vw;
 }
 
 main > * {
+  /* Box-sizing */
   padding: 1rem;
 }
 
 main,
 #img-div {
+  /* Box-sizing */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
 }
 
 #heading {
+  /* Box-sizing */
   text-align: center;
 }
 
 @media only screen and (min-width: 351px) {
   #heading {
-    /* color: red; */
+    /* Typography */
     font-size: 1.5rem;
-    /* transition: all 1s ease; */
   }
   .subheading {
+    /* Typography */
     font-size: 1rem;
   }
 }
 
 .subheading {
+  /* Box-sizing */
   margin-top: -1.25rem;
 }
 
 #image {
+  /* Box-sizing */
   max-width: 70vw;
   border-radius: 0.5rem;
 }
 
 #img-caption {
+  /* Box-sizing */
   margin-top: 0.5rem;
 }
 
 #tribute-info h2 {
+  /* Typography */
   font-size: 1.2rem;
 }
 
 .tribute-info-aspiring {
+  /* Typography */
   text-decoration: underline wavy var(--primary);
   text-underline-offset: 0.4rem;
 }
@@ -204,31 +221,38 @@ main,
 .tribute-info-secondary,
 .tribute-info-tertiary,
 .tribute-info-error {
+  /* Typography */
   font-weight: bold;
 }
 
 .tribute-info-primary {
+  /* Typography */
   color: var(--primary);
 }
 
 .tribute-info-secondary {
+  /* Typography */
   color: var(--secondary);
 }
 
 .tribute-info-tertiary {
+  /* Typography */
   color: var(--tertiary);
 }
 
 .tribute-info-error {
+  /* Typography */
   color: var(--error);
 }
 
 #tribute-link,
 #tribute-link:visited {
+  /* Typography */
   color: var(--on-surface-variant);
 }
 
 #tribute-link:hover {
+  /* Typography */
   color: var(--tertiary);
 }
 
