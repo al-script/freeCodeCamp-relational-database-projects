@@ -586,3 +586,8 @@ textarea {
   /* Visual */
   outline: 5px solid red !important;
 }
+
+#survey-form * {
+  /* Visual */
+  transition: all 0.4s ease;
+}
