@@ -692,7 +692,7 @@ main {
 .accordion-panel {
   /* Box-sizing */
   padding: 0 2.5rem;
-  max-height: 0;
+  /* max-height: 0; */
   overflow: hidden;
   transition: max-height 0.25s ease-out;
 
@@ -749,9 +749,14 @@ main {
   display: none;
 }
 
+.accordion-panel-tech-stack-container {
+  margin-top: 2rem;
+}
+
 .tech-stack-header, .project-gallery-header {
   /* Typography */
   font-size: 2rem;
+  margin-top: 2.5rem;
 }
 
 .tech-stack-gallery {
@@ -798,7 +803,7 @@ main {
   /* Box-sizing */
   display: flex;
   flex-direction: column;
-  margin-top: -2rem;
+  /* margin-top: -2rem; */
 }
 
 .project-gallery {
