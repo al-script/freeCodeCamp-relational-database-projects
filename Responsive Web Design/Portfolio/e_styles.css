@@ -692,7 +692,7 @@ main {
 .accordion-panel {
   /* Box-sizing */
   padding: 0 2.5rem;
-  max-height: 0;
+  /* max-height: 0; */
   overflow: hidden;
   transition: max-height 0.25s ease-out;
 
@@ -714,7 +714,7 @@ main {
 
   /* Box-model */
   padding: 1rem 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 1.75rem;
   margin-bottom: -0.75rem;
   width: 10rem;
 
@@ -750,13 +750,19 @@ main {
 }
 
 .accordion-panel-tech-stack-container {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  margin-top: -2rem;
+}
+
+.tech-stack-header *, .project-gallery-header * {
+  /* outline: 1px solid red; */
 }
 
 .tech-stack-header, .project-gallery-header {
   /* Box-sizing */
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
 
   /* Typography */
@@ -765,7 +771,34 @@ main {
 }
 
 .header-icon {
+  /* Typography */
   font-size: 1.25rem;
+}
+
+.header-text {
+  /* Box-sizing */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  width: 9rem;
+}
+
+.header-underline {
+  /* Box-sizing */
+  /* margin-bottom: 2rem; */
+  width: 50rem;
+
+  /* Visual */
+  outline: 1px solid var(--outline);
+}
+
+.header-line-pre {
+  /* Box-sizing */
+  width: 5rem;  
+  
+  /* Visual */
+  outline: 1px solid var(--outline);
 }
 
 .tech-stack-gallery {
