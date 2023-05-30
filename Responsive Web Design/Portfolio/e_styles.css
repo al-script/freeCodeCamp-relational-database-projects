@@ -705,7 +705,7 @@ main {
 .accordion-panel {
   /* Box-sizing */
   padding: 0 2.5rem;
-  /* max-height: 0; */
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.25s ease-out;
 
@@ -789,7 +789,7 @@ main {
 .divider-redux {
   margin: 3rem;
   border: 1px solid var(--outline);
-  /* display: none; */
+  display: none;
 }
 
 .tech-stack-header {
