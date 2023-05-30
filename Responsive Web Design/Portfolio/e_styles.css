@@ -216,6 +216,14 @@ main {
   background-color: black;
 }
 
+.portfolio-text::selection {
+  /* Typography */
+  color: black;
+
+  /* Visual */
+  background-color: limegreen;
+}
+
 /* || HEADER */
 #header {
   /* Positioning */
