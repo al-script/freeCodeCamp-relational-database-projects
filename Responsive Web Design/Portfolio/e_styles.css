@@ -30,6 +30,14 @@
   --surface-variant: #dce3e9;
   --on-surface-variant: #41484d;
 
+  --surface-dim: ;
+  --surface-bright: ;
+
+  --surface-container-low: #f6f7f9;
+  --surface-container: #f1f2f4;
+  --surface-container-high: #ecedf1;
+  --surface-container-highest: #e7e8ec;
+
   --outline: #71787d;
 
   /* Welcome section special styling */
@@ -73,6 +81,11 @@
   --on-surface: #e1e2e5;
   --surface-variant: #41484d;
   --on-surface-variant: #c0c7cd;
+
+  --surface-container-low: #232628;
+  --surface-container: #282b2d;
+  --surface-container-high: #353738;
+  --surface-container-highest: #414344;
 
   --outline: #8a9297;
 
