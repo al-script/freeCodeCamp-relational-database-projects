@@ -22,51 +22,58 @@
     <div id="page-container">
 
       <!-- Navbar -->
-      <navbar id="nav">
-        <div class="nav-name">
-          <i onclick="navMenuToggle()" class="fa-solid fa-bars nav-bars" id="nav-toggle"></i>
+      <navbar id="nav-top">
+        <div class="nav-top-name">
+          <i
+            onclick="navMenuToggle()"
+            class="fa-solid fa-bars nav-bars"
+            id="nav-top-toggle"
+          ></i>
           <h1>AS</h1>
           <h3>al-script</h3>
         </div>
         <div class="nav-toggle-container">
-          <div class="nav-project-links" id="nav-project-links">
+          <div
+            class="nav-top-project-link-container"
+            id="nav-top-project-link-container"
+          >
             <a
-              class="nav-link"
-              href=""
+              class="nav-top-project-link nav-top-link-highlighted"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               ><i class="fa-solid fa-square-poll-horizontal"></i> Survey Form</a
             >
             <a
-              class="nav-link nav-link-highlighted"
-              href=""
+              class="nav-top-project-link"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               ><i class="fa-solid fa-champagne-glasses"></i> Tribute Page</a
             >
             <a
-              class="nav-link"
-              href=""
+              class="nav-top-project-link"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               ><i class="fa-solid fa-file-lines"></i> Technical Documentation</a
             >
             <a
-              class="nav-link"
-              href=""
+              class="nav-top-project-link"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               ><i class="fa-solid fa-shop"></i> Product Landing Page</a
             >
             <a
-              class="nav-link"
-              href=""
+              class="nav-top-project-link"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               ><i class="fa-solid fa-folder-open"></i> &lt;portfolio /&gt</a
             >
             <a
-              class="fcc-header nav-link"
+              class="fcc-header nav-top-project-link"
               href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
               target="_blank"
               rel="noopener noreferrer"
@@ -75,9 +82,8 @@
             >
           </div>
         </div>
-        <div class="mode-toggle">
-          
-          <button onclick="toggleLightDarkMode()" class="light-dark-toggle">
+        <div>
+          <button onclick="toggleLightDarkMode()" id="light-dark-toggle-button">
             <i
               class="fa-solid fa-circle-half-stroke light-dark-toggle-icon"
             ></i>
