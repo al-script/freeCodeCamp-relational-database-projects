@@ -782,13 +782,18 @@ main {
   justify-content: center;
   gap: .5rem;
   width: 9rem;
+  /* color: var(--primary); */
 }
 
 .header-underline {
   /* Box-sizing */
   width: 50rem;
+
   /* Visual */
   outline: 1px solid var(--outline);
+  /* border: 3px solid var(--primary); */
+  /* background-color: var(--primary); */
+  /* border-radius: 5.5rem; */
 }
 
 .header-line-pre {
@@ -797,6 +802,9 @@ main {
   
   /* Visual */
   outline: 1px solid var(--outline);
+  /* border: 3px solid var(--primary); */
+  /* background-color: var(--primary); */
+  /* border-radius: 5.5rem; */
 }
 
 .tech-stack-gallery {
