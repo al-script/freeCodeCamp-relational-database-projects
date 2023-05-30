@@ -137,7 +137,7 @@
     --surface-container-low: #232628;
     --surface-container: #282b2d;
     --surface-container-high: #353738;
-    --surface-container-highest: #414344;  
+    --surface-container-highest: #414344;
 
     /* Welcome section special styling */
     --code: limegreen;
@@ -744,7 +744,7 @@ main {
 
 .certificate-link {
   /* Positioning */
-  align-self:flex-end;
+  align-self: flex-end;
   z-index: 99;
 
   /* Box-model */
@@ -789,11 +789,13 @@ main {
   margin-top: -2rem;
 }
 
-.tech-stack-header *, .project-gallery-header * {
+.tech-stack-header *,
+.project-gallery-header * {
   /* outline: 1px solid red; */
 }
 
-.tech-stack-header, .project-gallery-header {
+.tech-stack-header,
+.project-gallery-header {
   /* Box-sizing */
   display: flex;
   align-items: center;
@@ -815,7 +817,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .5rem;
+  gap: 0.5rem;
   width: 9rem;
   /* color: var(--primary); */
 }
@@ -833,8 +835,8 @@ main {
 
 .header-line-pre {
   /* Box-sizing */
-  width: 5rem;  
-  
+  width: 5rem;
+
   /* Visual */
   outline: 1px solid var(--outline);
   /* border: 3px solid var(--primary); */
