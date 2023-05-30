@@ -151,11 +151,7 @@ body {
 
 main {
   /* Box-model */
-  padding-top: 85px;
-  padding-bottom: 150px;
-  /* padding-left: 200px; */
-  /* padding-left: 13.25rem; */
-  /* padding-right: 2.5rem; */
+  padding: 85px 0 150px 0;
 }
 
 /* || TOP NAV */
@@ -236,11 +232,6 @@ main {
 
 .fcc-header {
   /* Box-model */
-  /* display: flex; */
-  /* align-items: center; */
-  /* gap: 0.5rem; */
-  /* padding: 0.3rem; */
-  /* padding: 0 0.5rem; */
   padding: 0 1rem;
 
   /* Typography */
@@ -318,12 +309,6 @@ main {
     border: 0.1rem solid var(--outline-variant);
     border-radius: 0.5rem;
   }
-
-  /* .nav-top-project-link-container::before {
-    content: "Project Links";
-    color: var(--on-surface-variant);
-    font-size: 1.5rem;
-  } */
 }
 
 .toggle-nav-top-menu {
@@ -426,13 +411,7 @@ main {
   background: var(--secondary-container);
 }
 
-/* Positioning */
-/* Box-model */
-/* Typography */
-/* Visual */
-
-/* #main {
-} */
+/* || SURVEY FORM */
 
 #survey-form {
   /* Box-model */
@@ -464,7 +443,6 @@ main {
   display: flex;
   gap: 1rem;
   align-items: baseline;
-  /* padding-bottom: 2rem; */
 }
 
 .form-input-container {
@@ -500,7 +478,6 @@ main {
   background-color: var(--surface-container-highest);
   border: 1px solid var(--outline);
   border-radius: 0.25rem;
-  outline: none;
   outline: 3px solid var(--surface-container-low);
 }
 
@@ -560,6 +537,7 @@ input[name="last-name"] {
 
 .radio-input-container,
 .check-input-container {
+  /* Box-model */
   display: flex;
   align-items: center;
   gap: 0.25rem;
