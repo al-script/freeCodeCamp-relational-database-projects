@@ -380,7 +380,7 @@ main {
 
 .contact-links i {
   /* Visual */
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .contact-links a:focus {
