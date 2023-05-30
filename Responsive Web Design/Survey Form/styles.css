@@ -481,11 +481,6 @@ main {
   outline: 3px solid var(--surface-container-low);
 }
 
-.form-input:focus {
-  /* Visual */
-  outline: 3px solid var(--primary);
-}
-
 .name-container {
   /* Box-model */
   flex-direction: row;
@@ -566,6 +561,16 @@ textarea {
   border: none;
   border-radius: 99rem;
   transition: all 0.4s ease;
+}
+
+#survey-form *:focus {
+  /* Visual */
+  outline: 3px solid var(--primary);
+}
+
+.form-submit-button:focus {
+  /* Visual */
+  outline: 5px solid red !important;
 }
 
 .form-submit-button:hover {
