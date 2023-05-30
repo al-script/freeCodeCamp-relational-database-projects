@@ -200,9 +200,11 @@ main,
   text-underline-offset: 0.4rem;
 }
 
-.tribute-info-primary, .tribute-info-secondary, .tribute-info-tertiary, .tribute-info-error {
+.tribute-info-primary,
+.tribute-info-secondary,
+.tribute-info-tertiary,
+.tribute-info-error {
   font-weight: bold;
-  
 }
 
 .tribute-info-primary {
@@ -221,7 +223,8 @@ main,
   color: var(--error);
 }
 
-#tribute-link, #tribute-link:visited {
+#tribute-link,
+#tribute-link:visited {
   color: var(--on-surface-variant);
 }
 
