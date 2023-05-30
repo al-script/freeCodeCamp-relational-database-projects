@@ -698,19 +698,20 @@ main {
   z-index: 999;
 
   /* Typography */
-  color: var(--on-primary-container);
+  color: var(--on-secondary-container);
 
   /* Visual */
-  background-color: var(--primary-container);
+  background-color: var(--secondary-container);
   border-bottom-left-radius: 0rem !important;
   border-bottom-right-radius: 0rem !important;
-  transition: none;
+  transition: all 0.5s ease;
+  /* transition: none; */
 }
 
 .accordion-panel {
   /* Box-sizing */
   padding: 0 2.5rem;
-  max-height: 0;
+  /* max-height: 0; */
   overflow: hidden;
   transition: max-height 0.25s ease-out;
 
@@ -737,13 +738,13 @@ main {
   width: 10rem;
 
   /* Typography */
-  color: var(--on-tertiary-container);
+  color: var(--on-primary);
   text-decoration: none;
   font-size: 0.74rem;
   text-align: center;
 
   /* Visual */
-  background-color: var(--tertiary-container);
+  background-color: var(--primary);
   border-radius: 3rem;
   transition: all 0.4s ease;
 }
@@ -892,10 +893,10 @@ main {
   justify-content: space-between;
 
   /* Typography */
-  color: var(--on-secondary-container);
+  color: var(--on-surface);
 
   /* Visual */
-  background-color: var(--secondary-container);
+  background-color: var(--surface-container-high);
   border-radius: 0.5rem;
   transition: all 0.4s ease;
 }
@@ -923,7 +924,7 @@ main {
 
 .project-tile-info-icon {
   /* Typography */
-  color: var(--primary);
+  color: var(--secondary);
   cursor: pointer;
 }
 
@@ -944,7 +945,7 @@ main {
 
   /* Typogaphy */
   font-size: 8rem;
-  color: var(--on-secondary-container);
+  color: var(--secondary);
 }
 
 .spacer {
