@@ -861,7 +861,7 @@ main {
   gap: 1rem;
   /* max-width: 35rem; */
   padding-bottom: 1.75rem;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .project-tile {
