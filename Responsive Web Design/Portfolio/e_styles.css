@@ -42,7 +42,7 @@
 
   /* Accordion special styling */
   --accordion-inactive: #1e1e1e;
-  --accordion-active: #586c80; 
+  --accordion-active: #586c80;
 }
 
 :root.dark {
@@ -86,7 +86,7 @@
 
   /* Accordion special styling */
   --accordion-inactive: #1e1e1e;
-  --accordion-active: #586c80; 
+  --accordion-active: #586c80;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -131,7 +131,7 @@
 
     /* Accordion special styling */
     --accordion-inactive: #1e1e1e;
-    --accordion-active: #586c80;   
+    --accordion-active: #586c80;
   }
 }
 
@@ -169,7 +169,7 @@ body {
 }
 
 :target {
-    scroll-margin-top: 60px;
+  scroll-margin-top: 60px;
 }
 
 main {
@@ -234,7 +234,6 @@ main {
   /* Box-sizing */
   margin: 0;
 }
-
 
 #nav-bar {
   /* Box-model */
@@ -530,7 +529,8 @@ main {
   /* gap: 0.5rem; */
 }
 
-.welcome-greeting-icons, .welcome-greeting-text {
+.welcome-greeting-icons,
+.welcome-greeting-text {
   /* border: 1px solid red; */
 }
 
@@ -546,7 +546,8 @@ main {
   right: 1rem;
 }
 
-.welcome-greeting-person-icon, .welcome-greeting-message-icon {
+.welcome-greeting-person-icon,
+.welcome-greeting-message-icon {
   /* Typography */
   font-size: 4.5rem;
 }
@@ -762,7 +763,8 @@ main {
   margin-right: 0.45rem;
 }
 
-.accordion-panel-tech-stack-container, .accordion-panel-project-gallery-container {
+.accordion-panel-tech-stack-container,
+.accordion-panel-project-gallery-container {
   /* margin: 1rem; */
   /* padding: 1.5rem; */
   /* display: flex; */
@@ -779,7 +781,7 @@ main {
   /* Box-sizing */
   margin-top: -2.5rem;
   margin-bottom: 1.5rem;
-  
+
   /* Visual */
   border: 1px solid var(--outline);
 
@@ -883,7 +885,7 @@ main {
   transition: all 0.4s ease;
 }
 
-.project-tile:hover{
+.project-tile:hover {
   /* Visual */
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -901,7 +903,7 @@ main {
   margin: 0.6rem 0;
 }
 
-.project-tile-info-link{
+.project-tile-info-link {
 }
 
 .project-tile-info-icon {
@@ -918,13 +920,13 @@ main {
 .project-tile-link-image-container {
 }
 
-.project-tile-link{
+.project-tile-link {
 }
 
 .project-tile-image {
   /* Box-sizing */
   margin-top: 0.5rem;
-  
+
   /* Typogaphy */
   font-size: 8rem;
   color: var(--on-secondary-container);
@@ -958,7 +960,8 @@ main {
   justify-content: center;
 }
 
-.links-icons, .link-tile a:visited {
+.links-icons,
+.link-tile a:visited {
   /* Typography */
   font-size: 3.5rem;
   color: var(--on-surface);
@@ -969,4 +972,3 @@ main {
   /* Typography */
   color: var(--primary);
 }
-
