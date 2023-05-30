@@ -203,7 +203,10 @@ main {
 .nav-top-project-link,
 .nav-top-project-link:visited {
   /* Box-model */
-  padding: 0.5rem;
+  padding: 0.45rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 
   /* Typography */
   text-decoration: none;
@@ -220,8 +223,6 @@ main {
 
   /* Visual */
   background-color: var(--secondary-container);
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .nav-top-link-highlighted,
@@ -235,14 +236,15 @@ main {
 
 .fcc-header {
   /* Box-model */
-  display: flex;
-  align-items: center;
-  gap: 0.2rem;
+  /* display: flex; */
+  /* align-items: center; */
+  /* gap: 0.5rem; */
   /* padding: 0.3rem; */
-  padding: 0 0.5rem;
+  /* padding: 0 0.5rem; */
+  padding: 0 1rem;
 
   /* Typography */
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 #light-dark-toggle-button {
@@ -270,14 +272,14 @@ main {
   background-color: var(--on-surface);
 }
 
-@media only screen and (min-width: 1121px) {
+@media only screen and (min-width: 1271px) {
   #nav-top-toggle {
     /* Box-model */
     display: none;
   }
 }
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1270px) {
   #nav-top-toggle {
     /* Box-model */
     margin-right: 1rem;
