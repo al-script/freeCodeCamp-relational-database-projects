@@ -207,7 +207,8 @@ main {
 .lightbox-image-caption {
   /* Box-sizing */
   align-self: center;
-  padding: 0.45rem 2rem ;
+  /* padding: 0.45rem 1.25rem; */
+  padding: 0.25rem 1.15rem 0.35rem 1.15rem;
 
   /* Typography */
   color: var(--on-surface);
