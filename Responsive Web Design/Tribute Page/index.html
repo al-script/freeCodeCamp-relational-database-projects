@@ -94,6 +94,24 @@
         </div>
       </navbar>
 
+      <!-- Lightbox -->
+      <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-opacity-cover"></div>
+        <div class="lightbox-content-container">
+          <div class="lightbox-content-tile">
+            <img
+              class="lightbox-image"
+              id="image-large"
+              src="https://i.postimg.cc/wMjb9c23/Screenshot-2023-05-22-184547.png"
+              alt="alt text"
+            />
+            <figcaption class="lightbox-image-caption">
+              A wild tribute page in its natural habitat
+            </figcaption>
+          </div>
+        </div>
+      </div>
+
       <!-- Main content -->
       <main id="main">
         <div id="heading">
@@ -105,7 +123,7 @@
 
         <div id="img-div" class="image-container">
           <img
-            id="image"
+            id="image-lightbox1"
             src="https://i.postimg.cc/wMjb9c23/Screenshot-2023-05-22-184547.png"
             alt="alt text"
             onclick="openLightbox()"
@@ -113,23 +131,6 @@
           <figcaption id="img-caption" class="image-caption">
             A wild tribute page in its natural habitat
           </figcaption>
-        </div>
-
-        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-          <div class="lightbox-content">
-            <div class="lightbox-image-container">
-              <img
-                class="lightbox-image"
-                id="image-large"
-                src="https://i.postimg.cc/wMjb9c23/Screenshot-2023-05-22-184547.png"
-                alt="alt text"
-              />
-              <figcaption class="lightbox-image-caption">
-                A wild tribute page in its natural habitat
-              </figcaption>
-            </div>
-          </div>
-          <div class="lightbox-opacity-cover"></div>
         </div>
 
         <div id="tribute-info">

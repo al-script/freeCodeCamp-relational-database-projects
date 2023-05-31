@@ -154,6 +154,84 @@ main {
   padding: 85px 0 150px 0;
 }
 
+/* || LIGHTBOX */
+#lightbox {
+  /* Position */
+  position: fixed;
+
+  /* Box-sizing */
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 999999;
+
+  /* Visual */
+  cursor: zoom-out;
+}
+
+.lightbox-content-container {
+  /* Position */
+  position: fixed;
+  z-index: 100;
+
+  /* Box-sizing */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+
+  /* Visual */
+  border-radius: 0.5rem;
+}
+
+.lightbox-content-tile {
+  /* Box-sizing */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 95vh;
+  width: 95vw;
+}
+
+.lightbox-image {
+  /* Box-sizing */
+  max-height: 100%;
+  object-fit: contain;
+
+  /* Visual */
+  border-radius: 0.5rem;
+}
+
+.lightbox-image-caption {
+  /* Box-sizing */
+  align-self: center;
+  padding: 0.45rem 2rem ;
+
+  /* Typography */
+  color: var(--on-surface);
+
+  /* Visual */
+  border-radius: 0 0 0.5rem 0.5rem;
+  background-color: var(--surface-container-high);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.lightbox-opacity-cover {
+  /* Position */
+  position: fixed;
+  z-index: 98;
+
+  /* Box-sizing */
+  width: 100%;
+  height: 100%;
+
+  /* Visual */
+  opacity: 70%;
+  background-color: var(--surface);
+}
+
 /* || MAIN CONTENT */
 main * {
   /* Box-sizing */
@@ -201,7 +279,7 @@ main,
   /* Visual */
   background-color: var(--surface-container);
   border-radius: 0.5rem;
-  cursor: pointer;
+  cursor: zoom-in;
   transition: all 0.4s ease;
 }
 
@@ -221,73 +299,6 @@ main,
   margin-top: 0.5rem;
 }
 
-#lightbox {
-  /* Box-sizing */
-  display: none;
-  position: fixed;
-  overflow: hidden;
-  top: 15%;
-  align-items: center;
-  z-index: 999;
-  width: 100%;
-
-  /* Visual */
-  cursor: pointer;
-}
-
-.lightbox-content {
-  /* Box-sizing */
-  position: relative;
-  z-index: 100;
-
-  /* Visual */
-  border-radius: 0.5rem;
-}
-
-.lightbox-image-container {
-  /* Box-sizing */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.1rem;
-  
-
-  /* Visual */
-  border-radius: 0.5rem;
-  background-color: var(--surface-container-high);
-}
-
-.lightbox-image {
-  /* Box-sizing */
-  width: 88vw;
-
-  /* Visual */
-  border-radius: 0.5rem;
-}
-
-.lightbox-image-caption {
-  /* Box-sizing */
-  /* margin-top: 1.5rem; */
-
-  /* Text-align */
-  text-align: center;
-}
-
-.lightbox-opacity-cover {
-  /* Box-sizing */
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 98;
-  width: 100%;
-  height: 100%;
-
-  /* Visual */
-  opacity: 50%;
-  background-color: var(--surface);
-}
-
 #tribute-info h2 {
   /* Typography */
   font-size: 1.2rem;
@@ -300,12 +311,12 @@ main,
 
 .tribute-info-aspiring {
   /* Typography */
-  text-decoration: underline wavy var(--primary);
-  text-underline-offset: 0.4rem;
+  /* text-decoration: underline wavy var(--primary); */
+  /* text-underline-offset: 0.4rem; */
 }
 
 .tribute-info-aspiring::selection {
-  text-decoration: underline wavy var(--primary) !important;
+  /* text-decoration: underline wavy var(--primary) !important; */
 }
 
 .tribute-info-primary,
@@ -318,17 +329,17 @@ main,
 
 .tribute-info-primary {
   /* Typography */
-  color: var(--primary);
+  /* color: var(--primary); */
 }
 
 .tribute-info-secondary {
   /* Typography */
-  color: var(--secondary);
+  /* color: var(--secondary); */
 }
 
 .tribute-info-tertiary {
   /* Typography */
-  color: var(--tertiary);
+  /* color: var(--tertiary); */
 }
 
 .tribute-info-error {
