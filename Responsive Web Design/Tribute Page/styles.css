@@ -261,7 +261,6 @@ main,
 .lightbox-image {
   /* Box-sizing */
   width: 88vw;
-  max-height: 70vh;
 
   /* Visual */
   border-radius: 0.5rem;
@@ -368,7 +367,7 @@ main,
   color: var(--on-surface);
 
   /* Visual */
-  background-color: var(--surface);
+  background-color: var(--surface-container-low);
   border-bottom: 1px solid var(--outline);
 }
 
@@ -534,7 +533,7 @@ main,
   color: var(--on-surface);
 
   /* Visual */
-  background-color: var(--surface);
+  background-color: var(--surface-container-low);
   border-top: 1px solid var(--outline);
 }
 
