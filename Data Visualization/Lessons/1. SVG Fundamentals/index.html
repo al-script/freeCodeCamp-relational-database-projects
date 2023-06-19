@@ -1,15 +1,75 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HTML Starter</title>
-    <style>
-      .message {
-        font-size: 13em;
-        text-align: center;
-      }
-    </style>
+    <title>SVG Fundamentals</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="message">Hello HTML!</div>
+    <div id="body-container">
+      <div id="svg-container">
+        <svg>
+          <circle
+            cx="150"
+            cy="50"
+            r="20"
+            stroke="black"
+            stroke-width="2"
+            fill="white"
+          ></circle>
+          <circle cx="150" cy="50" r="5" fill-opacity="0.7"></circle>
+          <circle cx="110" cy="50" r="45" fill-opacity="0.2"></circle>
+          <circle cx="90" cy="50" r="45" fill-opacity="0.35"></circle>
+          <circle cx="70" cy="50" r="45" fill-opacity="0.5"></circle>
+          <circle cx="50" cy="50" r="45"></circle>
+          <rect
+            x="0"
+            y="0"
+            width="300"
+            height="100"
+            fill="none"
+            stroke="black"
+            stroke-width="2"
+          ></rect>
+          <line
+            x1="0"
+            y1="0"
+            x2="300"
+            y2="100"
+            stroke="red"
+            stroke-width="2"
+          ></line>
+          <circle
+            cx="190"
+            cy="50"
+            r="45"
+            fill="red"
+            fill-opacity="0.2"
+          ></circle>
+          <circle
+            cx="210"
+            cy="50"
+            r="45"
+            fill="red"
+            fill-opacity="0.35"
+          ></circle>
+          <circle
+            cx="230"
+            cy="50"
+            r="45"
+            fill="red"
+            fill-opacity="0.5"
+          ></circle>
+          <circle cx="250" cy="50" r="45" fill="red"></circle>
+          <line
+            x1="300"
+            y1="0"
+            x2="0"
+            y2="100"
+            stroke="black"
+            stroke-width="2"
+          ></line>
+        </svg>
+      </div>
+    </div>
   </body>
 </html>
