@@ -9,13 +9,12 @@ body {
 }
 
 #svg-container {
-  /* padding-top: 5rem; */
+  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 85vh;
-  gap: 1rem;
+  padding: 2rem;
+  gap: 2rem;
 }
 
 .test {
