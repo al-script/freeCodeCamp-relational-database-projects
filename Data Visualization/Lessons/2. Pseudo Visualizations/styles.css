@@ -9,11 +9,13 @@ body {
 }
 
 #svg-container {
-  height: 100vh;
+  /* height: 100%; */
   display: flex;
   align-items: center;
-  flex-direction: column;
-  padding: 2rem;
+  justify-content: center;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  padding: 5rem;
   gap: 2rem;
 }
 
