@@ -14,11 +14,35 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vw;
+  height: 85vh;
+  gap: 1rem;
+}
+
+.test {
+  fill: purple;
+}
+
+#a-text {
+  fill: blue;
 }
 
 .bar-legend {
   font-size: 72px;
   font-family: "Mulish", sans-serif;
   font-weight: 800;
+  fill: red;
 }
+
+.test {
+  fill: aliceblue !important;
+}
+
+.test {
+  fill: greenyellow !important;
+}
+
+text {
+  fill: yellow;
+}
+
+/* seems like class dominates inheritance over tag selector, and id dominates class, inline style dominates css, and last !important dominates all */
