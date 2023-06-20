@@ -14,5 +14,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* height: 100vw; */
+  height: 100vw;
+}
+
+.bar-legend {
+  font-size: 72px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
 }
