@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 #body-container {
@@ -9,10 +9,15 @@ body {
 }
 
 #svg-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 5rem;
-  gap: 2rem;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
+  /* padding: 5rem; */
+  /* gap: 2rem; */
+}
+
+.svg-component {
+  height: 500px;
+  width: 500px;
 }
