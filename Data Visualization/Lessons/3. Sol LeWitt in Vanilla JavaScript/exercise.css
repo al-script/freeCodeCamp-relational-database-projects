@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#body-container {
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+#svg-container {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
+  /* padding: 5rem; */
+  /* gap: 2rem; */
+}
+
+.svg-component {
+  height: 500px;
+  width: 500px;
+}
+
+.even {
+  fill: black;
+}
+
+.odd {
+  fill: white;
+}
+
+.exp1 {
+  animation-name: test;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.exp2 {
+  animation-name: test2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes test {
+  from {
+    fill: black;
+  }
+  50% {
+    fill: white;
+  }
+  to {
+    fill: black;
+  }
+}
+
+@keyframes test2 {
+  from {
+    fill: white;
+  }
+  50%  {
+    fill: black;
+  }
+  to {
+    fill: white;
+  }
+}
