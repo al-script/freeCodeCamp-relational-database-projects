@@ -22,7 +22,7 @@ svg
   .attr("y", (d) => d * 20)
   .attr("width", width)
   .attr("height", 10)
-  .attr("mask", "url(#circle-mask)");
+  .attr("mask", "url(#mask)");
 
 svg
   .append("g")
@@ -32,9 +32,9 @@ svg
   .attr("x", (d) => d * 20)
   .attr("width", 10)
   .attr("height", height)
-  .attr("mask", "url(#circle-mask-inverse)");
+  .attr("mask", "url(#mask-inverse)");
 
-const mask = svg.append("mask").attr("id", "circle-mask");
+const mask = svg.append("mask").attr("id", "mask");
 
 mask
   .append("rect")
@@ -43,13 +43,13 @@ mask
   .attr("fill", "black");
 
 mask
-  .append("circle")
-  .attr("cx", width / 2)
-  .attr("cy", height / 2)
-  .attr("r", 200)
+  .append("g")
+  .attr("transform", `translate(${width / 2},${height / 2})`)
+  .append("path")
+  .attr("d", d3.symbol(d3.symbols[1], (height * height) / 2)())
   .attr("fill", "white");
 
-const maskInverse = svg.append("mask").attr("id", "circle-mask-inverse");
+const maskInverse = svg.append("mask").attr("id", "mask-inverse");
 
 maskInverse
   .append("rect")
@@ -58,8 +58,8 @@ maskInverse
   .attr("fill", "white");
 
 maskInverse
-  .append("circle")
-  .attr("cx", width / 2)
-  .attr("cy", height / 2)
-  .attr("r", 200)
-  .attr("fill", "black");
+.append("g")
+.attr("transform", `translate(${width / 2},${height / 2})`)
+.append("path")
+.attr("d", d3.symbol(d3.symbols[1], (height * height) / 2)())
+.attr("fill", "black");
