@@ -34,32 +34,22 @@ svg
   .attr("height", height)
   .attr("mask", "url(#mask-inverse)");
 
-const mask = svg.append("mask").attr("id", "mask");
+const renderMask = (id, inverted) => {
+  const mask = svg.append("mask").attr("id", id);
 
-mask
-  .append("rect")
-  .attr("width", width)
-  .attr("height", height)
-  .attr("fill", "black");
+  mask
+    .append("rect")
+    .attr("width", width)
+    .attr("height", height)
+    .attr("fill", inverted ? "white" : "black");
 
-mask
-  .append("g")
-  .attr("transform", `translate(${width / 2},${height / 2})`)
-  .append("path")
-  .attr("d", d3.symbol(d3.symbols[1], (height * height) / 2)())
-  .attr("fill", "white");
+  mask
+    .append("g")
+    .attr("transform", `translate(${width / 2},${height / 2})`)
+    .append("path")
+    .attr("d", d3.symbol(d3.symbols[1], (height * height) / 2)())
+    .attr("fill", inverted ? "black" : "white");
+};
 
-const maskInverse = svg.append("mask").attr("id", "mask-inverse");
-
-maskInverse
-  .append("rect")
-  .attr("width", width)
-  .attr("height", height)
-  .attr("fill", "white");
-
-maskInverse
-.append("g")
-.attr("transform", `translate(${width / 2},${height / 2})`)
-.append("path")
-.attr("d", d3.symbol(d3.symbols[1], (height * height) / 2)())
-.attr("fill", "black");
+renderMask("mask", false);
+renderMask("mask-inverse", true);
