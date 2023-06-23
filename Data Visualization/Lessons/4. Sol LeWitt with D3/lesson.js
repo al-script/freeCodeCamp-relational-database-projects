@@ -53,8 +53,11 @@ const svg = d3
 //   .attr("height", (d) => d.height)
 //   .attr("mask", (d) => d.mask);
 
+// *********************
 // create and render data
 // attr accepts both constants and functions, func passes in the object from array to play with
+// for each element in array, passes in that element to the function so can manipulate it, applies the attributes to it and allows to manipulate the attribute with a function which contains the data passed in for that element in the array
+// that entry in array is mapped to each joined element as specified; mapping function that transforms from array into created svg elements
 // const n = 100;
 // svg
 //   .selectAll("rect.horizontal")
@@ -76,9 +79,13 @@ const svg = d3
 //   .attr("class", 'vertical')
 //   .attr("mask", "url(#circle-mask-inverse)");
 
+// appends group to the specified svg element, set an empty selection for rects that are going to perform operations on
+// for each element in data, perform these functions on it, join a rect and apply these properties, mutates/updates the dom elements
+// associates array to selection and then performs operations using the data from the array
 const n = 100;
 svg
   .append("g")
+  .attr("class", "test")
   .selectAll("rect")
   .data(d3.range(n))
   .join("rect")
@@ -117,6 +124,7 @@ const mask = svg.append("mask").attr("id", "circle-mask");
 // maskRect.setAttribute("fill", "black");
 // mask.appendChild(maskRect);
 
+// appends the mask to the dom
 mask
   .append("rect")
   .attr("width", width)
