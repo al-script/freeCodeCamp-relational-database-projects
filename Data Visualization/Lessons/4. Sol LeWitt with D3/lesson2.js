@@ -1,4 +1,3 @@
-// DOM manipulation framework
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@6.6/+esm";
 
 let container = document.getElementById("svg-container");
@@ -15,7 +14,6 @@ const svg = d3
 const n = 100;
 svg
   .append("g")
-  .attr("class", "test")
   .selectAll("rect")
   .data(d3.range(n))
   .join("rect")
@@ -34,8 +32,8 @@ svg
   .attr("height", height)
   .attr("mask", "url(#mask-inverse)");
 
-const renderMask = (id, inverted) => {
-  const mask = svg.append("mask").attr("id", id);
+const renderMask = (selection, id, inverted) => {
+  const mask = selection.append("mask").attr("id", id);
 
   mask
     .append("rect")
@@ -51,5 +49,7 @@ const renderMask = (id, inverted) => {
     .attr("fill", inverted ? "black" : "white");
 };
 
-renderMask("mask", false);
-renderMask("mask-inverse", true);
+// renderMask(svg, "mask", false);
+// renderMask(svg, "mask-inverse", true);
+
+svg.call(renderMask, "mask", false).call(renderMask, "mask-inverse", true);
