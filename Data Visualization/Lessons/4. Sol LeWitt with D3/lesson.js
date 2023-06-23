@@ -55,8 +55,30 @@ const svg = d3
 
 // create and render data
 // attr accepts both constants and functions, func passes in the object from array to play with
+// const n = 100;
+// svg
+//   .selectAll("rect.horizontal")
+//   .data(d3.range(n))
+//   .join("rect")
+//   .attr("y", (d) => d * 20)
+//   .attr("width", width)
+//   .attr("height", 10)
+//   .attr('class', 'horizontal')
+//   .attr("mask", "url(#circle-mask)");
+
+// svg
+//   .selectAll("rect.vertical")
+//   .data(d3.range(n))
+//   .join("rect")
+//   .attr("x", (d) => d * 20)
+//   .attr("width", 10)
+//   .attr("height", height)
+//   .attr("class", 'vertical')
+//   .attr("mask", "url(#circle-mask-inverse)");
+
 const n = 100;
 svg
+  .append("g")
   .selectAll("rect")
   .data(d3.range(n))
   .join("rect")
@@ -66,6 +88,7 @@ svg
   .attr("mask", "url(#circle-mask)");
 
 svg
+  .append("g")
   .selectAll("rect")
   .data(d3.range(n))
   .join("rect")
@@ -77,6 +100,8 @@ svg
 // const mask = document.createElementNS("http://www.w3.org/2000/svg", "mask");
 // mask.setAttribute("id", "circle-mask");
 // svg.appendChild(mask);
+
+// black show, white hide, arranged such that can have inverse masking to allow for two elements to have different masking criteria
 
 const mask = svg.append("mask").attr("id", "circle-mask");
 
