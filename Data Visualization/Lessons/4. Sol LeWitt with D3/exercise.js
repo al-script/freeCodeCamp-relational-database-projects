@@ -56,7 +56,7 @@ const renderMask = (selection, id, inverted) => {
     .join((enter) =>
       enter
         .append("g")
-        .attr("transform", (d) => `translate(${width/15},${height / 2})`)
+        .attr("transform", (d) => `translate(${width / 15},${height / 2})`)
         .append("path")
         .attr("d", (d) => d3.symbol(d3.symbols[0], 5000)())
         .attr("fill", inverted ? "black" : "white")
@@ -64,6 +64,13 @@ const renderMask = (selection, id, inverted) => {
 };
 
 svg.call(renderMask, "mask", false).call(renderMask, "mask-inverse", true);
+
+// setup so can render a single 1/7 slice
+// and then dynamically change and render:
+//  the symbol within the slice, the vertical/horizontal bars (using mask), the translation of the slice
+
+// encapsulate the creation of one slice in a function, then iterate over it for each symbol,
+// or perhaps allow to call it using the inversion and symbol
 
 // svg
 //   .selectAll("g")
@@ -79,7 +86,3 @@ svg.call(renderMask, "mask", false).call(renderMask, "mask-inverse", true);
 //       .attr("width", width / 7)
 //       .attr("height", 10)
 //   );
-
-// setup so can render a single 1/7 slice
-// and then dynamically change and render:
-//  the symbol within the slice, the vertical/horizontal bars, the translation of the slice
