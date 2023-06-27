@@ -19,27 +19,99 @@ const svg = d3
   .attr("height", height);
 
 const n = 100;
-svg
-  .append("g")
-  .selectAll("rect")
-  .data(d3.range(n))
-  .join("rect")
-  .attr("y", (d) => d * 20)
-  .attr("width", width / 7)
-  .attr("height", 10)
-  .attr("mask", "url(#mask)")
-  .attr("transform", `translate(${0})`);
+// svg
+//   .append("g")
+//   .selectAll("rect")
+//   .data(d3.range(n))
+//   .join("rect")
+//   .attr("y", (d) => d * 20)
+//   .attr("width", width / 7)
+//   .attr("height", 10)
+//   .attr("mask", "url(#mask)")
+//   .attr("transform", `translate(${0})`);
+
+// svg
+//   .append("g")
+//   .selectAll("rect")
+//   .data(d3.range(width / 150))
+//   .join("rect")
+//   .attr("x", (d) => d * 20)
+//   .attr("width", 10)
+//   .attr("height", height)
+//   .attr("mask", "url(#mask-inverse)")
+//   .attr("transform", `translate(${0})`);
 
 svg
   .append("g")
-  .selectAll("rect")
-  .data(d3.range(width / 150))
-  .join("rect")
-  .attr("x", (d) => d * 20)
-  .attr("width", 10)
-  .attr("height", height)
-  .attr("mask", "url(#mask-inverse)")
-  .attr("transform", `translate(${0})`);
+  .selectAll("g")
+  .data(d3.range(d3.symbols.length))
+  .join((enter) =>
+    enter
+      .append("g")
+      .attr("transform", (d) => `translate(${(width / 7) * d})`)
+      .selectAll("rect")
+      .data(d3.range(width / 150))
+      .join("rect")
+      .attr("x", (d) => d * 20)
+      .attr("width", 10)
+      .attr("height", height)
+      .attr("mask", "url(#mask-inverse)")
+  );
+
+svg
+  .append("g")
+  .selectAll("g")
+  .data(d3.range(d3.symbols.length))
+  .join((enter) =>
+    enter
+      .append("g")
+      .attr("transform", (d) => `translate(${(width / 7) * d})`)
+      .selectAll("rect")
+      .data(d3.range(n))
+      .join("rect")
+      .attr("y", (d) => d * 20)
+      .attr("width", width / 7)
+      .attr("height", 10)
+      .attr("mask", "url(#mask)")
+  );
+
+// svg
+// .selectAll("g")
+// .data(d3.range(d3.symbols.length))
+// .join((enter) =>
+//   enter
+//     .append("g")
+//     .attr("transform", (d) => `translate(${(width / 7) * d})`)
+//     .selectAll("rect")
+//     .data(d3.range(n))
+//     .join("rect")
+//     .attr("y", (d) => d * 20)
+//     .attr("width", width / 7)
+//     .attr("height", 10)
+//     .attr("mask", "url(#mask)")
+// )
+// .join((enter) =>
+//   enter
+//     .append("g")
+//     .attr("transform", (d) => `translate(${(width / 7) * d})`)
+//     .selectAll("rect")
+//     .data(d3.range(n))
+//     .join("rect")
+//     .attr("x", (d) => d * 20)
+//     .attr("width", 10)
+//     .attr("height", height)
+//     .attr("mask", "url(#mask-inverse)")
+// );
+
+// .append("g")
+// .attr("transform", (d) => `translate(${(width / 7) * d})`)
+// .selectAll("rect")
+// .data(d3.range(n))
+// .join("rect")
+// .attr("x", (d) => d * 20)
+// .attr("width", 10)
+// .attr("height", height)
+// .attr("mask", "url(#mask-inverse)")
 
 const renderMask = (selection, id, inverted) => {
   const mask = selection.append("mask").attr("id", id);
@@ -58,7 +130,7 @@ const renderMask = (selection, id, inverted) => {
         .append("g")
         .attr("transform", (d) => `translate(${width / 15},${height / 2})`)
         .append("path")
-        .attr("d", (d) => d3.symbol(d3.symbols[0], 5000)())
+        .attr("d", (d) => d3.symbol(d3.symbols[d], 5000)())
         .attr("fill", inverted ? "black" : "white")
     );
 };
@@ -71,6 +143,9 @@ svg.call(renderMask, "mask", false).call(renderMask, "mask-inverse", true);
 
 // encapsulate the creation of one slice in a function, then iterate over it for each symbol,
 // or perhaps allow to call it using the inversion and symbol
+
+// can see if can iterate simply with a for loop
+// or if can iterate using .data(range(d3.symbols.length))
 
 // svg
 //   .selectAll("g")
