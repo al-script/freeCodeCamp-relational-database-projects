@@ -42,28 +42,28 @@ for (let i = 0; i < 7; i++) {
     .attr("height", height)
     .attr("mask", i % 2 == 0 ? "url(#mask-inverse)" : "url(#mask)")
     .attr("transform", `translate(${(width / 7) * i})`);
-
-  const renderMask = (selection, id, inverted) => {
-    const mask = selection.append("mask").attr("id", id);
-
-    mask
-      .append("rect")
-      .attr("width", width)
-      .attr("height", height)
-      .attr("fill", inverted ? "white" : "black");
-
-    mask
-      .selectAll("g")
-      .data(d3.range(d3.symbols.length))
-      .join((enter) =>
-        enter
-          .append("g")
-          .attr("transform", `translate(${width / 15},${height / 2})`)
-          .append("path")
-          .attr("d", d3.symbol(d3.symbols[i], 5000)())
-          .attr("fill", inverted ? "black" : "white")
-      );
-  };
-
-  svg.call(renderMask, "mask", false).call(renderMask, "mask-inverse", true);
 }
+
+const renderMask = (selection, id, inverted) => {
+  const mask = selection.append("mask").attr("id", id);
+
+  mask
+    .append("rect")
+    .attr("width", width)
+    .attr("height", height)
+    .attr("fill", inverted ? "white" : "black");
+
+  mask
+    .selectAll("g")
+    .data(d3.range(d3.symbols.length))
+    .join((enter) =>
+      enter
+        .append("g")
+        .attr("transform", (d) => `translate(${d * 100},${height / 2})`)
+        .append("path")
+        .attr("d", (d) => d3.symbol(d3.symbols[d], 9000)())
+        .attr("fill", inverted ? "black" : "white")
+    );
+};
+
+svg.call(renderMask, "mask", false).call(renderMask, "mask-inverse", true);
