@@ -29,7 +29,7 @@ for (let i = 0; i < 7; i++) {
     .attr("y", (d) => d * 20)
     .attr("width", width / 7)
     .attr("height", 10)
-    .attr("mask", i % 2 == 0 ? "url(#mask)" : "url(#mask-inverse)")
+    .attr("mask", i % 2 == 0 ? `url(#mask)` : `url(#mask-inverse)`)
     .attr("transform", `translate(${(width / 7) * i})`);
 
   svg
@@ -40,8 +40,37 @@ for (let i = 0; i < 7; i++) {
     .attr("x", (d) => d * 20)
     .attr("width", 10)
     .attr("height", height)
-    .attr("mask", i % 2 == 0 ? "url(#mask-inverse)" : "url(#mask)")
+    .attr("mask", i % 2 == 0 ? `url(#mask-inverse)` : `url(#mask)`)
     .attr("transform", `translate(${(width / 7) * i})`);
+
+  // perhaps assign id to the svg g element and take the width calculation from there
+  const temp_mask = svg.append("mask").attr("id", `mask-${i}`);
+  temp_mask
+    .append("rect")
+    .attr("width", width / 7)
+    .attr("height", height)
+    .attr("fill", "black")
+    .attr("transform", `translate(${(width / 7) * i})`);
+
+  temp_mask
+    .append("path")
+    .attr("transform", `translate(${(width / 7) * i}, ${height / 2})`)
+    .attr("d", d3.symbol(d3.symbols[i], 9000))
+    .attr("fill", "white");
+
+  const temp_inverse_mask = svg.append("mask").attr("id", `mask-inverse-${i}`);
+  temp_inverse_mask
+    .append("rect")
+    .attr("width", width / 7)
+    .attr("height", height)
+    .attr("fill", "white")
+    .attr("transform", `translate(${(width / 7) * i})`);
+
+  temp_inverse_mask
+    .append("path")
+    .attr("transform", `translate(${(width / 7) * i}, ${height / 2})`)
+    .attr("d", d3.symbol(d3.symbols[i], 9000))
+    .attr("fill", "black");
 }
 
 const renderMask = (selection, id, inverted) => {
