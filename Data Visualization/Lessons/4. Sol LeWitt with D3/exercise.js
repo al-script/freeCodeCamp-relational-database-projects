@@ -19,145 +19,51 @@ const svg = d3
   .attr("height", height);
 
 const n = 100;
-// svg
-//   .append("g")
-//   .selectAll("rect")
-//   .data(d3.range(n))
-//   .join("rect")
-//   .attr("y", (d) => d * 20)
-//   .attr("width", width / 7)
-//   .attr("height", 10)
-//   .attr("mask", "url(#mask)")
-//   .attr("transform", `translate(${0})`);
 
-// svg
-//   .append("g")
-//   .selectAll("rect")
-//   .data(d3.range(width / 150))
-//   .join("rect")
-//   .attr("x", (d) => d * 20)
-//   .attr("width", 10)
-//   .attr("height", height)
-//   .attr("mask", "url(#mask-inverse)")
-//   .attr("transform", `translate(${0})`);
+for (let i = 0; i < 7; i++) {
+  svg
+    .append("g")
+    .selectAll("rect")
+    .data(d3.range(n))
+    .join("rect")
+    .attr("y", (d) => d * 20)
+    .attr("width", width / 7)
+    .attr("height", 10)
+    .attr("mask", i % 2 == 0 ? "url(#mask)" : "url(#mask-inverse)")
+    .attr("transform", `translate(${(width / 7) * i})`);
 
-svg
-  .append("g")
-  .selectAll("g")
-  .data(d3.range(d3.symbols.length))
-  .join((enter) =>
-    enter
-      .append("g")
-      .attr("transform", (d) => `translate(${(width / 7) * d})`)
-      .selectAll("rect")
-      .data(d3.range(width / 150))
-      .join("rect")
-      .attr("x", (d) => d * 20)
-      .attr("width", 10)
-      .attr("height", height)
-      .attr("mask", "url(#mask-inverse)")
-  );
-
-svg
-  .append("g")
-  .selectAll("g")
-  .data(d3.range(d3.symbols.length))
-  .join((enter) =>
-    enter
-      .append("g")
-      .attr("transform", (d) => `translate(${(width / 7) * d})`)
-      .selectAll("rect")
-      .data(d3.range(n))
-      .join("rect")
-      .attr("y", (d) => d * 20)
-      .attr("width", width / 7)
-      .attr("height", 10)
-      .attr("mask", "url(#mask)")
-  );
-
-// svg
-// .selectAll("g")
-// .data(d3.range(d3.symbols.length))
-// .join((enter) =>
-//   enter
-//     .append("g")
-//     .attr("transform", (d) => `translate(${(width / 7) * d})`)
-//     .selectAll("rect")
-//     .data(d3.range(n))
-//     .join("rect")
-//     .attr("y", (d) => d * 20)
-//     .attr("width", width / 7)
-//     .attr("height", 10)
-//     .attr("mask", "url(#mask)")
-// )
-// .join((enter) =>
-//   enter
-//     .append("g")
-//     .attr("transform", (d) => `translate(${(width / 7) * d})`)
-//     .selectAll("rect")
-//     .data(d3.range(n))
-//     .join("rect")
-//     .attr("x", (d) => d * 20)
-//     .attr("width", 10)
-//     .attr("height", height)
-//     .attr("mask", "url(#mask-inverse)")
-// );
-
-// .append("g")
-// .attr("transform", (d) => `translate(${(width / 7) * d})`)
-// .selectAll("rect")
-// .data(d3.range(n))
-// .join("rect")
-// .attr("x", (d) => d * 20)
-// .attr("width", 10)
-// .attr("height", height)
-// .attr("mask", "url(#mask-inverse)")
-
-const renderMask = (selection, id, inverted) => {
-  const mask = selection.append("mask").attr("id", id);
-
-  mask
-    .append("rect")
-    .attr("width", width)
+  svg
+    .append("g")
+    .selectAll("rect")
+    .data(d3.range(width / 150))
+    .join("rect")
+    .attr("x", (d) => d * 20)
+    .attr("width", 10)
     .attr("height", height)
-    .attr("fill", inverted ? "white" : "black");
+    .attr("mask", i % 2 == 0 ? "url(#mask-inverse)" : "url(#mask)")
+    .attr("transform", `translate(${(width / 7) * i})`);
 
-  mask
-    .selectAll("g")
-    .data(d3.range(d3.symbols.length))
-    .join((enter) =>
-      enter
-        .append("g")
-        .attr("transform", (d) => `translate(${width / 15},${height / 2})`)
-        .append("path")
-        .attr("d", (d) => d3.symbol(d3.symbols[d], 5000)())
-        .attr("fill", inverted ? "black" : "white")
-    );
-};
+  const renderMask = (selection, id, inverted) => {
+    const mask = selection.append("mask").attr("id", id);
 
-svg.call(renderMask, "mask", false).call(renderMask, "mask-inverse", true);
+    mask
+      .append("rect")
+      .attr("width", width)
+      .attr("height", height)
+      .attr("fill", inverted ? "white" : "black");
 
-// setup so can render a single 1/7 slice
-// and then dynamically change and render:
-//  the symbol within the slice, the vertical/horizontal bars (using mask), the translation of the slice
+    mask
+      .selectAll("g")
+      .data(d3.range(d3.symbols.length))
+      .join((enter) =>
+        enter
+          .append("g")
+          .attr("transform", `translate(${width / 15},${height / 2})`)
+          .append("path")
+          .attr("d", d3.symbol(d3.symbols[i], 5000)())
+          .attr("fill", inverted ? "black" : "white")
+      );
+  };
 
-// encapsulate the creation of one slice in a function, then iterate over it for each symbol,
-// or perhaps allow to call it using the inversion and symbol
-
-// can see if can iterate simply with a for loop
-// or if can iterate using .data(range(d3.symbols.length))
-
-// svg
-//   .selectAll("g")
-//   .data(d3.range(d3.symbols.length))
-//   .join((enter) =>
-//     enter
-//       .append("g")
-//       .attr("transform", (d) => `translate(${(width / 7) * d})`)
-//       .selectAll("rect")
-//       .data(d3.range(n))
-//       .join("rect")
-//       .attr("y", (d) => d * 20)
-//       .attr("width", width / 7)
-//       .attr("height", 10)
-//   );
+  svg.call(renderMask, "mask", false).call(renderMask, "mask-inverse", true);
+}
