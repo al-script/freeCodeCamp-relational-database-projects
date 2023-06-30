@@ -1,4 +1,3 @@
-// DOM manipulation framework
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@6.6/+esm";
 
 let container = document.getElementById("svg-container");
