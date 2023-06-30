@@ -57,8 +57,66 @@ console.log(sortable);
 sortable.sort((a, b) => d3.descending(a, b));
 console.log(sortable);
 
+// map
+const rangeTest = range(10);
+// performs a function on each element and returns a new array with the result for each element based on the function as that element
+console.log(rangeTest.map((d) => d * 2));
+console.log(rangeTest.map((d) => ({ number: d, double: d * 2 })));
 
-// can now use d3 methods on svg
+// reduce, executes function and returns a single output value
+// takes a reducer: an accumulator and a currentValue
+// performs some operation on them
+// the accumulator is the returned value from the function (performed on each element, I would imagine)
+// first time invoked the accumulator is the value that pass in as current value
+// returns a single value
+// returns sum of all numbers
+console.log(rangeTest.reduce((accumulator, d) => accumulator + d, 0));
+console.log(rangeTest.reduce((a, c) => a - c));
+console.log(
+  rangeTest.reduce((a, c) => {
+    console.log(a + " + " + c);
+    return a + c;
+  }, 0)
+);
+
+// seems like dont really need the 0
+// if omit zero then simply starts accumulator as first value in array
+const rangeTest2 = [1, 2, 3, 4];
+console.log(
+  rangeTest2.reduce((a, c) => {
+    console.log(a + " + " + c);
+    return a + c;
+  })
+);
+
+const entries = [
+  { key: "B", value: "foo" },
+  { key: "A", value: "bar" },
+];
+
+const results = {
+  a: "foo",
+  b: "bar",
+};
+
+// initialize with empty object
+// then update the accumulator object using each entry via dot notation
+// very clever, because accumulator is updated with access to each entries current value
+// can reduce an array into an object by initializing with an empty object and then manipulating the accumulator (the updated initialized object)
+console.log(
+  entries.reduce((accumulator, d) => {
+    accumulator[d.key] = d.value;
+    return accumulator;
+  }, {})
+);
+
+// if a is before b, then sort a before b (-1)
+// sorting next two elements, a and b and comparing their key values to determine ascending order
+// mutates array
+// console.log(entries.sort((a,b) => a.key < b.key ? -1 : 1))
+console.log(entries.sort((a,b) => d3.ascending(a.key, b.key)))
+console.log(entries)
+
 const svg = d3
   .select(container)
   .append("svg")
