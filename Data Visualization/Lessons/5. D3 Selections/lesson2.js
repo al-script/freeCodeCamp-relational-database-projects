@@ -37,9 +37,12 @@ const svg = d3
 let t = 0;
 setInterval(() => {
   // defining our data
-  const data = d3.range(15).map((d) => ({
+  // n is basically saying sometimes only 10 elements and sometimes more than 10 elements, and those more than 10 that have a DOM element but do not have a data point associated with them can be removed with exit
+  const n = 10 + Math.sin(t) * 5;
+  const data = d3.range(n).map((d) => ({
     x: (d * width) / 15 + 25,
     y: 250 + Math.sin(d * 0.5 + t) * 200,
+    r: 20 + Math.sin(d * 0.5 + t * 2) * 10,
   }));
 
   // // initializing our data join
@@ -54,7 +57,13 @@ setInterval(() => {
   //   .merge(circlesEnter)
   //   .attr("cx", (d) => d.x)
   //   .attr("cy", (d) => d.y);
-  // merge is a method on a selection where can pass in another selection and can merge selections together, a set union
+  // // merge is a method on a selection where can pass in another selection and can merge selections together, a set union
+
+  // // EXIT is where DOM elements still exist but dont have data elements associated with them
+  // // exit can be used to remove those
+  // // D3 knows which data point belongs to which circle, associates DOM elements to data elements
+
+  // circles.exit().remove();
 
   // NEW shorthand, just use join! automatically merges the enter and update selections (and removes elements in exit selection)
   // shorthand for the entire general update pattern: enter, update, exit
@@ -62,10 +71,38 @@ setInterval(() => {
     .selectAll("circle")
     .data(data)
     .join("circle")
-    .attr("r", 20)
+    .attr("r", (d) => d.r)
     .attr("cx", (d) => d.x)
     .attr("cy", (d) => d.y);
 
   t = t + 0.005;
   // 1000/120 gives 120 frames per second
+}, 1000 / 120);
+
+// could abstract into functions and then call the functions within the setinterval
+t = 0;
+function makeData(n, t) {
+  const data = d3.range(n).map((d) => ({
+    x: (d * width) / 15 + 25,
+    y: 250 + Math.sin(d * 0.5 + t) * 200,
+    r: 20 + Math.sin(d * 0.5 + t * 2) * 10,
+  }));
+  return data;
+}
+
+function vizData(data) {
+  const circles = svg
+    .selectAll("circle")
+    .data(data)
+    .join("circle")
+    .attr("r", (d) => d.r)
+    .attr("cx", (d) => d.x)
+    .attr("cy", (d) => d.y);
+}
+
+setInterval(() => {
+  const n = 10 + Math.sin(t) * 5;
+  const data = makeData(n, t);
+  vizData(data);
+  t = t + 0.005;
 }, 1000 / 120);
