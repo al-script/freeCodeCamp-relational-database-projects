@@ -42,18 +42,30 @@ setInterval(() => {
     y: 250 + Math.sin(d * 0.5 + t) * 200,
   }));
 
-  // initializing our data join
-  const circles = svg.selectAll("circle").data(data);
+  // // initializing our data join
+  // const circles = svg.selectAll("circle").data(data);
 
-  // appending circles via enter, separated because only called where corresponding DOM element doesnt already exist, gives the circles their initial value
-  const circlesEnter = circles.enter().append("circle").attr("r", 20);
+  // // appending circles via enter, separated because only called where corresponding DOM element doesnt already exist, gives the circles their initial value
+  // const circlesEnter = circles.enter().append("circle").attr("r", 20);
 
-  // automatically calls update, calls the current value of d.x and d.y which is updated based on the interval and t
-  // *** USING MERGE: first time around will be enter selection with new circles and apply attrs to those, second time around will resolve to circles from update selection, very cool
-  circles
-    .merge(circlesEnter)
+  // // automatically calls update, calls the current value of d.x and d.y which is updated based on the interval and t
+  // // *** USING MERGE: first time around will be enter selection with new circles and apply attrs to those, second time around will resolve to circles from update selection, very cool
+  // circles
+  //   .merge(circlesEnter)
+  //   .attr("cx", (d) => d.x)
+  //   .attr("cy", (d) => d.y);
+  // merge is a method on a selection where can pass in another selection and can merge selections together, a set union
+
+  // NEW shorthand, just use join! automatically merges the enter and update selections (and removes elements in exit selection)
+  // shorthand for the entire general update pattern: enter, update, exit
+  const circles = svg
+    .selectAll("circle")
+    .data(data)
+    .join("circle")
+    .attr("r", 20)
     .attr("cx", (d) => d.x)
     .attr("cy", (d) => d.y);
 
-  t = t + 0.1;
-}, 25);
+  t = t + 0.005;
+  // 1000/120 gives 120 frames per second
+}, 1000 / 120);
