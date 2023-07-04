@@ -9,15 +9,28 @@ body {
 }
 
 #svg-container {
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* flex-wrap: wrap; */
-  /* padding: 5rem; */
-  /* gap: 2rem; */
+  background-color: #d7dce3;
 }
 
-.svg-component {
-  /* height: 500px; */
-  /* width: 500px; */
+#frame {
+  border: 25px solid black;
+  position: fixed;
+  height: calc(100vh - 50px);
+  width: calc(100vw - 50px);
+}
+
+#frame-cross-vertical {
+  width: 50px;
+  background-color: black;
+  position: absolute;
+  left: 50vw;
+  height: 100vw;
+}
+
+#frame-cross-horizontal {
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  width: 100vw;
+  top: 50vh;
 }

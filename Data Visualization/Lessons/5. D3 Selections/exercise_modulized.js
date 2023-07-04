@@ -1,6 +1,6 @@
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@6.6/+esm";
-import { vizData } from "./lesson2_vizData.js";
-import { makeData } from "./lesson2_makeData.js";
+import { vizData } from "./exercise_vizData.js";
+import { makeData } from "./exercise_makeData.js";
 
 let container = document.getElementById("svg-container");
 
@@ -16,7 +16,7 @@ const svg = d3
 let t = 0;
 
 setInterval(() => {
-  const n = 10 + Math.sin(t) * 5;
+  const n = width / 50;
   const data = makeData(n, t);
   svg.call(vizData, data); // svg is first element sent to the call, function setup to expect the svg element as first argument, and other arguements that pass are already setup presumably
   // vizData(svg, data);
