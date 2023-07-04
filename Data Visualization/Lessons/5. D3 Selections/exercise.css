@@ -10,14 +10,23 @@ body {
 
 #svg-container {
   background-color: #d7dce3;
+  position: relative;
 }
 
 #frame {
-  border: 25px solid black;
+  border: 35px solid black;
   position: fixed;
-  height: calc(100vh - 50px);
-  width: calc(100vw - 50px);
+  height: calc(100vh - 70px);
+  width: calc(100vw - 70px);
 }
+
+/* #sill {
+  position: absolute;
+  bottom: 0;
+  height: 45px;
+  width: 100%;
+  background-color: #9ac1c2;
+} */
 
 #frame-cross-vertical {
   width: 50px;

@@ -8,5 +8,5 @@ export function vizData(selection, data) {
     .attr("rx", (d) => d.rx)
     .attr("width", (d) => d.width)
     .attr("height", (d) => d.height)
-    .attr("fill", (d) => d.fill)
+    .attr("fill", (d) => d.fill);
 }
