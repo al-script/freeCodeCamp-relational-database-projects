@@ -16,6 +16,12 @@
 
       </div>
     </div>
-    <script src="lesson_modularized.js" type="module"></script>
+    <!-- if do it old way (non-modularized) then need to worry about a topographical hierarchy to make sure dependencies are loaded before used -->
+    
+    <!-- could import d3 like this, old school way -->
+    <!-- defines d3 as a global variable in the global namespace, a browser global, doesn't use ES6 modules -->
+    <script src="https://unpkg.com/d3@7.8.5/dist/d3.js"></script>
+
+    <script src="index.js" type="module"></script>
   </body>
 </html>
