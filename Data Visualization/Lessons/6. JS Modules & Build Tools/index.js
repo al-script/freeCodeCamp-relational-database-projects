@@ -1,6 +1,10 @@
 // importing a default export and { named exports }, named export distinguished by using { }
 import somethingEvenMoreElse, { something, somethingElse } from "./something.js";
 
+// import { select } from 'd3'
+// in rollup can resolve package names to browser globals
+// console.log(select);
+
 console.log("Hello " + something + ", " + somethingElse + ', ' + somethingEvenMoreElse + ".");
 
 // if dont use curly braces then get default export, which is where want module to only export one thing
