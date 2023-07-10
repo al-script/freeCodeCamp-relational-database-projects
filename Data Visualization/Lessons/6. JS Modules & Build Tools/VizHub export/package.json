@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "cd '6. JS Modules & Build Tools/VizHub export' && rollup -c"
+    "build": "rollup -c"
   },
   "devDependencies": {
     "rollup": "latest"
