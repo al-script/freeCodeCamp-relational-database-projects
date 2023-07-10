@@ -1,6 +1,0 @@
-{
-    "name": "npm-practice",
-    "workspaces": [
-      "./6. JS Modules & Build Tools/VizHub export"
-    ]
-  }
