@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","sources":["index.js"],"sourcesContent":["import { select } from 'd3';\nselect('body').text('Hello D3 version 7');"],"names":["select"],"mappings":";;;AACAA,UAAM,CAAC,MAAM,CAAC,CAAC,IAAI,CAAC,oBAAoB,CAAC;;;;;;"}
