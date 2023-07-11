@@ -5,6 +5,6 @@ export const somethingElse = "something else";
 
 export function foo() {}
 
-let somethingEvenMoreElse = 'another else';
+let somethingEvenMoreElse = 'another something else';
 
 export default somethingEvenMoreElse;
