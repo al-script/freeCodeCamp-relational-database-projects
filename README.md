@@ -1,3 +1,3 @@
-# freeCodeCamp-Projects
+# freeCodeCamp Relational Database Projects
 
-Migrate fCC projects to GitHub for consolidation and refactoring.
+https://www.freecodecamp.org/learn/relational-database/
